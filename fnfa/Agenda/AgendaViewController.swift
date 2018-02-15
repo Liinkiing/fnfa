@@ -8,11 +8,33 @@
 
 import UIKit
 
-class AgendaViewController: UITableViewController {
+class AgendaViewController: UITableViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+    
+
+
+    private let reuseIdentifier = "dayRow"
+    private var days = [
+        Date(timeIntervalSince1970: 1522792800), // 4 Février 2018, 00:00
+        Date(timeIntervalSince1970: 1522879200), // 5 Février 2018, 00:00
+        Date(timeIntervalSince1970: 1522965600), // 6 Février 2018, 00:00
+        Date(timeIntervalSince1970: 1523052000), // 7 Février 2018, 00:00
+        Date(timeIntervalSince1970: 1523138400)  // 8 Février 2018, 00:00
+    ]
+    private let dateFormatter = DateFormatter()
+    private let locale = Locale(identifier: "fr_FR")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        dateFormatter.locale = locale
         // Do any additional setup after loading the view.
     }
 
@@ -20,7 +42,21 @@ class AgendaViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! AgendaTableViewCell
+        return cell
+    }
+
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return days.count
+    }
+
 
     /*
     // MARK: - Navigation
@@ -31,24 +67,26 @@ class AgendaViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
+
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = super.tableView(tableView, viewForHeaderInSection: section)
-        view?.backgroundColor = #colorLiteral(red: 0.1175380871, green: 0.1734368503, blue: 0.310670346, alpha: 1)
-        
+        view?.backgroundColor = #colorLiteral(red:0.1175380871, green:0.1734368503, blue:0.310670346, alpha:1)
+
         return view
     }
-    
+
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 50
     }
 
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        if(view is UITableViewHeaderFooterView){
+        if (view is UITableViewHeaderFooterView) {
             let header = view as! UITableViewHeaderFooterView
+            dateFormatter.setLocalizedDateFormatFromTemplate("EEEE d")
+            header.textLabel?.text = dateFormatter.string(from: days[section]).capitalized(with: locale)
             header.textLabel?.textAlignment = .center
-            header.textLabel?.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            header.textLabel?.textColor = #colorLiteral(red:1.0, green:1.0, blue:1.0, alpha:1.0)
         }
     }
-    
+
 }

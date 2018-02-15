@@ -35,108 +35,69 @@
         <scene sceneID="CsH-ic-KFA">
             <objects>
                 <tableViewController id="07i-p2-Skj" customClass="AgendaViewController" customModule="fnfa" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NXK-gy-tPT">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NXK-gy-tPT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0078431372550000003" green="0.035294117649999998" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.0078431372550000003" green="0.035294117649999998" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
-                        <sections>
-                            <tableViewSection headerTitle="Mercredi 4" id="45X-Rv-x4D">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="420" id="IUz-iJ-d05">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="420"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IUz-iJ-d05" id="IvH-Dg-J05">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Day-Cd-zgh">
-                                                    <rect key="frame" x="16" y="11" width="343" height="398"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0FP-fj-v7b">
-                                                        <size key="itemSize" width="50" height="50"/>
-                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    </collectionViewFlowLayout>
-                                                    <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="IeK-2V-6oE">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                            </view>
-                                                        </collectionViewCell>
-                                                    </cells>
-                                                </collectionView>
-                                            </subviews>
-                                            <color key="backgroundColor" red="0.0078431372549019607" green="0.035294117647058823" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Day-Cd-zgh" secondAttribute="trailing" id="BCP-m0-rEj"/>
-                                                <constraint firstItem="Day-Cd-zgh" firstAttribute="top" secondItem="IvH-Dg-J05" secondAttribute="topMargin" id="GjR-v8-MK0"/>
-                                                <constraint firstItem="Day-Cd-zgh" firstAttribute="leading" secondItem="IvH-Dg-J05" secondAttribute="leadingMargin" id="H7R-kS-LT9"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Day-Cd-zgh" secondAttribute="bottom" id="wxX-9e-GuC"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="Jeudi 5" id="i7C-oO-3np">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="420" id="YfR-b0-DgQ">
-                                        <rect key="frame" x="0.0" y="476" width="375" height="420"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YfR-b0-DgQ" id="xSN-zR-HHT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" red="0.0078431372549019607" green="0.035294117647058823" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="Vendredi 6" id="FAl-2c-0Wz">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="420" id="knu-ba-4yp">
-                                        <rect key="frame" x="0.0" y="924" width="375" height="420"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="knu-ba-4yp" id="QLZ-7w-8vO">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" red="0.0078431372549019607" green="0.035294117647058823" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="Samedi 7" id="IFO-eL-d5G">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="420" id="LeD-0l-SYf">
-                                        <rect key="frame" x="0.0" y="1372" width="375" height="420"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LeD-0l-SYf" id="t8z-hk-9Jg">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" red="0.0078431372549019607" green="0.035294117647058823" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="Dimanche 8" id="h4w-DH-o2h">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="420" id="GpS-T8-DD6">
-                                        <rect key="frame" x="0.0" y="1820" width="375" height="420"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GpS-T8-DD6" id="d1p-Hs-x42">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" red="0.0078431372549019607" green="0.035294117647058823" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dayRow" rowHeight="420" id="IUz-iJ-d05" customClass="AgendaTableViewCell" customModule="fnfa" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="420"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IUz-iJ-d05" id="IvH-Dg-J05">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KPZ-Yg-A9t">
+                                            <rect key="frame" x="16" y="11" width="343" height="398"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="s1B-xZ-zbd" customClass="UPCarouselFlowLayout" customModule="UPCarouselFlowLayout">
+                                                <size key="itemSize" width="323" height="400"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="sideItemScale">
+                                                        <real key="value" value="0.80000000000000004"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="sideItemAlpha">
+                                                        <real key="value" value="0.59999999999999998"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ufl-L3-Ohj" customClass="AgendaCollectionViewCell" customModule="fnfa" customModuleProvider="target">
+                                                    <rect key="frame" x="10" y="0.0" width="323" height="400"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="323" height="400"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </view>
+                                                    <color key="backgroundColor" red="0.59265214204788208" green="0.978901207447052" blue="0.023496663197875023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </collectionViewCell>
+                                            </cells>
+                                            <connections>
+                                                <outlet property="dataSource" destination="07i-p2-Skj" id="h9F-0L-hbv"/>
+                                                <outlet property="delegate" destination="07i-p2-Skj" id="gZF-hn-NPm"/>
+                                            </connections>
+                                        </collectionView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0078431372549019607" green="0.035294117647058823" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="KPZ-Yg-A9t" secondAttribute="bottom" id="2cX-fC-uld"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="KPZ-Yg-A9t" secondAttribute="trailing" id="IMV-ZN-6If"/>
+                                        <constraint firstItem="KPZ-Yg-A9t" firstAttribute="leading" secondItem="IvH-Dg-J05" secondAttribute="leadingMargin" id="Td6-iy-SNg"/>
+                                        <constraint firstItem="KPZ-Yg-A9t" firstAttribute="top" secondItem="IvH-Dg-J05" secondAttribute="topMargin" id="hHL-Ew-CTm"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="eventsCollectionView" destination="KPZ-Yg-A9t" id="QaG-2Y-AhS"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="07i-p2-Skj" id="fAB-Ku-anG"/>
                             <outlet property="delegate" destination="07i-p2-Skj" id="uio-WK-4IQ"/>

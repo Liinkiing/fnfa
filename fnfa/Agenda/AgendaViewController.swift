@@ -8,20 +8,10 @@
 
 import UIKit
 
-class AgendaViewController: UITableViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
-    }
-    
-
+class AgendaViewController: UITableViewController {
 
     private let reuseIdentifier = "dayRow"
+
     private var days = [
         Date(timeIntervalSince1970: 1522792800), // 4 Février 2018, 00:00
         Date(timeIntervalSince1970: 1522879200), // 5 Février 2018, 00:00
@@ -37,7 +27,7 @@ class AgendaViewController: UITableViewController, UICollectionViewDelegate, UIC
         dateFormatter.locale = locale
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -45,6 +35,7 @@ class AgendaViewController: UITableViewController, UICollectionViewDelegate, UIC
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! AgendaTableViewCell
+        cell.day = days[indexPath.section]
         return cell
     }
 

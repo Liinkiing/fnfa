@@ -15,8 +15,8 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
     var image: String
     var places: [Place]?
     var category: Category
-    var startingDate: Date
-    var endingDate: Date
+    var startingDate: EventDate
+    var endingDate: EventDate
 
     static func ==(lhs: Event, rhs: Event) -> Bool {
         return lhs.id == rhs.id
@@ -29,8 +29,8 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
         self.image = aDecoder.decodeObject(forKey: "image") as! String
         self.places = aDecoder.decodeObject(forKey: "places") as! [Place]?
         self.category = aDecoder.decodeObject(forKey: "category") as! Category
-        self.startingDate = aDecoder.decodeObject(forKey: "startingDate") as! Date
-        self.endingDate = aDecoder.decodeObject(forKey: "endingDate") as! Date
+        self.startingDate = aDecoder.decodeObject(forKey: "startingDate") as! EventDate
+        self.endingDate = aDecoder.decodeObject(forKey: "endingDate") as! EventDate
     }
 
     func encode(with aCoder: NSCoder) {

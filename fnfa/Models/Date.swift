@@ -5,7 +5,7 @@
 
 import Foundation
 
-class Date: NSObject, NSCoding, Decodable {
+class EventDate: NSObject, NSCoding, Decodable {
     var year: Int!
     var month: Int!
     var day: Int!

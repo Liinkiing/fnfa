@@ -16,6 +16,7 @@
 		3AF260412035C23200D7E022 /* Agenda.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF260402035C23200D7E022 /* Agenda.storyboard */; };
 		3AF260442035C3BA00D7E022 /* ProgrammeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260432035C3BA00D7E022 /* ProgrammeViewController.swift */; };
 		3AF260462035C3C100D7E022 /* Programme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF260452035C3C100D7E022 /* Programme.storyboard */; };
+		3AF260542035DBD700D7E022 /* AgendaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260532035DBD700D7E022 /* AgendaCollectionViewController.swift */; };
 		944ABB5B3A83C70F3A0BD1D2 /* Pods_fnfa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE1B9ACA7C0551D06906509 /* Pods_fnfa.framework */; };
 		C36DA4D8111E9C092903D934 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C36DAD6B727E2ADC4EB7B7BF /* .gitignore */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 		3AF260402035C23200D7E022 /* Agenda.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Agenda.storyboard; sourceTree = "<group>"; };
 		3AF260432035C3BA00D7E022 /* ProgrammeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeViewController.swift; sourceTree = "<group>"; };
 		3AF260452035C3C100D7E022 /* Programme.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Programme.storyboard; sourceTree = "<group>"; };
+		3AF260532035DBD700D7E022 /* AgendaCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaCollectionViewController.swift; sourceTree = "<group>"; };
 		7DE1B9ACA7C0551D06906509 /* Pods_fnfa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fnfa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36DAD6B727E2ADC4EB7B7BF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		D28F6579E1123505B8D33BD6 /* Pods-fnfa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fnfa.release.xcconfig"; path = "Pods/Target Support Files/Pods-fnfa/Pods-fnfa.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			children = (
 				3AF2603E2035C22600D7E022 /* AgendaViewController.swift */,
 				3AF260402035C23200D7E022 /* Agenda.storyboard */,
+				3AF260532035DBD700D7E022 /* AgendaCollectionViewController.swift */,
 			);
 			path = Agenda;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AF2602E2035C18100D7E022 /* ViewController.swift in Sources */,
+				3AF260542035DBD700D7E022 /* AgendaCollectionViewController.swift in Sources */,
 				3AF260442035C3BA00D7E022 /* ProgrammeViewController.swift in Sources */,
 				3AF2602C2035C18100D7E022 /* AppDelegate.swift in Sources */,
 				3AF2603F2035C22600D7E022 /* AgendaViewController.swift in Sources */,

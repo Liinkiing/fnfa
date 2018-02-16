@@ -24,6 +24,7 @@ class AgendaViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.allowsSelection = false
         dateFormatter.locale = locale
         // Do any additional setup after loading the view.
     }

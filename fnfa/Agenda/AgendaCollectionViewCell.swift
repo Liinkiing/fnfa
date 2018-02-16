@@ -13,6 +13,5 @@ class AgendaCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var eventImage: UIImageView!
     
     var event: Event?
-    
-    
+
 }

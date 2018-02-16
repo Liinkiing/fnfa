@@ -46,7 +46,7 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
 
     func getUIImage() -> UIImage {
         if (image == "random") {
-            return [#imageLiteral(resourceName: "CROC-BLANC"), #imageLiteral(resourceName: "CROC-BLANC-2"), #imageLiteral(resourceName: "CROC-BLANC-3"), #imageLiteral(resourceName: "drole de petite bete"), #imageLiteral(resourceName: "drole de petite bete3"), #imageLiteral(resourceName: "drole de petite bete4"), #imageLiteral(resourceName: "drole de petite bete2"), #imageLiteral(resourceName: "i lost my body"), #imageLiteral(resourceName: "I lost my body2")].random()
+            return [#imageLiteral(resourceName: "motif-afca-3"), #imageLiteral(resourceName: "motif-afca-5"), #imageLiteral(resourceName: "motif-afca-8"), #imageLiteral(resourceName: "motif-afca-17"), #imageLiteral(resourceName: "motif-afca-14")].random()
         }
         return UIImage(named: image )!
     }

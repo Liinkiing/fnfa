@@ -43,11 +43,11 @@
                         <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.0078431372550000003" green="0.035294117649999998" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dayRow" rowHeight="420" id="IUz-iJ-d05" customClass="AgendaTableViewCell" customModule="fnfa" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="420"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dayRow" rowHeight="575" id="IUz-iJ-d05" customClass="AgendaTableViewCell" customModule="fnfa" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="575"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IUz-iJ-d05" id="IvH-Dg-J05">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="575"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KPZ-Yg-A9t">
@@ -79,12 +79,12 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="316" height="317"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="40r-6i-Agx">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="motif-afca-5" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="40r-6i-Agx">
                                                                 <rect key="frame" x="0.0" y="0.0" width="316" height="317"/>
                                                             </imageView>
                                                         </subviews>
                                                     </view>
-                                                    <color key="backgroundColor" red="0.055561209506487019" green="0.23868063984297161" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.0078431372550000003" green="0.035294117649999998" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="40r-6i-Agx" firstAttribute="top" secondItem="ufl-L3-Ohj" secondAttribute="topMargin" constant="-8" id="4Wc-DL-F54"/>
                                                         <constraint firstItem="40r-6i-Agx" firstAttribute="top" secondItem="ufl-L3-Ohj" secondAttribute="topMargin" constant="-8" id="8tH-eu-kPV"/>
@@ -97,7 +97,7 @@
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
@@ -109,9 +109,14 @@
                                     </subviews>
                                     <color key="backgroundColor" red="0.0078431372549019607" green="0.035294117647058823" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
+                                        <constraint firstItem="KPZ-Yg-A9t" firstAttribute="top" secondItem="IvH-Dg-J05" secondAttribute="topMargin" id="2Ec-rw-sYh"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="KPZ-Yg-A9t" secondAttribute="bottom" id="4xB-85-Ksm"/>
+                                        <constraint firstItem="KPZ-Yg-A9t" firstAttribute="top" secondItem="IvH-Dg-J05" secondAttribute="topMargin" id="HGl-vm-9uM"/>
+                                        <constraint firstItem="KPZ-Yg-A9t" firstAttribute="trailing" secondItem="IvH-Dg-J05" secondAttribute="trailingMargin" id="J1M-vj-DK9"/>
                                         <constraint firstItem="KPZ-Yg-A9t" firstAttribute="leading" secondItem="IvH-Dg-J05" secondAttribute="leadingMargin" id="MZu-eH-n1E"/>
                                         <constraint firstItem="KPZ-Yg-A9t" firstAttribute="top" secondItem="IvH-Dg-J05" secondAttribute="topMargin" id="QcC-ZO-aGa"/>
                                         <constraint firstItem="KPZ-Yg-A9t" firstAttribute="bottom" secondItem="IvH-Dg-J05" secondAttribute="bottomMargin" id="fC4-xl-ZVi"/>
+                                        <constraint firstItem="KPZ-Yg-A9t" firstAttribute="leading" secondItem="IvH-Dg-J05" secondAttribute="leadingMargin" id="gMG-xk-nJY"/>
                                         <constraint firstItem="KPZ-Yg-A9t" firstAttribute="trailing" secondItem="IvH-Dg-J05" secondAttribute="trailingMargin" id="hLy-WT-HPd"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -133,4 +138,7 @@
             <point key="canvasLocation" x="389.60000000000002" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="motif-afca-5" width="551" height="412"/>
+    </resources>
 </document>

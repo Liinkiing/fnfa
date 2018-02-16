@@ -25,6 +25,12 @@ extension Array where Element == Event {
     }
 }
 
+extension Collection where Index == Int {
+    func random() -> Iterator.Element {
+        return self[Int(arc4random_uniform(UInt32(endIndex)))]
+    }
+}
+
 extension Array where Element: NameProtocol {
     func findBy(name: String, useStrict strict: Bool = false) -> [NameProtocol]? {
         return self.filter({ element in

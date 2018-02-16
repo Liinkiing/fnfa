@@ -78,13 +78,31 @@
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                         <rect key="frame" x="0.0" y="0.0" width="316" height="317"/>
                                                         <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="40r-6i-Agx">
+                                                                <rect key="frame" x="0.0" y="0.0" width="316" height="317"/>
+                                                            </imageView>
+                                                        </subviews>
                                                     </view>
                                                     <color key="backgroundColor" red="0.055561209506487019" green="0.23868063984297161" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="40r-6i-Agx" firstAttribute="top" secondItem="ufl-L3-Ohj" secondAttribute="topMargin" constant="-8" id="4Wc-DL-F54"/>
+                                                        <constraint firstItem="40r-6i-Agx" firstAttribute="top" secondItem="ufl-L3-Ohj" secondAttribute="topMargin" constant="-8" id="8tH-eu-kPV"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="40r-6i-Agx" secondAttribute="bottom" constant="-8" id="OeD-Pl-IT8"/>
+                                                        <constraint firstItem="40r-6i-Agx" firstAttribute="leading" secondItem="ufl-L3-Ohj" secondAttribute="leadingMargin" constant="-8" id="QLZ-tV-6fJ"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="40r-6i-Agx" secondAttribute="bottom" constant="-8" id="Qqi-Yx-C3K"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="40r-6i-Agx" secondAttribute="trailing" constant="-8" id="Z5r-TJ-76E"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="40r-6i-Agx" secondAttribute="trailing" constant="-8" id="frw-l8-ATN"/>
+                                                        <constraint firstItem="40r-6i-Agx" firstAttribute="leading" secondItem="ufl-L3-Ohj" secondAttribute="leadingMargin" constant="-8" id="tON-9Z-3Ys"/>
+                                                    </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                                             <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="eventImage" destination="40r-6i-Agx" id="hBt-74-4Q7"/>
+                                                    </connections>
                                                 </collectionViewCell>
                                             </cells>
                                         </collectionView>

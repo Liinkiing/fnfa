@@ -10,19 +10,19 @@ import UIKit
 
 class AgendaViewController: UITableViewController {
 
-    
-    private let reuseIdentifier = UUID().uuidString
+
+    private let reuseIdentifier = "dayRow"
 
     private var days = [
-        Date(timeIntervalSince1970: 1522792800), // 4 Février 2018, 00:00
-        Date(timeIntervalSince1970: 1522879200), // 5 Février 2018, 00:00
-        Date(timeIntervalSince1970: 1522965600), // 6 Février 2018, 00:00
-        Date(timeIntervalSince1970: 1523052000), // 7 Février 2018, 00:00
-        Date(timeIntervalSince1970: 1523138400)  // 8 Février 2018, 00:00
+        Date(timeIntervalSince1970: 1522836000), // 4 Avril 2018, 12:00
+        Date(timeIntervalSince1970: 1522922400), // 5 Avril 2018, 12:00
+        Date(timeIntervalSince1970: 1523008800), // 6 Avril 2018, 12:00
+        Date(timeIntervalSince1970: 1523095200), // 7 Avril 2018, 12:00
+        Date(timeIntervalSince1970: 1523181600)  // 8 Avril 2018, 12:00
     ]
     private let dateFormatter = DateFormatter()
     private let locale = Locale(identifier: "fr_FR")
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.allowsSelection = false
@@ -30,17 +30,16 @@ class AgendaViewController: UITableViewController {
         tableView.register(UINib(nibName: "AgendaTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifier)
         // Do any additional setup after loading the view.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! AgendaTableViewCell
-        cell.day = days[indexPath.section]
-        print(dateFormatter.string(from: days[indexPath.section]))
-        return cell
+        let row = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! AgendaTableViewCell
+        row.events = DataMapper.instance.events.findBy(date: days[indexPath.section])
+        return row
     }
 
 
@@ -51,7 +50,6 @@ class AgendaViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return days.count
     }
-
 
     /*
     // MARK: - Navigation

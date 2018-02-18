@@ -23,6 +23,15 @@ extension Array where Element == Event {
             event.startingDate.day == day
         })
     }
+    
+    func findBy(date: Date) -> [Event]? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.setLocalizedDateFormatFromTemplate("d")
+        let day = Int(dateFormatter.string(from: date))
+        return self.filter({ (event) -> Bool in
+            event.startingDate.day == day
+        })
+    }
 }
 
 extension Collection where Index == Int {

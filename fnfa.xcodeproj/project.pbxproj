@@ -16,9 +16,11 @@
 		3AF260412035C23200D7E022 /* Agenda.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF260402035C23200D7E022 /* Agenda.storyboard */; };
 		3AF260442035C3BA00D7E022 /* ProgrammeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260432035C3BA00D7E022 /* ProgrammeViewController.swift */; };
 		3AF260462035C3C100D7E022 /* Programme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF260452035C3C100D7E022 /* Programme.storyboard */; };
-		3AF260562035DEFA00D7E022 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260552035DEFA00D7E022 /* AgendaTableViewCell.swift */; };
-		3AF260582035E4CE00D7E022 /* AgendaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260572035E4CE00D7E022 /* AgendaCollectionViewCell.swift */; };
 		944ABB5B3A83C70F3A0BD1D2 /* Pods_fnfa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE1B9ACA7C0551D06906509 /* Pods_fnfa.framework */; };
+		AF9AA6F2203916EC000A1BF4 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9AA6F0203916EC000A1BF4 /* EventCollectionViewCell.swift */; };
+		AF9AA6F3203916EC000A1BF4 /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF9AA6F1203916EC000A1BF4 /* EventCollectionViewCell.xib */; };
+		AF9AA6F62039224F000A1BF4 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9AA6F42039224F000A1BF4 /* AgendaTableViewCell.swift */; };
+		AF9AA6F72039224F000A1BF4 /* AgendaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF9AA6F52039224F000A1BF4 /* AgendaTableViewCell.xib */; };
 		C36DA4D8111E9C092903D934 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C36DAD6B727E2ADC4EB7B7BF /* .gitignore */; };
 		FBD9106799CC42E4B7D619E2 /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = FBD91567A5C3F1F3850D0D10 /* places.json */; };
 		FBD910B8637EC8189D3E0860 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = FBD91716F149762F6E15A991 /* events.json */; };
@@ -46,9 +48,11 @@
 		3AF260402035C23200D7E022 /* Agenda.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Agenda.storyboard; sourceTree = "<group>"; };
 		3AF260432035C3BA00D7E022 /* ProgrammeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeViewController.swift; sourceTree = "<group>"; };
 		3AF260452035C3C100D7E022 /* Programme.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Programme.storyboard; sourceTree = "<group>"; };
-		3AF260552035DEFA00D7E022 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
-		3AF260572035E4CE00D7E022 /* AgendaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaCollectionViewCell.swift; sourceTree = "<group>"; };
 		7DE1B9ACA7C0551D06906509 /* Pods_fnfa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fnfa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF9AA6F0203916EC000A1BF4 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF9AA6F1203916EC000A1BF4 /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCollectionViewCell.xib; sourceTree = "<group>"; };
+		AF9AA6F42039224F000A1BF4 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
+		AF9AA6F52039224F000A1BF4 /* AgendaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgendaTableViewCell.xib; sourceTree = "<group>"; };
 		C36DAD6B727E2ADC4EB7B7BF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		D28F6579E1123505B8D33BD6 /* Pods-fnfa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fnfa.release.xcconfig"; path = "Pods/Target Support Files/Pods-fnfa/Pods-fnfa.release.xcconfig"; sourceTree = "<group>"; };
 		FBD910005F1EFF514159592A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -118,8 +122,10 @@
 			children = (
 				3AF2603E2035C22600D7E022 /* AgendaViewController.swift */,
 				3AF260402035C23200D7E022 /* Agenda.storyboard */,
-				3AF260552035DEFA00D7E022 /* AgendaTableViewCell.swift */,
-				3AF260572035E4CE00D7E022 /* AgendaCollectionViewCell.swift */,
+				AF9AA6F0203916EC000A1BF4 /* EventCollectionViewCell.swift */,
+				AF9AA6F1203916EC000A1BF4 /* EventCollectionViewCell.xib */,
+				AF9AA6F42039224F000A1BF4 /* AgendaTableViewCell.swift */,
+				AF9AA6F52039224F000A1BF4 /* AgendaTableViewCell.xib */,
 			);
 			path = Agenda;
 			sourceTree = "<group>";
@@ -237,8 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AF260362035C18100D7E022 /* LaunchScreen.storyboard in Resources */,
+				AF9AA6F72039224F000A1BF4 /* AgendaTableViewCell.xib in Resources */,
 				3AF260462035C3C100D7E022 /* Programme.storyboard in Resources */,
 				3AF260332035C18100D7E022 /* Assets.xcassets in Resources */,
+				AF9AA6F3203916EC000A1BF4 /* EventCollectionViewCell.xib in Resources */,
 				3AF260412035C23200D7E022 /* Agenda.storyboard in Resources */,
 				3AF260312035C18100D7E022 /* Main.storyboard in Resources */,
 				C36DA4D8111E9C092903D934 /* .gitignore in Resources */,
@@ -309,12 +317,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF9AA6F2203916EC000A1BF4 /* EventCollectionViewCell.swift in Sources */,
 				3AF2602E2035C18100D7E022 /* ViewController.swift in Sources */,
 				3AF260442035C3BA00D7E022 /* ProgrammeViewController.swift in Sources */,
 				3AF2602C2035C18100D7E022 /* AppDelegate.swift in Sources */,
 				3AF2603F2035C22600D7E022 /* AgendaViewController.swift in Sources */,
-				3AF260582035E4CE00D7E022 /* AgendaCollectionViewCell.swift in Sources */,
-				3AF260562035DEFA00D7E022 /* AgendaTableViewCell.swift in Sources */,
+				AF9AA6F62039224F000A1BF4 /* AgendaTableViewCell.swift in Sources */,
 				FBD91EE95CF7BE307D24FCC4 /* Date.swift in Sources */,
 				FBD91493F3C188E7149A19BE /* Event.swift in Sources */,
 				FBD91E79AD1400659FE15AA4 /* Place.swift in Sources */,

@@ -10,7 +10,8 @@ import UIKit
 
 class AgendaViewController: UITableViewController {
 
-    private let reuseIdentifier = "dayRow"
+    
+    private let reuseIdentifier = UUID().uuidString
 
     private var days = [
         Date(timeIntervalSince1970: 1522792800), // 4 Février 2018, 00:00
@@ -21,11 +22,12 @@ class AgendaViewController: UITableViewController {
     ]
     private let dateFormatter = DateFormatter()
     private let locale = Locale(identifier: "fr_FR")
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.allowsSelection = false
         dateFormatter.locale = locale
+        tableView.register(UINib(nibName: "AgendaTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifier)
         // Do any additional setup after loading the view.
     }
     
@@ -37,6 +39,7 @@ class AgendaViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! AgendaTableViewCell
         cell.day = days[indexPath.section]
+        print(dateFormatter.string(from: days[indexPath.section]))
         return cell
     }
 

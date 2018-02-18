@@ -28,6 +28,7 @@
 		FBD91493F3C188E7149A19BE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD91AB4B6909CDFF62E13F2 /* Event.swift */; };
 		FBD916A38D771EF8DA38C878 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD910005F1EFF514159592A /* Extensions.swift */; };
 		FBD91759918FEEEEDE7F709F /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD91DD94E643737174D795D /* DataMapper.swift */; };
+		FBD91821DBE596FA810DE019 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD91142E501C4BCC4096730 /* Utils.swift */; };
 		FBD91A6BDC790E1C8C2C88AA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD91B861A5A6AFF957F2C5C /* Category.swift */; };
 		FBD91BA9775BA429CB0F1C6E /* IdProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD917417AE1BA4C1533768D /* IdProtocol.swift */; };
 		FBD91C3DF093D973C7B6E280 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = FBD918580D0241B11031E355 /* categories.json */; };
@@ -56,6 +57,7 @@
 		C36DAD6B727E2ADC4EB7B7BF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		D28F6579E1123505B8D33BD6 /* Pods-fnfa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fnfa.release.xcconfig"; path = "Pods/Target Support Files/Pods-fnfa/Pods-fnfa.release.xcconfig"; sourceTree = "<group>"; };
 		FBD910005F1EFF514159592A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FBD91142E501C4BCC4096730 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		FBD91500E64F4F8C07A106C9 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		FBD9151F32EB1F15028BA888 /* NameProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameProtocol.swift; sourceTree = "<group>"; };
 		FBD91567A5C3F1F3850D0D10 /* places.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = places.json; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				FBD91F7C0218CD392E9A055B /* Models */,
 				FBD9168F459F7DA4FEC9E16F /* Data */,
 				FBD910005F1EFF514159592A /* Extensions.swift */,
+				FBD91142E501C4BCC4096730 /* Utils.swift */,
 			);
 			path = fnfa;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				FBD91BA9775BA429CB0F1C6E /* IdProtocol.swift in Sources */,
 				FBD91186237305BFD8410EE0 /* NameProtocol.swift in Sources */,
 				FBD916A38D771EF8DA38C878 /* Extensions.swift in Sources */,
+				FBD91821DBE596FA810DE019 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

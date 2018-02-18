@@ -31,7 +31,6 @@ class AgendaTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollecti
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = eventsCollectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! EventCollectionViewCell
-        cell.tag = Int(arc4random())
         cell.event = events?[indexPath.item]
         return cell
     }

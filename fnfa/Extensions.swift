@@ -23,16 +23,31 @@ extension Array where Element == Event {
             event.startingDate.day == day
         })
     }
-    
+
     func findBy(date: Date) -> [Event]? {
-        let dateFormatter = DateFormatter()
-        dateFormatter.setLocalizedDateFormatFromTemplate("d")
-        let day = Int(dateFormatter.string(from: date))
         return self.filter({ (event) -> Bool in
-            event.startingDate.day == day
+            event.startingDate.day == Utils.getDayNumber(from: date)
         })
     }
+
+    func filterBy(days: [Date]?) -> [Event]? {
+        let daysNumber = days?.map {
+            Utils.getDayNumber(from: $0)
+        }
+        return self.filter({ (event) -> Bool in
+            return (daysNumber?.contains(event.startingDate.day))!
+        })
+    }
+    
+    func between(_ interval: DateInterval) -> [Event]? {
+        return self.filter({ (event) -> Bool in
+            interval.contains(event.startingDate.getDate())
+        })
+    }
+
 }
+
+
 
 extension Collection where Index == Int {
     func random() -> Iterator.Element {

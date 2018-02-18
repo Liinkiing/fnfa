@@ -15,7 +15,6 @@ class EventCollectionViewCell: UICollectionViewCell {
     
     var event: Event? {
         didSet{
-            print("tu viens de set l'event \(event!) pour la cellule \(tag)")
             eventImage.image = event?.getUIImage()
             labelTitle.text = event?.name
         }

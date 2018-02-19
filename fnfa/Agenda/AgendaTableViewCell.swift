@@ -8,38 +8,25 @@
 
 import UIKit
 
-class AgendaTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
+class AgendaTableViewCell: UITableViewCell {
 
     @IBOutlet weak var eventsCollectionView: UICollectionView!
 
+    var eventsDataSource: EventsDataSource?
+    var day: Date? {
+        didSet {
+            setup()
+        }
+    }
     let dateFormatter = DateFormatter()
-    var identifier = "events"
-    var events: [Event]?
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
+
+    private func setup() {
+        self.eventsDataSource = EventsDataSource(events: DataMapper.instance.events.findBy(date: day!)!)
         dateFormatter.setLocalizedDateFormatFromTemplate("d")
-        eventsCollectionView.delegate = self as UICollectionViewDelegate
-        eventsCollectionView.dataSource = self as UICollectionViewDataSource
-        eventsCollectionView.register(UINib(nibName: "EventCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: identifier)
-    }
-
-
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return (events?.count)!
-    }
-
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = eventsCollectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! EventCollectionViewCell
-        cell.event = events?[indexPath.item]
-        return cell
-    }
-
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        eventsCollectionView.dataSource = eventsDataSource
+        eventsCollectionView.reloadData()
+        eventsCollectionView.register(UINib(nibName: String(describing: EventCollectionViewCell.self), bundle: nil),
+                forCellWithReuseIdentifier: String(describing: EventCollectionViewCell.self))
     }
 
 }

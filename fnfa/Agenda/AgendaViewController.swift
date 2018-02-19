@@ -10,9 +10,6 @@ import UIKit
 
 class AgendaViewController: UITableViewController {
 
-
-    private let reuseIdentifier = "dayRow"
-
     private var days = [
         Date(timeIntervalSince1970: 1522836000), // 4 Avril 2018, 12:00
         Date(timeIntervalSince1970: 1522922400), // 5 Avril 2018, 12:00
@@ -27,21 +24,16 @@ class AgendaViewController: UITableViewController {
         super.viewDidLoad()
         tableView.allowsSelection = false
         dateFormatter.locale = locale
-        tableView.register(UINib(nibName: "AgendaTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifier)
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        tableView.register(UINib(nibName: String(describing: AgendaTableViewCell.self), bundle: nil),
+                forCellReuseIdentifier: String(describing: AgendaTableViewCell.self))
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let row = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! AgendaTableViewCell
-        row.events = DataMapper.instance.events.findBy(date: days[indexPath.section])
+        let row = tableView.dequeueReusableCell(withIdentifier: String(describing: AgendaTableViewCell.self),
+                for: indexPath) as! AgendaTableViewCell
+        row.day = days[indexPath.section]
         return row
     }
-
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -50,16 +42,6 @@ class AgendaViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return days.count
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = super.tableView(tableView, viewForHeaderInSection: section)
@@ -81,5 +63,4 @@ class AgendaViewController: UITableViewController {
             header.textLabel?.textColor = #colorLiteral(red:1.0, green:1.0, blue:1.0, alpha:1.0)
         }
     }
-
 }

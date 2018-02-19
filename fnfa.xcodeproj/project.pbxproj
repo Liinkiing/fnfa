@@ -21,6 +21,8 @@
 		AF9AA6F3203916EC000A1BF4 /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF9AA6F1203916EC000A1BF4 /* EventCollectionViewCell.xib */; };
 		AF9AA6F62039224F000A1BF4 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9AA6F42039224F000A1BF4 /* AgendaTableViewCell.swift */; };
 		AF9AA6F72039224F000A1BF4 /* AgendaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF9AA6F52039224F000A1BF4 /* AgendaTableViewCell.xib */; };
+		AFCDE2BA203A6B0000D57078 /* NoItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCDE2B8203A6B0000D57078 /* NoItemCollectionViewCell.swift */; };
+		AFCDE2BB203A6B0000D57078 /* NoItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFCDE2B9203A6B0000D57078 /* NoItemCollectionViewCell.xib */; };
 		C36DA4D8111E9C092903D934 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C36DAD6B727E2ADC4EB7B7BF /* .gitignore */; };
 		FBD9106799CC42E4B7D619E2 /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = FBD91567A5C3F1F3850D0D10 /* places.json */; };
 		FBD910B8637EC8189D3E0860 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = FBD91716F149762F6E15A991 /* events.json */; };
@@ -55,6 +57,8 @@
 		AF9AA6F1203916EC000A1BF4 /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCollectionViewCell.xib; sourceTree = "<group>"; };
 		AF9AA6F42039224F000A1BF4 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
 		AF9AA6F52039224F000A1BF4 /* AgendaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgendaTableViewCell.xib; sourceTree = "<group>"; };
+		AFCDE2B8203A6B0000D57078 /* NoItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		AFCDE2B9203A6B0000D57078 /* NoItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		C36DAD6B727E2ADC4EB7B7BF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		D28F6579E1123505B8D33BD6 /* Pods-fnfa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fnfa.release.xcconfig"; path = "Pods/Target Support Files/Pods-fnfa/Pods-fnfa.release.xcconfig"; sourceTree = "<group>"; };
 		FBD910005F1EFF514159592A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 				AF9AA6F42039224F000A1BF4 /* AgendaTableViewCell.swift */,
 				AF9AA6F52039224F000A1BF4 /* AgendaTableViewCell.xib */,
 				FBD910E20F8AA05FC1D15BCA /* EventsDataSource.swift */,
+				AFCDE2B8203A6B0000D57078 /* NoItemCollectionViewCell.swift */,
+				AFCDE2B9203A6B0000D57078 /* NoItemCollectionViewCell.xib */,
 			);
 			path = Agenda;
 			sourceTree = "<group>";
@@ -252,6 +258,7 @@
 				AF9AA6F72039224F000A1BF4 /* AgendaTableViewCell.xib in Resources */,
 				3AF260462035C3C100D7E022 /* Programme.storyboard in Resources */,
 				3AF260332035C18100D7E022 /* Assets.xcassets in Resources */,
+				AFCDE2BB203A6B0000D57078 /* NoItemCollectionViewCell.xib in Resources */,
 				AF9AA6F3203916EC000A1BF4 /* EventCollectionViewCell.xib in Resources */,
 				3AF260412035C23200D7E022 /* Agenda.storyboard in Resources */,
 				3AF260312035C18100D7E022 /* Main.storyboard in Resources */,
@@ -331,6 +338,7 @@
 				AF9AA6F62039224F000A1BF4 /* AgendaTableViewCell.swift in Sources */,
 				FBD91EE95CF7BE307D24FCC4 /* Date.swift in Sources */,
 				FBD91493F3C188E7149A19BE /* Event.swift in Sources */,
+				AFCDE2BA203A6B0000D57078 /* NoItemCollectionViewCell.swift in Sources */,
 				FBD91E79AD1400659FE15AA4 /* Place.swift in Sources */,
 				FBD91A6BDC790E1C8C2C88AA /* Category.swift in Sources */,
 				FBD91759918FEEEEDE7F709F /* DataMapper.swift in Sources */,

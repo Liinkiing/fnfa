@@ -11,6 +11,7 @@ import UPCarouselFlowLayout
 
 class AgendaTableViewCell: UITableViewCell {
 
+    
     @IBOutlet weak var eventsCollectionView: UICollectionView!
     @IBOutlet weak var eventsCollectionFlowLayout: UPCarouselFlowLayout!
     
@@ -28,6 +29,8 @@ class AgendaTableViewCell: UITableViewCell {
         eventsCollectionFlowLayout.spacingMode = .overlap(visibleOffset: 30)
         eventsCollectionView.dataSource = eventsDataSource
         eventsCollectionView.reloadData()
+        eventsCollectionView.register(UINib(nibName: String(describing: NoItemCollectionViewCell.self), bundle: nil),
+                                      forCellWithReuseIdentifier: String(describing: NoItemCollectionViewCell.self))
         eventsCollectionView.register(UINib(nibName: String(describing: EventCollectionViewCell.self), bundle: nil),
                 forCellWithReuseIdentifier: String(describing: EventCollectionViewCell.self))
     }

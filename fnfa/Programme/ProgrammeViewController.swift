@@ -7,29 +7,28 @@
 //
 
 import UIKit
+import UPCarouselFlowLayout
 
-class ProgrammeViewController: UIViewController {
+class ProgrammeViewController: UIViewController, UICollectionViewDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBOutlet weak var programmeCollectionView: UICollectionView!
+    
+    @IBOutlet weak var programmeFlowLayout: UPCarouselFlowLayout!
+    
+    var programmeDataSource: ProgrammeDataSource
+    
+    required init?(coder aDecoder: NSCoder) {
+        programmeDataSource = ProgrammeDataSource(events: DataMapper.instance.events)
+        super.init(coder: aDecoder)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        programmeFlowLayout.spacingMode = .overlap(visibleOffset: 30)
+        programmeCollectionView.register(UINib(nibName: String(describing: ProgrammeCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: ProgrammeCollectionViewCell.self))
+        programmeCollectionView.dataSource = programmeDataSource
+        programmeCollectionView.reloadData()
     }
-    */
+
 
 }

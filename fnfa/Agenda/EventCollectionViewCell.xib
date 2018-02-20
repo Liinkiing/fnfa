@@ -73,6 +73,19 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ge0-Ux-wiV" customClass="DesignableButton" customModule="fnfa" customModuleProvider="target">
+                                    <rect key="frame" x="258" y="37" width="32" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <state key="normal" image="delete"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonDeleteFavTap:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Wrx-na-mE1"/>
+                                    </connections>
+                                </button>
                             </subviews>
                         </view>
                         <blurEffect style="dark"/>
@@ -92,4 +105,7 @@
             <point key="canvasLocation" x="57" y="-1"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="delete" width="256" height="256"/>
+    </resources>
 </document>

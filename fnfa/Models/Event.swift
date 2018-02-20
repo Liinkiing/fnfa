@@ -13,6 +13,7 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
     var name: String?
     var excerpt: String?
     var image: String
+    var age: Int?
     var places: [Place]?
     var category: Category
     var startingDate: EventDate
@@ -27,6 +28,7 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
         self.name = aDecoder.decodeObject(forKey: "name") as! String?
         self.excerpt = aDecoder.decodeObject(forKey: "excerpt") as! String?
         self.image = aDecoder.decodeObject(forKey: "image") as! String
+        self.age = aDecoder.decodeObject(forKey: "age") as! Int?
         self.places = aDecoder.decodeObject(forKey: "places") as! [Place]?
         self.category = aDecoder.decodeObject(forKey: "category") as! Category
         self.startingDate = aDecoder.decodeObject(forKey: "startingDate") as! EventDate
@@ -38,6 +40,7 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
         aCoder.encode(name, forKey: "name")
         aCoder.encode(excerpt, forKey: "excerpt")
         aCoder.encode(image, forKey: "image")
+        aCoder.encode(age, forKey: "age")
         aCoder.encode(places, forKey: "places")
         aCoder.encode(category, forKey: "category")
         aCoder.encode(startingDate, forKey: "startingDate")

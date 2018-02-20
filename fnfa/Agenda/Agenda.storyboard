@@ -13,7 +13,7 @@
         <scene sceneID="Q7w-hJ-ouL">
             <objects>
                 <navigationController title="AGENDA" automaticallyAdjustsScrollViewInsets="NO" id="wan-11-pvh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Agenda" id="f8k-f8-MPv"/>
+                    <tabBarItem key="tabBarItem" title="Mon agenda" id="f8k-f8-MPv"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>

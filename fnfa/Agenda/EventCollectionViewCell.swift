@@ -16,6 +16,9 @@ class EventCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var labelPlace: UILabel!
     @IBOutlet weak var labelDuration: UILabel!
     
+    @IBAction func buttonDeleteFavTap(_ sender: UIButton) {
+    }
+    
     var event: Event? {
         didSet{
             let df = DateFormatter()

@@ -29,6 +29,19 @@ extension Array where Element == Event {
             event.startingDate.day == Utils.getDayNumber(from: date)
         })
     }
+    
+    func findBy(locations: [String]) -> [Event]? {
+        var result: [Event] = []
+        locations.forEach { (location) in
+            let results = self.filter({ (event) -> Bool in
+                return event.places!.filter({ (place) -> Bool in
+                    return place.name == location
+                }).count > 0
+            })
+            result.append(contentsOf: results)
+        }
+        return Array(Set(result))
+    }
 
     func filterBy(days: [Date]?) -> [Event]? {
         let daysNumber = days?.map {

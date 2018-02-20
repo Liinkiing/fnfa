@@ -87,9 +87,39 @@ class DesignableImageView: UIImageView {
 extension Notification.Name {
     static let FAVORITE_ADD = Notification.Name("FAVORITE_ADD")
     static let FAVORITE_REMOVE = Notification.Name("FAVORITE_REMOVE")
+    static let AGENDA_FAVORITE_REMOVE =
+        Notification.Name("AGENDA_FAVORITE_REMOVE")
+}
+
+extension UICollectionViewCell {
+    var collectionView: UICollectionView? {
+        return next(UICollectionView.self)
+    }
+    
+    var indexPath: IndexPath? {
+        return collectionView?.indexPath(for: self)
+    }
+    
+    var tableViewCell: UITableViewCell? {
+        return next(UITableViewCell.self)
+    }
+}
+
+extension UITableViewCell {
+    var tableView: UITableView? {
+        return next(UITableView.self)
+    }
+    
+    var indexPath: IndexPath? {
+        return tableView?.indexPath(for: self)
+    }
 }
 
 extension UIView {
+    
+    func next<T: UIResponder>(_ type: T.Type) -> T? {
+        return next as? T ?? next(type)
+    }
     
     @IBInspectable
     var cornerRadius: CGFloat {

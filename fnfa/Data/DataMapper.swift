@@ -50,6 +50,35 @@ class DataMapper {
         guard let data = userDefaults.data(forKey: FAVORITES_KEY_USER) else { return [] }
         return NSKeyedUnarchiver.unarchiveObject(with: data) as! [Event]
     }
+    
+    func removeFromFavorites(event: Event, forceRefresh: Bool = true) {
+        var favorites = getSavedFavorites().filter { (e) -> Bool in
+            return e.id != event.id
+        }
+        save(favorites)
+        if(forceRefresh) {
+            NotificationCenter.default.post(name: .FAVORITE_REMOVE, object: event)
+        }
+    }
+    
+    func addToFavorites(event: Event, forceRefresh: Bool = true) {
+        var favorites = getSavedFavorites()
+        favorites.append(event)
+        save(favorites)
+        if(forceRefresh) {
+            NotificationCenter.default.post(name: .FAVORITE_ADD, object: event)
+        }
+    }
+    
+    func isFavorited(event: Event) -> Bool {
+        if (getSavedFavorites().count == 0) {
+            return false
+        }
+        return getSavedFavorites()
+            .filter({ (e) -> Bool in
+                e.id == event.id
+            }).count > 0
+    }
 
     func save(_ favorites: [Event]) {
         let placeData = NSKeyedArchiver.archivedData(withRootObject: favorites)

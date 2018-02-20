@@ -24,23 +24,31 @@ class ProgrammeCollectionViewCell: UICollectionViewCell {
             labelPlace.text = event?.places?.first?.name
             labelAudience.text = (event?.age != nil ? "A partir de \((event?.age!)!) ans" : "Pour tous public")
             eventImage.image = event?.getUIImage()
-            buttonFav.isSelected = isFavorited()
+            buttonFav.isSelected = DataMapper.instance.isFavorited(event: event!)
         }
     }
     
     override func awakeFromNib() {
         buttonFav.setImage(#imageLiteral(resourceName: "like"), for: .normal)
         buttonFav.setImage(#imageLiteral(resourceName: "like_fill"), for: .selected)
+        NotificationCenter.default.addObserver(self, selector: #selector(refresh), name: .FAVORITE_ADD, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(refresh), name: .FAVORITE_REMOVE, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(refresh), name: .AGENDA_FAVORITE_REMOVE, object: nil)
+    }
+    
+    @objc
+    private func refresh() {
+        buttonFav.isSelected = DataMapper.instance.isFavorited(event: event!)
     }
     
 
     @IBAction func buttonFavTap(_ sender: UIButton) {
-        if(isFavorited()) {
-            NotificationCenter.default.post(name: .FAVORITE_REMOVE, object: event)
+        if(DataMapper.instance.isFavorited(event: event!)) {
             buttonFav.isSelected = false
+        DataMapper.instance.removeFromFavorites(event: event!)
         } else {
-            NotificationCenter.default.post(name: .FAVORITE_ADD, object: event)
             buttonFav.isSelected = true
+            DataMapper.instance.addToFavorites(event: event!)
         }
     }
 
@@ -48,14 +56,4 @@ class ProgrammeCollectionViewCell: UICollectionViewCell {
 
     }
 
-    
-    private func isFavorited() -> Bool {
-        if (DataMapper.instance.getSavedFavorites().count == 0) {
-            return false
-        }
-        return DataMapper.instance.getSavedFavorites()
-            .filter({ (event) -> Bool in
-                event.id == self.event!.id
-            }).count > 0
-    }
 }

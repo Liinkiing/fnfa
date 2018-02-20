@@ -17,6 +17,19 @@ class EventCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var labelDuration: UILabel!
     
     @IBAction func buttonDeleteFavTap(_ sender: UIButton) {
+        print("DELETING \(event!) in \(indexPath!)")
+        DataMapper.instance.removeFromFavorites(event: event!, forceRefresh: false)
+        collectionView?.performBatchUpdates({
+            if((indexPath?.item)! > 0) {
+                self.collectionView?.scrollToItem(
+                    at: IndexPath(item: (self.indexPath?.item)! - 1, section: 0),
+                    at: .centeredHorizontally,
+                    animated: true)
+            }
+        }, completion: { (finished) in
+            NotificationCenter.default.post(name: .AGENDA_FAVORITE_REMOVE, object: self.event!)
+        })
+        
     }
     
     var event: Event? {

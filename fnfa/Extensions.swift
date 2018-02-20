@@ -84,6 +84,11 @@ class DesignableLabel: UILabel {
 class DesignableImageView: UIImageView {
 }
 
+extension Notification.Name {
+    static let FAVORITE_ADD = Notification.Name("FAVORITE_ADD")
+    static let FAVORITE_REMOVE = Notification.Name("FAVORITE_REMOVE")
+}
+
 extension UIView {
     
     @IBInspectable

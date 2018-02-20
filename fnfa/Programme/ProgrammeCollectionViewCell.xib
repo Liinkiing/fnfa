@@ -76,7 +76,7 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                     <connections>
-                                        <action selector="buttonDeleteFavTap:" destination="9g7-A8-ePE" eventType="touchUpInside" id="UsX-95-mRZ"/>
+                                        <action selector="buttonFavTap:" destination="9g7-A8-ePE" eventType="touchUpInside" id="6jX-Xh-7jc"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -121,6 +121,7 @@
             <viewLayoutGuide key="safeArea" id="c5C-uw-rDh"/>
             <size key="customSize" width="316" height="425"/>
             <connections>
+                <outlet property="buttonFav" destination="fcI-hN-wcl" id="AeR-9x-MuH"/>
                 <outlet property="eventImage" destination="SLk-Hb-Ve4" id="yQf-tM-oYj"/>
                 <outlet property="labelAudience" destination="3te-oQ-obe" id="Ux8-Oa-7E0"/>
                 <outlet property="labelPlace" destination="R61-Gd-A1z" id="Mol-a8-qAT"/>

@@ -12,8 +12,8 @@ enum DataMapperError: Error {
 class DataMapper {
 
     static let instance = DataMapper()
-    let userDefaults = UserDefaults.standard
-    let FAVORITES_KEY_USER = "favorites"
+    private let userDefaults = UserDefaults.standard
+    private let FAVORITES_KEY_USER = "favorites_events"
 
     private init() {
     }
@@ -51,7 +51,7 @@ class DataMapper {
         return NSKeyedUnarchiver.unarchiveObject(with: data) as! [Event]
     }
 
-    func save(favorites: [Event]) {
+    func save(_ favorites: [Event]) {
         let placeData = NSKeyedArchiver.archivedData(withRootObject: favorites)
         userDefaults.set(placeData, forKey: FAVORITES_KEY_USER)
     }

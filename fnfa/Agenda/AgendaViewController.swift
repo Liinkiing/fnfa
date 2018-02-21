@@ -43,13 +43,6 @@ class AgendaViewController: UITableViewController {
         return days.count
     }
 
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = super.tableView(tableView, viewForHeaderInSection: section)
-        view?.backgroundColor = #colorLiteral(red:0.1175380871, green:0.1734368503, blue:0.310670346, alpha:1)
-
-        return view
-    }
-
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 50
     }

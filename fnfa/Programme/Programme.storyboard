@@ -19,8 +19,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xj8-39-HkV">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="144" width="375" height="474"/>
+                                <color key="backgroundColor" red="0.0078431372549019607" green="0.039215686274509803" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="j3l-JM-n3K" customClass="UPCarouselFlowLayout" customModule="UPCarouselFlowLayout">
                                     <size key="itemSize" width="316" height="500"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -37,14 +37,61 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IE8-NQ-TGi">
+                                <rect key="frame" x="20" y="64" width="335" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhg-1K-MVt" customClass="FilterButton" customModule="fnfa" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="15" width="98.5" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <inset key="contentEdgeInsets" minX="8" minY="16" maxX="8" maxY="16"/>
+                                        <state key="normal" title="Films"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="filter" value="movies"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="filterButtonTap:" destination="ZXj-yO-PRK" eventType="touchUpInside" id="vlL-4B-bHu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMV-yM-1iC" customClass="FilterButton" customModule="fnfa" customModuleProvider="target">
+                                        <rect key="frame" x="118.5" y="15" width="98" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <inset key="contentEdgeInsets" minX="8" minY="16" maxX="8" maxY="16"/>
+                                        <state key="normal" title="Activités"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="filter" value="activities"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="filterButtonTap:" destination="ZXj-yO-PRK" eventType="touchUpInside" id="iJw-wA-fWV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nlP-ep-lG6" customClass="FilterButton" customModule="fnfa" customModuleProvider="target">
+                                        <rect key="frame" x="236.5" y="15" width="98.5" height="50"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <inset key="contentEdgeInsets" minX="8" minY="16" maxX="8" maxY="16"/>
+                                        <state key="normal" title="Pro">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="filter" value="meetups"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="filterButtonTap:" destination="ZXj-yO-PRK" eventType="touchUpInside" id="NZA-jk-lH4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0078431372549019607" green="0.035294117647058823" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="IE8-NQ-TGi" firstAttribute="leading" secondItem="jg3-cu-Ix7" secondAttribute="leading" constant="20" id="25W-uc-Xuw"/>
                             <constraint firstItem="jg3-cu-Ix7" firstAttribute="trailing" secondItem="xj8-39-HkV" secondAttribute="trailing" id="6Oo-Pr-B23"/>
+                            <constraint firstItem="IE8-NQ-TGi" firstAttribute="trailing" secondItem="jg3-cu-Ix7" secondAttribute="trailing" constant="-20" id="K3g-u2-tzy"/>
+                            <constraint firstItem="xj8-39-HkV" firstAttribute="top" secondItem="IE8-NQ-TGi" secondAttribute="bottom" id="cVa-Yd-bAX"/>
                             <constraint firstItem="xj8-39-HkV" firstAttribute="leading" secondItem="jg3-cu-Ix7" secondAttribute="leading" id="lvz-2a-HEu"/>
                             <constraint firstItem="jg3-cu-Ix7" firstAttribute="bottom" secondItem="xj8-39-HkV" secondAttribute="bottom" id="myE-AO-pnu"/>
-                            <constraint firstItem="xj8-39-HkV" firstAttribute="top" secondItem="jg3-cu-Ix7" secondAttribute="top" id="rye-RQ-h1j"/>
+                            <constraint firstItem="xj8-39-HkV" firstAttribute="top" secondItem="jg3-cu-Ix7" secondAttribute="top" constant="80" id="rye-RQ-h1j"/>
+                            <constraint firstItem="IE8-NQ-TGi" firstAttribute="top" secondItem="jg3-cu-Ix7" secondAttribute="top" id="wp3-qk-AtO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jg3-cu-Ix7"/>
                     </view>

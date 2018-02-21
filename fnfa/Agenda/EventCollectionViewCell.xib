@@ -92,7 +92,7 @@
                     </visualEffectView>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.0078431372549019607" green="0.039215686274509803" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="316" height="425"/>
             <connections>

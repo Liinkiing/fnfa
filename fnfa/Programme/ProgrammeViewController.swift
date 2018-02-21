@@ -17,6 +17,19 @@ class ProgrammeViewController: UIViewController, UICollectionViewDelegate {
     
     var programmeDataSource: ProgrammeDataSource
     
+    
+    @IBAction func filterButtonTap(_ sender: FilterButton) {
+        sender.isSelected = !sender.isSelected
+        if sender.isSelected {
+            programmeDataSource.filters.append(sender.filter!)
+        } else {
+            programmeDataSource.filters = programmeDataSource.filters.filter { return $0 != sender.filter }
+        }
+        programmeDataSource.events = programmeDataSource.filter()
+        programmeCollectionView.reloadData()
+    }
+    
+    
     required init?(coder aDecoder: NSCoder) {
         programmeDataSource = ProgrammeDataSource(events: DataMapper.instance.events)
         super.init(coder: aDecoder)

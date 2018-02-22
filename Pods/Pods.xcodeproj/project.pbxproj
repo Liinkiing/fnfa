@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3AD06132203EB8D80049AE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AD0612C203EB8D80049AE6B /* TimeLine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06562547203343EE00AB6D5F;
+			remoteInfo = TimeLine;
+		};
+		3AD06134203EB8D80049AE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AD0612C203EB8D80049AE6B /* TimeLine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0656255B203343EE00AB6D5F;
+			remoteInfo = TimeLineTests;
+		};
+		3AD06136203EB8D80049AE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AD0612C203EB8D80049AE6B /* TimeLine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06562566203343EE00AB6D5F;
+			remoteInfo = TimeLineUITests;
+		};
 		66476A40733676641481477B14D96BA9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -32,23 +53,24 @@
 		0347DFA482A54E9019C9CB7F43C23D8D /* Pods-fnfa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fnfa-dummy.m"; sourceTree = "<group>"; };
 		16457B40523110C8FA2128869E775E8F /* Pods-fnfa-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fnfa-frameworks.sh"; sourceTree = "<group>"; };
 		205B6F7CA40272BAD10776650D31525F /* UPCarouselFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UPCarouselFlowLayout.h; path = UPCarouselFlowLayout/UPCarouselFlowLayout.h; sourceTree = "<group>"; };
+		3AD0612C203EB8D80049AE6B /* TimeLine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TimeLine.xcodeproj; path = "../../swift-interval-slider/TimeLine.xcodeproj"; sourceTree = "<group>"; };
 		3B557C45CB7AD8500A64F1F517E85DCC /* Pods-fnfa-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-fnfa-umbrella.h"; sourceTree = "<group>"; };
 		46B0467964750163A66549CE9A62C48A /* UPCarouselFlowLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UPCarouselFlowLayout.xcconfig; sourceTree = "<group>"; };
 		5C8B23AD877AEE6CC9C46C94D21752F0 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UPCarouselFlowLayout.swift; path = UPCarouselFlowLayout/UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
 		650DF9CB0498063EF9E909DC76D3F8A2 /* Pods-fnfa-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fnfa-acknowledgements.plist"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		75E8BEF97A5E03E164AC72070DAE5F6C /* UPCarouselFlowLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UPCarouselFlowLayout-prefix.pch"; sourceTree = "<group>"; };
-		89E0A213E7A657215F0C38AA0D119122 /* UPCarouselFlowLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UPCarouselFlowLayout.modulemap; sourceTree = "<group>"; };
+		89E0A213E7A657215F0C38AA0D119122 /* UPCarouselFlowLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UPCarouselFlowLayout.modulemap; sourceTree = "<group>"; };
 		8B81D1CAC8AFC1B6F635E77F24F98B36 /* Pods-fnfa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fnfa.debug.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9CA35EA6D8050531796A852652E30826 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UPCarouselFlowLayout.framework; path = UPCarouselFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CA35EA6D8050531796A852652E30826 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UPCarouselFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F899B2BC736D71EAF42EE483804A7E /* Pods-fnfa-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fnfa-resources.sh"; sourceTree = "<group>"; };
 		B08740037578CD9455D327C72D85D4B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = UPCarouselFlowLayout/Info.plist; sourceTree = "<group>"; };
 		C295B3BB4A89D1FD9651AD70EC5CBBB8 /* Pods-fnfa-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-fnfa-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C406F564B1EF8E81C395C91011706770 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C769E96F54B3A62DFF94C6F4AD66F205 /* Pods-fnfa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fnfa.release.xcconfig"; sourceTree = "<group>"; };
-		CFD2C1A4F8D6C56F8F6C1EF317EEBE27 /* Pods-fnfa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-fnfa.modulemap"; sourceTree = "<group>"; };
-		D1EC9F8F321D0126DD50F34175493629 /* Pods_fnfa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_fnfa.framework; path = "Pods-fnfa.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD2C1A4F8D6C56F8F6C1EF317EEBE27 /* Pods-fnfa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-fnfa.modulemap"; sourceTree = "<group>"; };
+		D1EC9F8F321D0126DD50F34175493629 /* Pods_fnfa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fnfa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21F9DFAB10B33E6627E4A78F116710C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D652B78B514CDF57916DF51CC0657F68 /* UPCarouselFlowLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UPCarouselFlowLayout-dummy.m"; sourceTree = "<group>"; };
 		EF2C16DC0450A8B67627D4A72FF97869 /* UPCarouselFlowLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UPCarouselFlowLayout-umbrella.h"; sourceTree = "<group>"; };
@@ -92,6 +114,16 @@
 			path = "Target Support Files/Pods-fnfa";
 			sourceTree = "<group>";
 		};
+		3AD0612D203EB8D80049AE6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AD06133203EB8D80049AE6B /* TimeLine.app */,
+				3AD06135203EB8D80049AE6B /* TimeLineTests.xctest */,
+				3AD06137203EB8D80049AE6B /* TimeLineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3DF2343C3462741B800C84DFCC5600F2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +144,7 @@
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
+				3AD0612C203EB8D80049AE6B /* TimeLine.xcodeproj */,
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				3DF2343C3462741B800C84DFCC5600F2 /* Pods */,
@@ -158,7 +191,6 @@
 				5C8B23AD877AEE6CC9C46C94D21752F0 /* UPCarouselFlowLayout.swift */,
 				805A5F588630E1D8C38BE8F09CAB155A /* Support Files */,
 			);
-			name = UPCarouselFlowLayout;
 			path = UPCarouselFlowLayout;
 			sourceTree = "<group>";
 		};
@@ -247,6 +279,12 @@
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = 4893E89092DBB496DB8029178AB86FB3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3AD0612D203EB8D80049AE6B /* Products */;
+					ProjectRef = 3AD0612C203EB8D80049AE6B /* TimeLine.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1EF5084C12D44FC6773AF9CC9C87AEB8 /* Pods-fnfa */,
@@ -254,6 +292,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3AD06133203EB8D80049AE6B /* TimeLine.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TimeLine.app;
+			remoteRef = 3AD06132203EB8D80049AE6B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3AD06135203EB8D80049AE6B /* TimeLineTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TimeLineTests.xctest;
+			remoteRef = 3AD06134203EB8D80049AE6B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3AD06137203EB8D80049AE6B /* TimeLineUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TimeLineUITests.xctest;
+			remoteRef = 3AD06136203EB8D80049AE6B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A23EA5FFD868B22366FFE68C4466D88 /* Sources */ = {

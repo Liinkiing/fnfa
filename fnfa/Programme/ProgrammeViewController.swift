@@ -11,12 +11,14 @@ import UPCarouselFlowLayout
 
 class ProgrammeViewController: UIViewController, UICollectionViewDelegate {
 
+
     @IBOutlet weak var programmeCollectionView: UICollectionView!
     
     @IBOutlet weak var programmeFlowLayout: UPCarouselFlowLayout!
     
     var programmeDataSource: ProgrammeDataSource
     
+    @IBOutlet weak var timeline: TimeLineControl!
     
     @IBAction func filterButtonTap(_ sender: FilterButton) {
         sender.isSelected = !sender.isSelected
@@ -37,12 +39,37 @@ class ProgrammeViewController: UIViewController, UICollectionViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        timeline.delegate = self
         programmeFlowLayout.spacingMode = .overlap(visibleOffset: 30)
         programmeCollectionView.register(UINib(nibName: String(describing: ProgrammeCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: ProgrammeCollectionViewCell.self))
+        programmeDataSource.timeline = timeline
         programmeCollectionView.dataSource = programmeDataSource
         programmeCollectionView.reloadData()
     }
     
+    
+    
+}
 
-
+extension ProgrammeViewController: TimeLineControlDelegate {
+    
+    func userAddedStep(_ value: Int) {
+        let event = programmeDataSource.getFirstEvent(ofDay: value + 3)
+        let index = programmeDataSource.events.index(of: event)
+        programmeCollectionView.selectItem(at: IndexPath(item: index!, section: 0), animated: true, scrollPosition: .centeredHorizontally)
+    }
+    
+    func userRemovedStep(_ value: Int) {
+        let event = programmeDataSource.getFirstEvent(ofDay: value + 3)
+        let index = programmeDataSource.events.index(of: event)
+        programmeCollectionView.selectItem(at: IndexPath(item: index!, section: 0), animated: true, scrollPosition: .centeredHorizontally)
+    }
+    
+    func userIsDragging(_ values: Array<CGFloat>) {
+        
+    }
+    
+    func userDidEndDrag(_ values: Array<CGFloat>) {
+        
+    }
 }

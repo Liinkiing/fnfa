@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xj8-39-HkV">
-                                <rect key="frame" x="0.0" y="144" width="375" height="474"/>
+                                <rect key="frame" x="0.0" y="144" width="375" height="274"/>
                                 <color key="backgroundColor" red="0.0078431372549019607" green="0.039215686274509803" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="j3l-JM-n3K" customClass="UPCarouselFlowLayout" customModule="UPCarouselFlowLayout">
-                                    <size key="itemSize" width="316" height="500"/>
+                                    <size key="itemSize" width="316" height="274"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -80,17 +80,63 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jq5-vH-GCq" customClass="TimeLineControl" customModule="fnfa" customModuleProvider="target">
+                                <rect key="frame" x="69" y="450" width="236" height="46"/>
+                                <color key="backgroundColor" red="0.01193963829" green="0.036842212079999999" blue="0.15308156610000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.0" green="0.8862745098" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="firstValue">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="secondValue">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circlesSize">
+                                        <real key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="timelineMode" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timelineSteps">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="LineColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timelineInitSteps">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbt-DZ-lEr">
+                                <rect key="frame" x="60" y="541" width="255" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="En savoir + sur notre site"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0078431372549019607" green="0.035294117647058823" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="jq5-vH-GCq" firstAttribute="centerX" secondItem="gbt-DZ-lEr" secondAttribute="centerX" id="0Ir-pW-6ue"/>
                             <constraint firstItem="IE8-NQ-TGi" firstAttribute="leading" secondItem="jg3-cu-Ix7" secondAttribute="leading" constant="20" id="25W-uc-Xuw"/>
                             <constraint firstItem="jg3-cu-Ix7" firstAttribute="trailing" secondItem="xj8-39-HkV" secondAttribute="trailing" id="6Oo-Pr-B23"/>
+                            <constraint firstItem="jq5-vH-GCq" firstAttribute="top" secondItem="xj8-39-HkV" secondAttribute="bottom" constant="32" id="AGh-wd-6JT"/>
                             <constraint firstItem="IE8-NQ-TGi" firstAttribute="trailing" secondItem="jg3-cu-Ix7" secondAttribute="trailing" constant="-20" id="K3g-u2-tzy"/>
+                            <constraint firstItem="jq5-vH-GCq" firstAttribute="leading" secondItem="jg3-cu-Ix7" secondAttribute="leading" constant="69" id="WdD-pY-lRI"/>
                             <constraint firstItem="xj8-39-HkV" firstAttribute="top" secondItem="IE8-NQ-TGi" secondAttribute="bottom" id="cVa-Yd-bAX"/>
+                            <constraint firstItem="gbt-DZ-lEr" firstAttribute="top" secondItem="jq5-vH-GCq" secondAttribute="bottom" constant="45" id="e9P-OP-BdK"/>
                             <constraint firstItem="xj8-39-HkV" firstAttribute="leading" secondItem="jg3-cu-Ix7" secondAttribute="leading" id="lvz-2a-HEu"/>
-                            <constraint firstItem="jg3-cu-Ix7" firstAttribute="bottom" secondItem="xj8-39-HkV" secondAttribute="bottom" id="myE-AO-pnu"/>
+                            <constraint firstItem="jg3-cu-Ix7" firstAttribute="bottom" secondItem="xj8-39-HkV" secondAttribute="bottom" constant="200" id="myE-AO-pnu"/>
                             <constraint firstItem="xj8-39-HkV" firstAttribute="top" secondItem="jg3-cu-Ix7" secondAttribute="top" constant="80" id="rye-RQ-h1j"/>
+                            <constraint firstItem="jg3-cu-Ix7" firstAttribute="trailing" secondItem="gbt-DZ-lEr" secondAttribute="trailing" constant="60" id="tXS-wu-s9z"/>
+                            <constraint firstItem="jg3-cu-Ix7" firstAttribute="bottom" secondItem="gbt-DZ-lEr" secondAttribute="bottom" constant="45" id="tik-K2-sve"/>
+                            <constraint firstItem="gbt-DZ-lEr" firstAttribute="leading" secondItem="jg3-cu-Ix7" secondAttribute="leading" constant="60" id="ubh-UQ-f62"/>
                             <constraint firstItem="IE8-NQ-TGi" firstAttribute="top" secondItem="jg3-cu-Ix7" secondAttribute="top" id="wp3-qk-AtO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jg3-cu-Ix7"/>
@@ -99,6 +145,7 @@
                     <connections>
                         <outlet property="programmeCollectionView" destination="xj8-39-HkV" id="D62-7U-fQP"/>
                         <outlet property="programmeFlowLayout" destination="j3l-JM-n3K" id="jrS-Ee-XZD"/>
+                        <outlet property="timeline" destination="jq5-vH-GCq" id="w4W-0K-OiH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yoP-b4-6gC" userLabel="First Responder" sceneMemberID="firstResponder"/>

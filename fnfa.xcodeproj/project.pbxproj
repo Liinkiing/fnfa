@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A799972203EC0F700036941 /* circleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A79996C203EC0F700036941 /* circleView.swift */; };
+		3A799973203EC0F700036941 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A79996D203EC0F700036941 /* LineView.swift */; };
+		3A799974203EC0F700036941 /* TimeLineControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A79996E203EC0F700036941 /* TimeLineControl.swift */; };
 		3AF2602C2035C18100D7E022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2602B2035C18100D7E022 /* AppDelegate.swift */; };
 		3AF2602E2035C18100D7E022 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2602D2035C18100D7E022 /* ViewController.swift */; };
 		3AF260312035C18100D7E022 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF2602F2035C18100D7E022 /* Main.storyboard */; };
@@ -43,8 +46,36 @@
 		FBD91EE95CF7BE307D24FCC4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD91500E64F4F8C07A106C9 /* Date.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3AD06126203EB8CF0049AE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AD06120203EB8CE0049AE6B /* TimeLine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06562547203343EE00AB6D5F;
+			remoteInfo = TimeLine;
+		};
+		3AD06128203EB8CF0049AE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AD06120203EB8CE0049AE6B /* TimeLine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0656255B203343EE00AB6D5F;
+			remoteInfo = TimeLineTests;
+		};
+		3AD0612A203EB8CF0049AE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AD06120203EB8CE0049AE6B /* TimeLine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06562566203343EE00AB6D5F;
+			remoteInfo = TimeLineUITests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1AF4F4C03221CE5F39069D43 /* Pods-fnfa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fnfa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fnfa/Pods-fnfa.debug.xcconfig"; sourceTree = "<group>"; };
+		3A79996C203EC0F700036941 /* circleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = circleView.swift; sourceTree = "<group>"; };
+		3A79996D203EC0F700036941 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		3A79996E203EC0F700036941 /* TimeLineControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineControl.swift; sourceTree = "<group>"; };
+		3AD06120203EB8CE0049AE6B /* TimeLine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TimeLine.xcodeproj; path = "../swift-interval-slider/TimeLine.xcodeproj"; sourceTree = "<group>"; };
 		3AF260282035C18100D7E022 /* fnfa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fnfa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF2602B2035C18100D7E022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AF2602D2035C18100D7E022 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +127,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A79996B203EC0F700036941 /* TimeLine */ = {
+			isa = PBXGroup;
+			children = (
+				3A79996C203EC0F700036941 /* circleView.swift */,
+				3A79996D203EC0F700036941 /* LineView.swift */,
+				3A79996E203EC0F700036941 /* TimeLineControl.swift */,
+			);
+			path = TimeLine;
+			sourceTree = "<group>";
+		};
+		3AD06121203EB8CE0049AE6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AD06127203EB8CF0049AE6B /* TimeLine.app */,
+				3AD06129203EB8CF0049AE6B /* TimeLineTests.xctest */,
+				3AD0612B203EB8CF0049AE6B /* TimeLineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3AF2601F2035C18100D7E022 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +169,7 @@
 		3AF2602A2035C18100D7E022 /* fnfa */ = {
 			isa = PBXGroup;
 			children = (
+				3A79996B203EC0F700036941 /* TimeLine */,
 				AFF894BF203C4A7B00AA1387 /* Assets.xcassets */,
 				3AF260422035C3A000D7E022 /* Programme */,
 				3AF2603D2035C20B00D7E022 /* Agenda */,
@@ -166,6 +218,7 @@
 		3C1C336D609A18A4EF0ADFE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3AD06120203EB8CE0049AE6B /* TimeLine.xcodeproj */,
 				7DE1B9ACA7C0551D06906509 /* Pods_fnfa.framework */,
 			);
 			name = Frameworks;
@@ -254,12 +307,42 @@
 			mainGroup = 3AF2601F2035C18100D7E022;
 			productRefGroup = 3AF260292035C18100D7E022 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3AD06121203EB8CE0049AE6B /* Products */;
+					ProjectRef = 3AD06120203EB8CE0049AE6B /* TimeLine.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3AF260272035C18100D7E022 /* fnfa */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3AD06127203EB8CF0049AE6B /* TimeLine.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TimeLine.app;
+			remoteRef = 3AD06126203EB8CF0049AE6B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3AD06129203EB8CF0049AE6B /* TimeLineTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TimeLineTests.xctest;
+			remoteRef = 3AD06128203EB8CF0049AE6B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3AD0612B203EB8CF0049AE6B /* TimeLineUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TimeLineUITests.xctest;
+			remoteRef = 3AD0612A203EB8CF0049AE6B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3AF260262035C18100D7E022 /* Resources */ = {
@@ -355,10 +438,13 @@
 				FBD91EE95CF7BE307D24FCC4 /* Date.swift in Sources */,
 				FBD91493F3C188E7149A19BE /* Event.swift in Sources */,
 				AFCDE2BA203A6B0000D57078 /* NoItemCollectionViewCell.swift in Sources */,
+				3A799974203EC0F700036941 /* TimeLineControl.swift in Sources */,
 				FBD91E79AD1400659FE15AA4 /* Place.swift in Sources */,
 				FBD91A6BDC790E1C8C2C88AA /* Category.swift in Sources */,
 				FBD91759918FEEEEDE7F709F /* DataMapper.swift in Sources */,
 				FBD91BA9775BA429CB0F1C6E /* IdProtocol.swift in Sources */,
+				3A799973203EC0F700036941 /* LineView.swift in Sources */,
+				3A799972203EC0F700036941 /* circleView.swift in Sources */,
 				FBD91186237305BFD8410EE0 /* NameProtocol.swift in Sources */,
 				FBD916A38D771EF8DA38C878 /* Extensions.swift in Sources */,
 				FBD91821DBE596FA810DE019 /* Utils.swift in Sources */,

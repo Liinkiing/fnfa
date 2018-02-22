@@ -52,7 +52,7 @@ class DataMapper {
     }
     
     func removeFromFavorites(event: Event, forceRefresh: Bool = true) {
-        var favorites = getSavedFavorites().filter { (e) -> Bool in
+        let favorites = getSavedFavorites().filter { (e) -> Bool in
             return e.id != event.id
         }
         save(favorites)

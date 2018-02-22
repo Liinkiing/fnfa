@@ -13,6 +13,7 @@ class ProgrammeDataSource : NSObject, UICollectionViewDataSource {
     var events: [Event]
     var originals: [Event]
     var filters: [String] = []
+    var timeline: TimeLineControl? = nil
 
     var filtersMap = [
         "movies": ["Séance spéciale", "Séance scolaire", "Long métrage et rencontres"],
@@ -39,6 +40,10 @@ class ProgrammeDataSource : NSObject, UICollectionViewDataSource {
         })
     }
     
+    func getFirstEvent(ofDay: Int) -> Event {
+        return (self.events.findBy(day: ofDay)?.first)!
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.events.count
     }
@@ -46,6 +51,9 @@ class ProgrammeDataSource : NSObject, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: ProgrammeCollectionViewCell.self), for: indexPath) as! ProgrammeCollectionViewCell
         cell.event = self.events[indexPath.item]
+        let currentEvent = getFirstEvent(ofDay: (timeline?.timelineSteps)! + 3)
+        let index = self.events.index(of: currentEvent)
+//    
         return cell
     }
 

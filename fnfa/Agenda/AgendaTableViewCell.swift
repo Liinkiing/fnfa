@@ -29,15 +29,12 @@ class AgendaTableViewCell: UITableViewCell {
         NotificationCenter.default.addObserver(self, selector: #selector(refresh), name: .FAVORITE_REMOVE, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(refreshFromAgenda), name: .AGENDA_FAVORITE_REMOVE, object: nil)
         timeline.delegate = self
-        
     }
 
     
     private func setup() {
         self.eventsDataSource = EventsDataSource(events: DataMapper.instance.getSavedFavorites().findBy(date: day!)!
-            .sorted {
-                return $0.id! < $1.id!
-            })
+            .sorted(by: .date)!)
         dateFormatter.setLocalizedDateFormatFromTemplate("d")
         eventsCollectionFlowLayout.spacingMode = .overlap(visibleOffset: 30)
         eventsCollectionView.dataSource = eventsDataSource
@@ -52,9 +49,7 @@ class AgendaTableViewCell: UITableViewCell {
     private func refresh() {
         self.eventsDataSource?.events =  DataMapper.instance.getSavedFavorites()
             .findBy(date: day!)!
-            .sorted {
-                return $0.id! < $1.id!
-            }
+            .sorted(by: .date)!
         eventsCollectionView.reloadData()
         eventsCollectionView.selectItem(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: .centeredHorizontally)
     }
@@ -63,9 +58,7 @@ class AgendaTableViewCell: UITableViewCell {
     private func refreshFromAgenda() {
         self.eventsDataSource?.events =  DataMapper.instance.getSavedFavorites()
             .findBy(date: day!)!
-            .sorted {
-                return $0.id! < $1.id!
-        }
+            .sorted(by: .date)!
         eventsCollectionView.reloadData()
     }
     
@@ -82,12 +75,16 @@ extension AgendaTableViewCell : TimeLineControlDelegate {
         let startDate = buildDateWith(hour: values.first!)
         let endDate = buildDateWith(hour: values.last!)
         
+        dateFormatter.setLocalizedDateFormatFromTemplate("dd MMM yyyy HH:mm:ss")
+
+        print(dateFormatter.string(from: startDate!))
+        print(dateFormatter.string(from: endDate!))
+
+
         self.eventsDataSource?.events =  DataMapper.instance.getSavedFavorites()
             .findBy(date: day!)!
             .between(startDate: startDate!, endDate: endDate!)!
-            .sorted {
-                return $0.id! < $1.id!
-        }
+            .sorted(by: .date)!
         eventsCollectionView.reloadData()
         eventsCollectionView.selectItem(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: .centeredHorizontally)
     }

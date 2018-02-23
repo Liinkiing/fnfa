@@ -5,7 +5,16 @@
 
 import UIKit
 
+enum SortDirection {
+    case ascending, descending
+}
+
+enum EventSortProperty {
+    case name, id, date
+}
+
 extension Array where Element == Event {
+
     func findBy(place: Place) -> [Event]? {
         return self.filter({ (event) -> Bool in
             return (event.places?.contains(place))!
@@ -29,7 +38,22 @@ extension Array where Element == Event {
             event.startingDate.day == Utils.getDayNumber(from: date)
         })
     }
+
+    func sorted(by: EventSortProperty, order: SortDirection = .ascending) -> [Event]? {
+        return self.sorted {
+            switch by {
+            case .name:
+                return order == .ascending ? $0.name! < $1.name! : $0.name! > $1.name!
+            case .date:
+                return order == .ascending ? $0.startingDate.getDate() < $1.startingDate.getDate() :
+                    $0.startingDate.getDate() > $1.startingDate.getDate()
+            case .id:
+                return order == .ascending ? $0.id! < $1.id! : $0.id! > $1.id!
+            }
+        }
+    }
     
+
     func findBy(locations: [String]) -> [Event]? {
         var result: [Event] = []
         locations.forEach { (location) in
@@ -51,13 +75,13 @@ extension Array where Element == Event {
             return (daysNumber?.contains(event.startingDate.day))!
         })
     }
-    
+
     func between(_ interval: DateInterval) -> [Event]? {
         return self.filter({ (event) -> Bool in
             return interval.contains(event.startingDate.getDate())
         })
     }
-    
+
     func between(startDate: Date, endDate: Date) -> [Event]? {
         return self.filter {
             return $0.startingDate.getDate() >= startDate && $0.startingDate.getDate() <= endDate
@@ -65,7 +89,6 @@ extension Array where Element == Event {
     }
 
 }
-
 
 
 extension Collection where Index == Int {
@@ -77,8 +100,11 @@ extension Collection where Index == Int {
 extension Array where Element: NameProtocol {
     func findBy(name: String, useStrict strict: Bool = false) -> [NameProtocol]? {
         return self.filter({ element in
-            if strict { return element.name == name }
-            else { return element.name!.lowercased().contains(name.lowercased()) }
+            if strict {
+                return element.name == name
+            } else {
+                return element.name!.lowercased().contains(name.lowercased())
+            }
         })
     }
 }
@@ -107,18 +133,18 @@ extension Notification.Name {
     static let FAVORITE_ADD = Notification.Name("FAVORITE_ADD")
     static let FAVORITE_REMOVE = Notification.Name("FAVORITE_REMOVE")
     static let AGENDA_FAVORITE_REMOVE =
-        Notification.Name("AGENDA_FAVORITE_REMOVE")
+            Notification.Name("AGENDA_FAVORITE_REMOVE")
 }
 
 extension UICollectionViewCell {
     var collectionView: UICollectionView? {
         return next(UICollectionView.self)
     }
-    
+
     var indexPath: IndexPath? {
         return collectionView?.indexPath(for: self)
     }
-    
+
     var tableViewCell: UITableViewCell? {
         return next(UITableViewCell.self)
     }
@@ -128,18 +154,18 @@ extension UITableViewCell {
     var tableView: UITableView? {
         return next(UITableView.self)
     }
-    
+
     var indexPath: IndexPath? {
         return tableView?.indexPath(for: self)
     }
 }
 
 extension UIView {
-    
+
     func next<T: UIResponder>(_ type: T.Type) -> T? {
         return next as? T ?? next(type)
     }
-    
+
     @IBInspectable
     var cornerRadius: CGFloat {
         get {
@@ -149,7 +175,7 @@ extension UIView {
             layer.cornerRadius = newValue
         }
     }
-    
+
     @IBInspectable
     var borderWidth: CGFloat {
         get {
@@ -159,7 +185,7 @@ extension UIView {
             layer.borderWidth = newValue
         }
     }
-    
+
     @IBInspectable
     var masksToBounds: Bool {
         get {
@@ -169,7 +195,7 @@ extension UIView {
             layer.masksToBounds = newValue
         }
     }
-    
+
     @IBInspectable
     var borderColor: UIColor? {
         get {
@@ -186,7 +212,7 @@ extension UIView {
             }
         }
     }
-    
+
     @IBInspectable
     var shadowRadius: CGFloat {
         get {
@@ -196,7 +222,7 @@ extension UIView {
             layer.shadowRadius = newValue
         }
     }
-    
+
     @IBInspectable
     var shadowOpacity: Float {
         get {
@@ -206,7 +232,7 @@ extension UIView {
             layer.shadowOpacity = newValue
         }
     }
-    
+
     @IBInspectable
     var shadowOffset: CGSize {
         get {
@@ -216,7 +242,7 @@ extension UIView {
             layer.shadowOffset = newValue
         }
     }
-    
+
     @IBInspectable
     var shadowColor: UIColor? {
         get {

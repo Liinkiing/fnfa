@@ -54,8 +54,14 @@ extension Array where Element == Event {
     
     func between(_ interval: DateInterval) -> [Event]? {
         return self.filter({ (event) -> Bool in
-            interval.contains(event.startingDate.getDate())
+            return interval.contains(event.startingDate.getDate())
         })
+    }
+    
+    func between(startDate: Date, endDate: Date) -> [Event]? {
+        return self.filter {
+            return $0.startingDate.getDate() >= startDate && $0.startingDate.getDate() <= endDate
+        }
     }
 
 }

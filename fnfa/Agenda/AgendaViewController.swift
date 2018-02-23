@@ -28,25 +28,29 @@ class AgendaViewController: UITableViewController {
                 forCellReuseIdentifier: String(describing: AgendaTableViewCell.self))
     }
 
+   
+}
+
+extension AgendaViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let row = tableView.dequeueReusableCell(withIdentifier: String(describing: AgendaTableViewCell.self),
-                for: indexPath) as! AgendaTableViewCell
+                                                for: indexPath) as! AgendaTableViewCell
         row.day = days[indexPath.section]
         return row
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return days.count
     }
-
+    
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 50
     }
-
+    
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if (view is UITableViewHeaderFooterView) {
             let header = view as! UITableViewHeaderFooterView

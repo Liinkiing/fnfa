@@ -104,6 +104,11 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="timelineInitSteps">
                                         <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbSize">
+                                        <real key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="timelineLabel" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="timelineLabelValue" value="Mardi 5"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbt-DZ-lEr">

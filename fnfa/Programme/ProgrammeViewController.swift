@@ -40,15 +40,36 @@ class ProgrammeViewController: UIViewController, UICollectionViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         timeline.delegate = self
+        programmeCollectionView.delegate = self
         programmeFlowLayout.spacingMode = .overlap(visibleOffset: 30)
         programmeCollectionView.register(UINib(nibName: String(describing: ProgrammeCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: ProgrammeCollectionViewCell.self))
-        programmeDataSource.timeline = timeline
         programmeCollectionView.dataSource = programmeDataSource
         programmeCollectionView.reloadData()
     }
     
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        updateTimeline()
+    }
     
-    
+    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        updateTimeline()
+    }
+
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if(!decelerate) {
+            updateTimeline()
+        }
+    }
+
+    private func updateTimeline() {
+        let visibleRect = CGRect(origin: programmeCollectionView.contentOffset, size: programmeCollectionView.bounds.size)
+        let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
+        let indexPath = programmeCollectionView.indexPathForItem(at: visiblePoint)
+        if let cell = programmeCollectionView.cellForItem(at: indexPath!) as! ProgrammeCollectionViewCell? {
+                timeline.setStep((cell.event?.startingDate.day)! - 3)
+        }
+    }
+
 }
 
 extension ProgrammeViewController: TimeLineControlDelegate {

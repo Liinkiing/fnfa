@@ -29,4 +29,5 @@ class EventsDataSource: NSObject, UICollectionViewDataSource {
         cell.event = events[indexPath.item]
         return cell
     }
+    
 }

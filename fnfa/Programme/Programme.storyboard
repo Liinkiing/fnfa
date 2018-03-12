@@ -36,6 +36,9 @@
                                     </userDefinedRuntimeAttributes>
                                 </collectionViewFlowLayout>
                                 <cells/>
+                                <connections>
+                                    <outlet property="delegate" destination="ZXj-yO-PRK" id="7iU-bS-4Jy"/>
+                                </connections>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IE8-NQ-TGi">
                                 <rect key="frame" x="20" y="64" width="335" height="80"/>

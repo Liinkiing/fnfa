@@ -431,6 +431,26 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
         }
     }
     
+    public func setStep(_ stepNumber: Int) {
+        if timelineMode {
+            if circles.count <= timelineSteps {
+                let newStep = stepNumber
+                let width  = self.bounds.width - circleRadius * 4 - 2
+                let sumCircle = CGFloat(newStep-2) * (2 * circleRadius)
+                let sumDash = CGFloat(newStep-1) * intervalBetweenCircles
+                let lineSize = sumCircle + sumDash
+                let lineCenter = lineSize/2 + (2 * circleRadius) + 1
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.line!.bounds.size.width = lineSize
+                }, completion: nil)
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.line?.center = CGPoint(x: lineCenter, y: 18)
+                }, completion: nil)
+                drawCircles(nbCirclesToDraw: newStep, timelineWidth: width )
+            }
+        }
+    }
+    
     /**
      Decrement the timeLine By 1
      */

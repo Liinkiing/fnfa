@@ -48,7 +48,7 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
     
     private         let verticalPosition    : CGFloat = 20
     private         let circleRadius        : CGFloat = 8
-    private         let labelHeight         : CGFloat = 5
+    private         let labelHeight         : CGFloat = 0
     private         var draggableZoneWidth  : CGFloat!
     private         var firstCircle         : CircleView?
     private         var secondCircle        : CircleView?
@@ -96,7 +96,7 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
                     in: CGRect(
                         origin: CGPoint(
                             x: startStroke - (circleRadius*2),
-                            y: verticalPosition),
+                            y:self.verticalPosition),
                         size:   CGSize(
                             width: circleRadius * 2,
                             height: circleRadius * 2)
@@ -106,12 +106,12 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
                     ctx?.move(
                         to: CGPoint(
                             x: startStroke,
-                            y: verticalPosition + circleRadius
+                            y: self.verticalPosition + circleRadius
                     ))
                     ctx?.addLine(
                         to: CGPoint(
                             x: startStroke + intervalBetweenCircles,
-                            y: verticalPosition + circleRadius
+                            y: self.verticalPosition + circleRadius
                     ))
                 }
             }
@@ -124,7 +124,7 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
                 in: CGRect(
                     origin: CGPoint(
                         x: 1 ,
-                        y: verticalPosition),
+                        y: self.verticalPosition),
                     size: CGSize(
                         width: circleRadius * 2,
                         height: circleRadius * 2)
@@ -133,13 +133,13 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
             ctx?.move(
                 to: CGPoint(
                     x: circleRadius * 2,
-                    y: verticalPosition + circleRadius
+                    y: self.verticalPosition + circleRadius
             ))
             
             ctx?.addLine(
                 to: CGPoint(
                     x: rect.size.width - circleRadius * 2,
-                    y: verticalPosition + circleRadius
+                    y: self.verticalPosition + circleRadius
             ))
             
             ctx?.addEllipse(
@@ -179,7 +179,7 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
             firstCircle = CircleView(
                 frame: CGRect(
                     x: calcXBoundPosition(center: firstCirclePostion).left,
-                    y: verticalPosition + circleRadius-thumbSize/2,
+                    y: self.verticalPosition + circleRadius-thumbSize/2,
                     width: thumbSize,
                     height: thumbSize
             ))
@@ -197,7 +197,7 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
             secondCircle = CircleView(
                 frame: CGRect(
                     x:calcXBoundPosition(center: secondCirclePostion).right ,
-                    y: verticalPosition + circleRadius-thumbSize/2,
+                    y: self.verticalPosition + circleRadius-thumbSize/2,
                     width: thumbSize,
                     height: thumbSize
             ))
@@ -431,6 +431,9 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
         }
     }
     
+    /**
+     Set the timeLine step
+     */
     public func setStep(_ stepNumber: Int) {
         if timelineMode {
             if circles.count <= timelineSteps {
@@ -444,7 +447,7 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
                     self.line!.bounds.size.width = lineSize
                 }, completion: nil)
                 UIView.animate(withDuration: 0.5, animations: {
-                    self.line?.center = CGPoint(x: lineCenter, y: 18)
+                    self.line?.center = CGPoint(x: lineCenter, y: self.verticalPosition + self.circleRadius)
                 }, completion: nil)
                 drawCircles(nbCirclesToDraw: newStep, timelineWidth: width )
             }
@@ -525,7 +528,7 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
                     let sumCircles = CGFloat(drawedCircles) * (2*circleRadius)
                     let sumInterval = CGFloat(drawedCircles) * intervalBetweenCircles
                     let pos = sumCircles + sumInterval - 5
-                    createCircleWithAnimation(x: pos, y: verticalPosition + circleRadius-thumbSize/2)
+                    createCircleWithAnimation(x: pos, y: verticalPosition + circleRadius - thumbSize/2)
                     
                     i = i + 1
                 } while i < circleLeftToDraw
@@ -633,7 +636,7 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
                 self.line?.center = CGPoint(x: XPosition, y: self.verticalPosition + self.circleRadius)
             }, completion: nil)
         } else {
-            line?.center = CGPoint(x: XPosition, y: verticalPosition + circleRadius)
+            line?.center = CGPoint(x: XPosition, y:self.verticalPosition + circleRadius)
         }
     }
     

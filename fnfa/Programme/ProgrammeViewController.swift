@@ -29,7 +29,6 @@ class ProgrammeViewController: UIViewController, UICollectionViewDelegate {
         }
         programmeDataSource.events = programmeDataSource.filter()
         programmeCollectionView.reloadData()
-        print("WESH")
     }
     
     
@@ -63,7 +62,6 @@ class ProgrammeViewController: UIViewController, UICollectionViewDelegate {
     }
 
     private func updateTimeline() {
-        print("update")
         let visibleRect = CGRect(origin: programmeCollectionView.contentOffset, size: programmeCollectionView.bounds.size)
         let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
         let indexPath = programmeCollectionView.indexPathForItem(at: visiblePoint)
@@ -72,9 +70,7 @@ class ProgrammeViewController: UIViewController, UICollectionViewDelegate {
                 let df = DateFormatter()
                 df.locale = Locale(identifier: "fr_FR")
                 df.setLocalizedDateFormatFromTemplate("EEEE dd")
-                timeline.timelineLabelValue = df.string(from: (cell.event?.startingDate.getDate())!)
-                print(df.string(from: (cell.event?.startingDate.getDate())!))
-                print("update")
+                timeline.timelineLabelValue = df.string(from: (cell.event?.startingDate.getDate())!).capitalized
         }
     }
 

@@ -1,88 +1,52 @@
 [
   {
     "id": 1,
-    "name": "Séance scolaire",
-    "excerpt": "Petite enfance 3 ans",
+    "name": "Salon des nouvelles écritures",
+    "excerpt": "En accès libre",
     "image": "random",
-    "age": 15,
     "places": [
       {
-        "id": 2,
-        "name": "Ciné TNB Piccoli",
-        "seats": 100
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
       }
     ],
     "category": {
-      "id": 3,
-      "name": "Séance scolaire"
+      "id": 6,
+      "name": "Salon des nouvelles écritures"
     },
     "startingDate": {
       "year": 2018,
       "month": 4,
       "day": 4,
-      "hour": 9,
-      "minute": 30
+      "hour": 13,
+      "minute": 0
     },
     "endingDate": {
       "year": 2018,
       "month": 4,
       "day": 4,
-      "hour": 10,
-      "minute": 30
-    }
+      "hour": 19,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": 5
   },
   {
     "id": 2,
-    "name": "Salon des nouvelles écritures",
-    "excerpt": "Et projections (boucle de 20min) ou démos en continu",
-    "image": "random",
-    "age": 8,
-    "places": [
-      {
-        "id": 5,
-        "name": "Hall bas TNB",
-        "seats": -1
-      },
-      {
-        "id": 6,
-        "name": "Cube - RDC TNB",
-        "seats": -1
-      }
-    ],
-    "category": {
-      "id": 7,
-      "name": "Salon des nouvelles écritures"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 4,
-      "hour": 10,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 4,
-      "hour": 20,
-      "minute": 30
-    }
-  },
-  {
-    "id": 3,
     "name": "Regards croisés sur la Fête 2018",
-    "excerpt": "",
+    "excerpt": "Réservé aux programmateurs et professionnels de l'action culturelle",
     "image": "random",
-    "age": null,
     "places": [
       {
-        "id": 3,
-        "name": "Espace rencontre TNB",
-        "seats": 80
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
       }
     ],
     "category": {
-      "id": 2,
+      "id": 4,
       "name": "Volet professionnel"
     },
     "startingDate": {
@@ -97,15 +61,17 @@
       "month": 4,
       "day": 4,
       "hour": 13,
-      "minute": 30
-    }
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": null
   },
   {
-    "id": 4,
-    "name": "Les courts n°5",
-    "excerpt": "",
+    "id": 3,
+    "name": "Atelier Kool cloud",
+    "excerpt": "Réservé aux programmateurs et professionnels de l'action culturelle, En partenariat avec La Ménagerie et le Ministère de la Culture\n",
     "image": "random",
-    "age": null,
     "places": [
       {
         "id": 1,
@@ -115,61 +81,31 @@
     ],
     "category": {
       "id": 4,
-      "name": "Compétition et sélections"
+      "name": "Volet professionnel"
     },
     "startingDate": {
       "year": 2018,
       "month": 4,
       "day": 4,
       "hour": 14,
-      "minute": 30
+      "minute": 0
     },
     "endingDate": {
       "year": 2018,
       "month": 4,
       "day": 4,
-      "hour": 16,
+      "hour": 17,
       "minute": 0
-    }
+    },
+    "director": null,
+    "producer": null,
+    "age": null
   },
   {
-    "id": 5,
-    "name": "Ateliers tout public",
-    "excerpt": "",
+    "id": 4,
+    "name": "Atelier Jeux Optiques ",
+    "excerpt": "En partenariat avec LISAA, en accès libre",
     "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 3,
-        "name": "Espace rencontre TNB",
-        "seats": 80
-      }
-    ],
-    "category": {
-      "id": 6,
-      "name": "Atelier secret Fab"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 4,
-      "hour": 14,
-      "minute": 30
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 4,
-      "hour": 18,
-      "minute": 0
-    }
-  },
-  {
-    "id": 6,
-    "name": "Croc Blanc",
-    "excerpt": "",
-    "image": "random",
-    "age": 18,
     "places": [
       {
         "id": 1,
@@ -179,14 +115,14 @@
     ],
     "category": {
       "id": 5,
-      "name": "Long métrage et rencontres"
+      "name": "Autour des films"
     },
     "startingDate": {
       "year": 2018,
       "month": 4,
       "day": 4,
-      "hour": 16,
-      "minute": 30
+      "hour": 14,
+      "minute": 0
     },
     "endingDate": {
       "year": 2018,
@@ -194,78 +130,50 @@
       "day": 4,
       "hour": 18,
       "minute": 0
-    }
+    },
+    "director": null,
+    "producer": null,
+    "age": 6
   },
   {
-    "id": 7,
-    "name": "Inauguration",
-    "excerpt": "",
+    "id": 5,
+    "name": "Série",
+    "excerpt": null,
     "image": "random",
-    "age": null,
     "places": [
       {
-        "id": 1,
-        "name": "Ciné TNB Jouvet",
-        "seats": 400
+        "id": 4,
+        "name": "Grand Logis",
+        "seats": -1
       }
     ],
     "category": {
-      "id": 8,
-      "name": "Unknown"
+      "id": 1,
+      "name": "Compétition et panorama"
     },
     "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 4,
+      "hour": 18,
+      "minute": 0
+    },
+    "endingDate": {
       "year": 2018,
       "month": 4,
       "day": 4,
       "hour": 19,
       "minute": 0
     },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 4,
-      "hour": 20,
-      "minute": 0
-    }
+    "director": null,
+    "producer": null,
+    "age": null
   },
   {
-    "id": 8,
-    "name": "Cocktail",
-    "excerpt": "",
+    "id": 6,
+    "name": "Films bricolés",
+    "excerpt": "En accès libre",
     "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 4,
-        "name": "Bar TNB",
-        "seats": -1
-      }
-    ],
-    "category": {
-      "id": 8,
-      "name": "Unknown"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 4,
-      "hour": 20,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 4,
-      "hour": 21,
-      "minute": 30
-    }
-  },
-  {
-    "id": 9,
-    "name": "Film d'ouverture",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
     "places": [
       {
         "id": 1,
@@ -274,8 +182,280 @@
       }
     ],
     "category": {
-      "id": 5,
-      "name": "Long métrage et rencontres"
+      "id": 7,
+      "name": "Cube animé"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 4,
+      "hour": 13,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 4,
+      "hour": 19,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": 8
+  },
+  {
+    "id": 7,
+    "name": "Compétition 1",
+    "excerpt": null,
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Compétition et panorama"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 4,
+      "hour": 14,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 4,
+      "hour": 15,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": 6
+  },
+  {
+    "id": 8,
+    "name": "Croc Blanc",
+    "excerpt": "En préseance du réalisateur Alexandre Espigares",
+    "image": "random",
+    "places": [
+      {
+        "id": 2,
+        "name": "Arvor",
+        "seats": 152
+      }
+    ],
+    "category": {
+      "id": 3,
+      "name": "Long métrage"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 4,
+      "hour": 14,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 4,
+      "hour": 15,
+      "minute": 30
+    },
+    "director": "Alexandre Espigares",
+    "producer": "Superprod",
+    "age": 7
+  },
+  {
+    "id": 9,
+    "name": "Compétition 1",
+    "excerpt": null,
+    "image": "random",
+    "places": [
+      {
+        "id": 4,
+        "name": "Grand Logis",
+        "seats": -1
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Compétition et panorama"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 4,
+      "hour": 14,
+      "minute": 30
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 4,
+      "hour": 15,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": 6
+  },
+  {
+    "id": 10,
+    "name": "Sahara",
+    "excerpt": "En présence du réalisateur Pierre Coré et du producteur Christian Ronget\n",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 3,
+      "name": "Long métrage"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 4,
+      "hour": 15,
+      "minute": 30
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 4,
+      "hour": 17,
+      "minute": 0
+    },
+    "director": "Pierre Coré",
+    "producer": "La Station Animation, Mandarin Production",
+    "age": 6
+  },
+  {
+    "id": 11,
+    "name": "Pour les tout petits",
+    "excerpt": null,
+    "image": "random",
+    "places": [
+      {
+        "id": 4,
+        "name": "Grand Logis",
+        "seats": -1
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Compétition et panorama"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 4,
+      "hour": 16,
+      "minute": 30
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 4,
+      "hour": 17,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": 3
+  },
+  {
+    "id": 12,
+    "name": "Dans les coulisses de Sahara",
+    "excerpt": "Avec le réalisateur Pierre Coré et le producteur Christian Ronget, en accès libre\n",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 8,
+      "name": "Focus"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 4,
+      "hour": 17,
+      "minute": 15
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 4,
+      "hour": 18,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 13,
+    "name": "Compétition 3",
+    "excerpt": null,
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Compétition et panorama"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 4,
+      "hour": 18,
+      "minute": 30
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 4,
+      "hour": 20,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 14,
+    "name": "L'Île aux chiens ",
+    "excerpt": "Film d'ouverture en avant-première nationale",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 2,
+      "name": "Séance spéciale"
     },
     "startingDate": {
       "year": 2018,
@@ -289,121 +469,27 @@
       "month": 4,
       "day": 4,
       "hour": 23,
-      "minute": 0
-    }
+      "minute": 15
+    },
+    "director": "Wes Anderson",
+    "producer": "American Empirical c/o United Talent Agency",
+    "age": null
   },
   {
-    "id": 10,
-    "name": "Soirée",
-    "excerpt": "",
+    "id": 15,
+    "name": "Table ronde « Comment évaluer la production d’un film en volume ? » ",
+    "excerpt": "En partenariat avec Films en Bretagne",
     "image": "random",
-    "age": null,
     "places": [
       {
-        "id": 4,
-        "name": "Bar TNB",
-        "seats": -1
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
       }
     ],
     "category": {
-      "id": 1,
-      "name": "Séance spéciale"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 4,
-      "hour": 23,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 1,
-      "minute": 0
-    }
-  },
-  {
-    "id": 11,
-    "name": "Matinée des métiers",
-    "excerpt": "Être compositeurs (scolaire)",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 3,
-        "name": "Espace rencontre TNB",
-        "seats": 80
-      }
-    ],
-    "category": {
-      "id": 6,
-      "name": "Atelier secret Fab"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 10,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 12,
-      "minute": 0
-    }
-  },
-  {
-    "id": 12,
-    "name": "Matinée du volume",
-    "excerpt": "Formation et étude de cas long métrage",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 2,
-        "name": "Ciné TNB Piccoli",
-        "seats": 100
-      }
-    ],
-    "category": {
-      "id": 2,
+      "id": 4,
       "name": "Volet professionnel"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 10,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 12,
-      "minute": 30
-    }
-  },
-  {
-    "id": 13,
-    "name": "Les courts n°1",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 7,
-        "name": "Arvor salle 2",
-        "seats": 152
-      }
-    ],
-    "category": {
-      "id": 3,
-      "name": "Séance scolaire"
     },
     "startingDate": {
       "year": 2018,
@@ -418,92 +504,59 @@
       "day": 5,
       "hour": 11,
       "minute": 30
-    }
-  },
-  {
-    "id": 14,
-    "name": "Salon des nouvelles écritures",
-    "excerpt": "Et projections (boucle de 20min) ou démos en continu",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 5,
-        "name": "Hall bas TNB",
-        "seats": -1
-      },
-      {
-        "id": 6,
-        "name": "Cube - RDC TNB",
-        "seats": -1
-      }
-    ],
-    "category": {
-      "id": 7,
-      "name": "Salon des nouvelles écritures"
     },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 10,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 20,
-      "minute": 30
-    }
-  },
-  {
-    "id": 15,
-    "name": "Atelier",
-    "excerpt": "(scolaire)",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 8,
-        "name": "Hall haut TNB",
-        "seats": -1
-      }
-    ],
-    "category": {
-      "id": 6,
-      "name": "Atelier secret Fab"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 10,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 12,
-      "minute": 0
-    }
+    "director": null,
+    "producer": null,
+    "age": null
   },
   {
     "id": 16,
-    "name": "Cantine professionnelle",
-    "excerpt": "",
+    "name": "Stand Démo Wacom/TVPaint",
+    "excerpt": "En accès libre",
     "image": "random",
-    "age": null,
     "places": [
       {
-        "id": 4,
-        "name": "Bar TNB",
-        "seats": -1
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
       }
     ],
     "category": {
-      "id": 2,
+      "id": 5,
+      "name": "Autour des films"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 13,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 19,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 17,
+    "name": "Le film \"La Tour\" en chantier",
+    "excerpt": "Avec le directeur exécutif des Contes modernes, Laurent Versini",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 4,
       "name": "Volet professionnel"
     },
     "startingDate": {
@@ -511,31 +564,475 @@
       "month": 4,
       "day": 5,
       "hour": 12,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 12,
+      "minute": 45
+    },
+    "director": "Mats Grorud",
+    "producer": "Les Contes Modernes, Tenk.tv, Cinenic",
+    "age": null
+  },
+  {
+    "id": 18,
+    "name": "Zapping animé",
+    "excerpt": "En accès libre",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 7,
+      "name": "Cube animé"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 13,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 19,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": 10
+  },
+  {
+    "id": 19,
+    "name": "Compétition 1",
+    "excerpt": null,
+    "image": "random",
+    "places": [
+      {
+        "id": 4,
+        "name": "Grand Logis",
+        "seats": -1
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Compétition et panorama"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 14,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 15,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": 6
+  },
+  {
+    "id": 20,
+    "name": "Compétition 2",
+    "excerpt": null,
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Compétition et panorama"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 14,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 15,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": 8
+  },
+  {
+    "id": 21,
+    "name": "Compétition 4",
+    "excerpt": null,
+    "image": "random",
+    "places": [
+      {
+        "id": 2,
+        "name": "Arvor",
+        "seats": 152
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Compétition et panorama"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 14,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 15,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 22,
+    "name": "Compétition 8",
+    "excerpt": null,
+    "image": "random",
+    "places": [
+      {
+        "id": 2,
+        "name": "Arvor",
+        "seats": 152
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Compétition et panorama"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 16,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 17,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 23,
+    "name": "Séries",
+    "excerpt": null,
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Compétition et panorama"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 16,
       "minute": 30
     },
     "endingDate": {
       "year": 2018,
       "month": 4,
       "day": 5,
-      "hour": 14,
-      "minute": 0
-    }
+      "hour": 17,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": null
   },
   {
-    "id": 17,
-    "name": "Pitchs des séries et Webséries",
-    "excerpt": "",
+    "id": 24,
+    "name": "Compétition 5",
+    "excerpt": null,
     "image": "random",
-    "age": null,
     "places": [
       {
         "id": 2,
-        "name": "Ciné TNB Piccoli",
-        "seats": 100
+        "name": "Arvor",
+        "seats": 152
       }
     ],
     "category": {
-      "id": 2,
+      "id": 1,
+      "name": "Compétition et panorama"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 18,
+      "minute": 30
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 20,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 25,
+    "name": "Salon des nouvelles écritures",
+    "excerpt": "En accès libre",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 6,
+      "name": "Salon des nouvelles écritures"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 13,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 19,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": 5
+  },
+  {
+    "id": 26,
+    "name": "\nSpeed dating des auteurs - AGRAF",
+    "excerpt": "Séance en accès libre sur inscription à agraf.contact@gmail.com (dans la limite des places disponibles)",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 4,
+      "name": "Volet professionnel"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 18,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 20,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 27,
+    "name": "\"Sortez les enfants !\" Propositions et usages de l'animation pour adolescents et adultes aujourd'hui",
+    "excerpt": null,
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 4,
+      "name": "Volet professionnel"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 16,
+      "minute": 30
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 17,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 28,
+    "name": "\nDans les coulisses de la série \"Athléticus\"",
+    "excerpt": "Avec le réalisateur Nicolas Deveaux",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 8,
+      "name": "Focus"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 18,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 19,
+      "minute": 0
+    },
+    "director": "Nicolas Deveaux",
+    "producer": "Cube créative productions, Arte france",
+    "age": null
+  },
+  {
+    "id": 29,
+    "name": "Compétition 6",
+    "excerpt": null,
+    "image": "random",
+    "places": [
+      {
+        "id": 2,
+        "name": "Arvor",
+        "seats": 152
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Compétition et panorama"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 22,
+      "minute": 30
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 0,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 30,
+    "name": "Mutafukaz",
+    "excerpt": "Avant-première en présence de l'auteur RUN et de l'acteur Féodor Atkine ",
+    "image": "random",
+    "places": [
+      {
+        "id": 2,
+        "name": "Arvor",
+        "seats": 152
+      }
+    ],
+    "category": {
+      "id": 3,
+      "name": "Long métrage"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 20,
+      "minute": 30
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 5,
+      "hour": 22,
+      "minute": 15
+    },
+    "director": "«RUN» alias Guillaume Renard et Shojirou Nishim",
+    "producer": "Ankama Animations",
+    "age": null
+  },
+  {
+    "id": 31,
+    "name": "Pitchs des séries ",
+    "excerpt": "En partenariat avec The Animation Workshop et France Télévisions ",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 4,
       "name": "Volet professionnel"
     },
     "startingDate": {
@@ -550,15 +1047,51 @@
       "month": 4,
       "day": 5,
       "hour": 16,
-      "minute": 30
-    }
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": null
   },
   {
-    "id": 18,
-    "name": "Les courts n°3",
-    "excerpt": "",
+    "id": 32,
+    "name": "Dans les coulisses des \"As de la jungle\"",
+    "excerpt": "Avec le réalisateur David Alaux",
     "image": "random",
-    "age": null,
+    "places": [
+      {
+        "id": 3,
+        "name": "ESRA",
+        "seats": -1
+      }
+    ],
+    "category": {
+      "id": 5,
+      "name": "Autour des films"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 10,
+      "minute": 30
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 11,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 33,
+    "name": "Les As de la jungle",
+    "excerpt": "En présence du réalisateur David Alaux ",
+    "image": "random",
     "places": [
       {
         "id": 1,
@@ -568,358 +1101,312 @@
     ],
     "category": {
       "id": 3,
-      "name": "Séance scolaire"
+      "name": "Long métrage"
     },
     "startingDate": {
       "year": 2018,
       "month": 4,
-      "day": 5,
+      "day": 6,
       "hour": 14,
       "minute": 0
     },
     "endingDate": {
       "year": 2018,
       "month": 4,
-      "day": 5,
+      "day": 6,
       "hour": 15,
-      "minute": 30
-    }
+      "minute": 45
+    },
+    "director": "David Alaux",
+    "producer": "TAT Productions ",
+    "age": 6
   },
   {
-    "id": 19,
-    "name": "Les courts n°4",
-    "excerpt": "",
+    "id": 34,
+    "name": "Compétition 1",
+    "excerpt": null,
     "image": "random",
-    "age": null,
     "places": [
       {
-        "id": 7,
-        "name": "Arvor salle 2",
+        "id": 2,
+        "name": "Arvor",
         "seats": 152
-      }
-    ],
-    "category": {
-      "id": 3,
-      "name": "Séance scolaire"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 14,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 15,
-      "minute": 30
-    }
-  },
-  {
-    "id": 20,
-    "name": "Atelier TV paint",
-    "excerpt": "(scolaire)",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 3,
-        "name": "Espace rencontre TNB",
-        "seats": 80
-      }
-    ],
-    "category": {
-      "id": 6,
-      "name": "Atelier secret Fab"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 14,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 16,
-      "minute": 0
-    }
-  },
-  {
-    "id": 21,
-    "name": "Atelier",
-    "excerpt": "(scolaire)",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 8,
-        "name": "Hall haut TNB",
-        "seats": -1
-      }
-    ],
-    "category": {
-      "id": 6,
-      "name": "Atelier secret Fab"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 14,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 16,
-      "minute": 0
-    }
-  },
-  {
-    "id": 22,
-    "name": "CNC",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 2,
-        "name": "Ciné TNB Piccoli",
-        "seats": 100
-      }
-    ],
-    "category": {
-      "id": 2,
-      "name": "Volet professionnel"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 16,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 16,
-      "minute": 30
-    }
-  },
-  {
-    "id": 23,
-    "name": "Le chantier de « les Culottées »",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 2,
-        "name": "Ciné TNB Piccoli",
-        "seats": 100
-      }
-    ],
-    "category": {
-      "id": 2,
-      "name": "Volet professionnel"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 17,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 18,
-      "minute": 0
-    }
-  },
-  {
-    "id": 24,
-    "name": "Rencontre avec les réalisateurs",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 3,
-        "name": "Espace rencontre TNB",
-        "seats": 80
       }
     ],
     "category": {
       "id": 1,
-      "name": "Séance spéciale"
+      "name": "Compétition et panorama"
     },
     "startingDate": {
       "year": 2018,
       "month": 4,
-      "day": 5,
-      "hour": 17,
-      "minute": 30
+      "day": 6,
+      "hour": 14,
+      "minute": 0
     },
     "endingDate": {
       "year": 2018,
       "month": 4,
-      "day": 5,
-      "hour": 19,
-      "minute": 30
-    }
+      "day": 6,
+      "hour": 15,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": 6
   },
   {
-    "id": 25,
-    "name": "Les courts n°6",
-    "excerpt": "",
+    "id": 35,
+    "name": "Compétition 2",
+    "excerpt": null,
     "image": "random",
-    "age": null,
     "places": [
       {
-        "id": 7,
-        "name": "Arvor salle 2",
-        "seats": 152
+        "id": 4,
+        "name": "Grand Logis",
+        "seats": -1
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Compétition et panorama"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 14,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 15,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": 8
+  },
+  {
+    "id": 36,
+    "name": "Pitchs des courts métrages",
+    "excerpt": "En partenariat avec Ciclic ",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
       }
     ],
     "category": {
       "id": 4,
-      "name": "Compétition et sélections"
+      "name": "Volet professionnel"
     },
     "startingDate": {
       "year": 2018,
       "month": 4,
-      "day": 5,
-      "hour": 18,
-      "minute": 30
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 20,
-      "minute": 0
-    }
-  },
-  {
-    "id": 26,
-    "name": "Séries Ado/adultes",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 2,
-        "name": "Ciné TNB Piccoli",
-        "seats": 100
-      }
-    ],
-    "category": {
-      "id": 4,
-      "name": "Compétition et sélections"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 18,
-      "minute": 30
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 20,
-      "minute": 0
-    }
-  },
-  {
-    "id": 27,
-    "name": "Mutafukaz",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 7,
-        "name": "Arvor salle 2",
-        "seats": 152
-      }
-    ],
-    "category": {
-      "id": 5,
-      "name": "Long métrage et rencontres"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 20,
-      "minute": 30
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 22,
-      "minute": 0
-    }
-  },
-  {
-    "id": 28,
-    "name": "Soirée",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 7,
-        "name": "Arvor salle 2",
-        "seats": 152
-      }
-    ],
-    "category": {
-      "id": 4,
-      "name": "Compétition et sélections"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 5,
-      "hour": 22,
+      "day": 6,
+      "hour": 14,
       "minute": 30
     },
     "endingDate": {
       "year": 2018,
       "month": 4,
       "day": 6,
-      "hour": 0,
-      "minute": 0
-    }
+      "hour": 16,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": null
   },
   {
-    "id": 29,
-    "name": "Petit-dejeuner des producteurs",
-    "excerpt": "",
+    "id": 37,
+    "name": "Le film \"Funan, le nouveau peuple\" en chantier",
+    "excerpt": "Avec le réalisateur Denis Do et le producteur Sébastien Onomo",
     "image": "random",
-    "age": null,
     "places": [
       {
-        "id": 4,
-        "name": "Bar TNB",
-        "seats": -1
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 4,
+      "name": "Volet professionnel"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 17,
+      "minute": 30
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 18,
+      "minute": 30
+    },
+    "director": "Denis Do",
+    "producer": "Les Films d’ici",
+    "age": null
+  },
+  {
+    "id": 38,
+    "name": "Compétition 7",
+    "excerpt": null,
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Compétition et panorama"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 19,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 20,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 39,
+    "name": "Ecrans rythmiques",
+    "excerpt": "Soirée musique : performance par Colin Toupé suivi de la projection des Clips",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
       }
     ],
     "category": {
       "id": 2,
+      "name": "Séance spéciale"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 21,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 22,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 40,
+    "name": "Stand Démo Wacom/TVPaint",
+    "excerpt": "En accès libre",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 5,
+      "name": "Autour des films"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 13,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 18,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 41,
+    "name": "Animer avec Wacom",
+    "excerpt": "Par Ange Leca",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 4,
+      "name": "Volet professionnel"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 10,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 11,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 42,
+    "name": "Petit-déjeuner des producteurs",
+    "excerpt": "Sur inscription auprès de c.bragard@afca.asso.fr",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 4,
       "name": "Volet professionnel"
     },
     "startingDate": {
@@ -934,189 +1421,26 @@
       "month": 4,
       "day": 6,
       "hour": 10,
-      "minute": 30
-    }
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": null
   },
   {
-    "id": 30,
-    "name": "Atelier",
-    "excerpt": "(scolaire)",
+    "id": 43,
+    "name": "Line-up des diffuseurs",
+    "excerpt": "Par Arte, Canal +, Benshi Studio et France Télévision",
     "image": "random",
-    "age": null,
     "places": [
       {
-        "id": 8,
-        "name": "Hall haut TNB",
-        "seats": -1
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
       }
     ],
     "category": {
-      "id": 6,
-      "name": "Atelier secret Fab"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 10,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 12,
-      "minute": 0
-    }
-  },
-  {
-    "id": 31,
-    "name": "Les courts n°2",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 7,
-        "name": "Arvor salle 2",
-        "seats": 152
-      }
-    ],
-    "category": {
-      "id": 3,
-      "name": "Séance scolaire"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 10,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 11,
-      "minute": 30
-    }
-  },
-  {
-    "id": 32,
-    "name": "Salon des nouvelles écritures",
-    "excerpt": "Et projections (boucle de 20min) ou démos en continu",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 5,
-        "name": "Hall bas TNB",
-        "seats": -1
-      },
-      {
-        "id": 6,
-        "name": "Cube - RDC TNB",
-        "seats": -1
-      }
-    ],
-    "category": {
-      "id": 7,
-      "name": "Salon des nouvelles écritures"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 10,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 20,
-      "minute": 30
-    }
-  },
-  {
-    "id": 33,
-    "name": "Secret de fabrication",
-    "excerpt": "(scolaire)",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 3,
-        "name": "Espace rencontre TNB",
-        "seats": 80
-      }
-    ],
-    "category": {
-      "id": 6,
-      "name": "Atelier secret Fab"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 10,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 12,
-      "minute": 0
-    }
-  },
-  {
-    "id": 34,
-    "name": "La Fée spéciale",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 2,
-        "name": "Ciné TNB Piccoli",
-        "seats": 100
-      }
-    ],
-    "category": {
-      "id": 2,
-      "name": "Volet professionnel"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 10,
-      "minute": 30
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 11,
-      "minute": 30
-    }
-  },
-  {
-    "id": 35,
-    "name": "La réunion des Résidences",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 2,
-        "name": "Ciné TNB Piccoli",
-        "seats": 100
-      }
-    ],
-    "category": {
-      "id": 2,
+      "id": 4,
       "name": "Volet professionnel"
     },
     "startingDate": {
@@ -1132,23 +1456,25 @@
       "day": 6,
       "hour": 13,
       "minute": 0
-    }
+    },
+    "director": null,
+    "producer": null,
+    "age": null
   },
   {
-    "id": 36,
-    "name": "Cantine professionnelle",
-    "excerpt": "",
+    "id": 44,
+    "name": "Zoom sur mon premier contrat",
+    "excerpt": "En partenariat avec la SACD, en accès libre",
     "image": "random",
-    "age": null,
     "places": [
       {
-        "id": 4,
-        "name": "Bar TNB",
-        "seats": -1
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
       }
     ],
     "category": {
-      "id": 2,
+      "id": 4,
       "name": "Volet professionnel"
     },
     "startingDate": {
@@ -1156,150 +1482,24 @@
       "month": 4,
       "day": 6,
       "hour": 12,
-      "minute": 30
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 14,
-      "minute": 0
-    }
-  },
-  {
-    "id": 37,
-    "name": "Atelier TV paint",
-    "excerpt": "(scolaire)",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 3,
-        "name": "Espace rencontre TNB",
-        "seats": 80
-      }
-    ],
-    "category": {
-      "id": 6,
-      "name": "Atelier secret Fab"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 14,
       "minute": 0
     },
     "endingDate": {
       "year": 2018,
       "month": 4,
       "day": 6,
-      "hour": 16,
+      "hour": 13,
       "minute": 0
-    }
+    },
+    "director": null,
+    "producer": null,
+    "age": null
   },
   {
-    "id": 38,
-    "name": "Les courts n°1",
-    "excerpt": "",
+    "id": 45,
+    "name": "Presentation du jeu vidéo \"Life Is Strange\"",
+    "excerpt": "Par 3 Hit Combo, en accès libre",
     "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 7,
-        "name": "Arvor salle 2",
-        "seats": 152
-      }
-    ],
-    "category": {
-      "id": 4,
-      "name": "Compétition et sélections"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 14,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 15,
-      "minute": 30
-    }
-  },
-  {
-    "id": 39,
-    "name": "Pitchs des Courts métrages",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 2,
-        "name": "Ciné TNB Piccoli",
-        "seats": 100
-      }
-    ],
-    "category": {
-      "id": 2,
-      "name": "Volet professionnel"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 14,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 16,
-      "minute": 0
-    }
-  },
-  {
-    "id": 40,
-    "name": "Atelier",
-    "excerpt": "(scolaire)",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 8,
-        "name": "Hall haut TNB",
-        "seats": -1
-      }
-    ],
-    "category": {
-      "id": 6,
-      "name": "Atelier secret Fab"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 14,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 16,
-      "minute": 0
-    }
-  },
-  {
-    "id": 41,
-    "name": "Les courts n°4",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
     "places": [
       {
         "id": 1,
@@ -1308,40 +1508,8 @@
       }
     ],
     "category": {
-      "id": 3,
-      "name": "Séance scolaire"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 14,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 15,
-      "minute": 30
-    }
-  },
-  {
-    "id": 42,
-    "name": "L'appel de Folimage",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 2,
-        "name": "Ciné TNB Piccoli",
-        "seats": 100
-      }
-    ],
-    "category": {
-      "id": 2,
-      "name": "Volet professionnel"
+      "id": 5,
+      "name": "Autour des films"
     },
     "startingDate": {
       "year": 2018,
@@ -1349,117 +1517,57 @@
       "day": 6,
       "hour": 16,
       "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 16,
-      "minute": 30
-    }
-  },
-  {
-    "id": 43,
-    "name": "Le chantier de « I lost my body »",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 2,
-        "name": "Ciné TNB Piccoli",
-        "seats": 100
-      }
-    ],
-    "category": {
-      "id": 2,
-      "name": "Volet professionnel"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 17,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 18,
-      "minute": 0
-    }
-  },
-  {
-    "id": 44,
-    "name": "Rencontres avec les réalisateurs",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 3,
-        "name": "Espace rencontre TNB",
-        "seats": 80
-      }
-    ],
-    "category": {
-      "id": 1,
-      "name": "Séance spéciale"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 17,
-      "minute": 30
     },
     "endingDate": {
       "year": 2018,
       "month": 4,
       "day": 6,
       "hour": 19,
-      "minute": 30
-    }
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": null
   },
   {
-    "id": 45,
-    "name": "Les courts n°7",
-    "excerpt": "",
+    "id": 46,
+    "name": "Salon des nouvelles écritures",
+    "excerpt": "En accès libre",
     "image": "random",
-    "age": null,
     "places": [
       {
-        "id": 2,
-        "name": "Ciné TNB Piccoli",
-        "seats": 100
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
       }
     ],
     "category": {
-      "id": 4,
-      "name": "Compétition et sélections"
+      "id": 6,
+      "name": "Salon des nouvelles écritures"
     },
     "startingDate": {
       "year": 2018,
       "month": 4,
       "day": 6,
-      "hour": 18,
-      "minute": 30
+      "hour": 13,
+      "minute": 0
     },
     "endingDate": {
       "year": 2018,
       "month": 4,
       "day": 6,
-      "hour": 20,
+      "hour": 19,
       "minute": 0
-    }
+    },
+    "director": null,
+    "producer": null,
+    "age": null
   },
   {
-    "id": 46,
-    "name": "Soirée clips",
-    "excerpt": "",
+    "id": 47,
+    "name": "Initiation à TVPaint",
+    "excerpt": "Sur inscription auprès de c.bragard@afca.asso.fr",
     "image": "random",
-    "age": null,
     "places": [
       {
         "id": 1,
@@ -1469,108 +1577,109 @@
     ],
     "category": {
       "id": 4,
-      "name": "Compétition et sélections"
+      "name": "Volet professionnel"
     },
     "startingDate": {
       "year": 2018,
       "month": 4,
       "day": 6,
-      "hour": 21,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 22,
-      "minute": 30
-    }
-  },
-  {
-    "id": 47,
-    "name": "Soirée V J-ing",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 4,
-        "name": "Bar TNB",
-        "seats": -1
-      }
-    ],
-    "category": {
-      "id": 1,
-      "name": "Séance spéciale"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 6,
-      "hour": 22,
+      "hour": 16,
       "minute": 30
     },
     "endingDate": {
       "year": 2018,
       "month": 4,
-      "day": 7,
-      "hour": 1,
-      "minute": 0
-    }
+      "day": 6,
+      "hour": 18,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": null
   },
   {
     "id": 48,
-    "name": "Salon des nouvelles écritures",
-    "excerpt": "Dans l'atelier",
+    "name": "Tribune de l'actualité de l'animation",
+    "excerpt": null,
     "image": "random",
-    "age": null,
     "places": [
       {
-        "id": 5,
-        "name": "Hall bas TNB",
-        "seats": -1
-      },
-      {
-        "id": 6,
-        "name": "Cube - RDC TNB",
-        "seats": -1
-      }
-    ],
-    "category": {
-      "id": 7,
-      "name": "Salon des nouvelles écritures"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 7,
-      "hour": 10,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 7,
-      "hour": 21,
-      "minute": 30
-    }
-  },
-  {
-    "id": 49,
-    "name": "Séance petite enfance",
-    "excerpt": "3 ans",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 7,
-        "name": "Arvor salle 2",
-        "seats": 152
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
       }
     ],
     "category": {
       "id": 4,
-      "name": "Compétition et sélections"
+      "name": "Volet professionnel"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 14,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 14,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 49,
+    "name": "\nA la rencontre des réalisateurs",
+    "excerpt": "Modérée par Alexis Hunot, en accès libre",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 5,
+      "name": "Autour des films"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 19,
+      "minute": 30
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 6,
+      "hour": 21,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 50,
+    "name": "Pour les tout petits",
+    "excerpt": null,
+    "image": "random",
+    "places": [
+      {
+        "id": 2,
+        "name": "Arvor",
+        "seats": 152
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Compétition et panorama"
     },
     "startingDate": {
       "year": 2018,
@@ -1585,14 +1694,50 @@
       "day": 7,
       "hour": 11,
       "minute": 30
-    }
+    },
+    "director": null,
+    "producer": null,
+    "age": 3
   },
   {
-    "id": 50,
-    "name": "Drôles de petites bêtes",
-    "excerpt": "",
+    "id": 51,
+    "name": "Le Film \"Pachamama\" en chantier",
+    "excerpt": "Avec le réalisateur Juan Antin et la directrice artistique Aurélie Raphaël",
     "image": "random",
-    "age": null,
+    "places": [
+      {
+        "id": 2,
+        "name": "Arvor",
+        "seats": 152
+      }
+    ],
+    "category": {
+      "id": 5,
+      "name": "Autour des films"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 11,
+      "minute": 30
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 12,
+      "minute": 30
+    },
+    "director": "Juan Antin",
+    "producer": "Folivari",
+    "age": null
+  },
+  {
+    "id": 52,
+    "name": "Le Cube animé - Spécial famille",
+    "excerpt": "En accès libre",
+    "image": "random",
     "places": [
       {
         "id": 1,
@@ -1601,8 +1746,76 @@
       }
     ],
     "category": {
-      "id": 5,
-      "name": "Long métrage et rencontres"
+      "id": 7,
+      "name": "Cube animé"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 13,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 19,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": 10
+  },
+  {
+    "id": 53,
+    "name": "Salon des nouvelles écritures",
+    "excerpt": "En accès libre",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 6,
+      "name": "Salon des nouvelles écritures"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 13,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 19,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": 5
+  },
+  {
+    "id": 54,
+    "name": "Zombillénium",
+    "excerpt": "En présence du réalisateur Arthur de Pins",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 3,
+      "name": "Long métrage"
     },
     "startingDate": {
       "year": 2018,
@@ -1617,110 +1830,16 @@
       "day": 7,
       "hour": 15,
       "minute": 30
-    }
+    },
+    "director": "Arthur De Pins et Alexis Ducord",
+    "producer": " Maybe Movies",
+    "age": 7
   },
   {
-    "id": 51,
-    "name": "Le chantier de « Pachamama »",
-    "excerpt": "",
+    "id": 55,
+    "name": "Musique à l'image - \"Croc-Blanc\"",
+    "excerpt": "Par le compositeur Bruno Coulais",
     "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 7,
-        "name": "Arvor salle 2",
-        "seats": 152
-      }
-    ],
-    "category": {
-      "id": 1,
-      "name": "Séance spéciale"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 7,
-      "hour": 14,
-      "minute": 30
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 7,
-      "hour": 16,
-      "minute": 0
-    }
-  },
-  {
-    "id": 52,
-    "name": "Coupure Pubs",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 2,
-        "name": "Ciné TNB Piccoli",
-        "seats": 100
-      }
-    ],
-    "category": {
-      "id": 4,
-      "name": "Compétition et sélections"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 7,
-      "hour": 14,
-      "minute": 30
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 7,
-      "hour": 16,
-      "minute": 0
-    }
-  },
-  {
-    "id": 53,
-    "name": "Délibération publique",
-    "excerpt": "du Syndicat de la critique",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 3,
-        "name": "Espace rencontre TNB",
-        "seats": 80
-      }
-    ],
-    "category": {
-      "id": 1,
-      "name": "Séance spéciale"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 7,
-      "hour": 14,
-      "minute": 30
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 7,
-      "hour": 16,
-      "minute": 0
-    }
-  },
-  {
-    "id": 54,
-    "name": "Les courts n°5",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
     "places": [
       {
         "id": 1,
@@ -1729,8 +1848,76 @@
       }
     ],
     "category": {
-      "id": 4,
-      "name": "Compétition et sélections"
+      "id": 5,
+      "name": "Autour des films"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 14,
+      "minute": 30
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 16,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 56,
+    "name": "Séries jeunesse",
+    "excerpt": null,
+    "image": "random",
+    "places": [
+      {
+        "id": 4,
+        "name": "Grand Logis",
+        "seats": -1
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Compétition et panorama"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 14,
+      "minute": 30
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 16,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": 6
+  },
+  {
+    "id": 57,
+    "name": "Croc-Blanc",
+    "excerpt": "En présence du compositeur Bruno Coulais",
+    "image": "random",
+    "places": [
+      {
+        "id": 2,
+        "name": "Arvor",
+        "seats": 152
+      }
+    ],
+    "category": {
+      "id": 3,
+      "name": "Long métrage"
     },
     "startingDate": {
       "year": 2018,
@@ -1745,24 +1932,60 @@
       "day": 7,
       "hour": 17,
       "minute": 30
-    }
+    },
+    "director": "Alexandre Espigares",
+    "producer": "Superprod",
+    "age": 7
   },
   {
-    "id": 55,
-    "name": "20 ans de Vivement Lundi !",
-    "excerpt": "",
+    "id": 58,
+    "name": "Séance anniversaire : Le Quatuor à cornes",
+    "excerpt": "Avant-première en présence des auteurs Benjamin Botella, Yves Cotten et Emmanuelle Gorgiard",
     "image": "random",
-    "age": null,
     "places": [
       {
-        "id": 7,
-        "name": "Arvor salle 2",
-        "seats": 152
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
       }
     ],
     "category": {
-      "id": 5,
-      "name": "Long métrage et rencontres"
+      "id": 8,
+      "name": "Focus"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 16,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 17,
+      "minute": 0
+    },
+    "director": "Benjamin Botella, Arnaud Demuynck et Emmanuelle Gorgiard ",
+    "producer": "Vivement Lundi !, La Boîte...Productions ",
+    "age": 4
+  },
+  {
+    "id": 59,
+    "name": "Compétition 5",
+    "excerpt": null,
+    "image": "random",
+    "places": [
+      {
+        "id": 4,
+        "name": "Grand Logis",
+        "seats": -1
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Compétition et panorama"
     },
     "startingDate": {
       "year": 2018,
@@ -1777,127 +2000,33 @@
       "day": 7,
       "hour": 18,
       "minute": 0
-    }
+    },
+    "director": null,
+    "producer": null,
+    "age": null
   },
   {
-    "id": 56,
-    "name": "Rencontre avec les réalisateurs",
-    "excerpt": "",
+    "id": 60,
+    "name": "Projection du Palmarès",
+    "excerpt": null,
     "image": "random",
-    "age": null,
     "places": [
       {
-        "id": 3,
-        "name": "Espace rencontre TNB",
-        "seats": 80
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
       }
     ],
     "category": {
-      "id": 1,
+      "id": 2,
       "name": "Séance spéciale"
     },
     "startingDate": {
       "year": 2018,
       "month": 4,
       "day": 7,
-      "hour": 17,
-      "minute": 30
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 7,
-      "hour": 19,
-      "minute": 30
-    }
-  },
-  {
-    "id": 57,
-    "name": "Remise des Prix",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 1,
-        "name": "Ciné TNB Jouvet",
-        "seats": 400
-      }
-    ],
-    "category": {
-      "id": 8,
-      "name": "Unknown"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 7,
-      "hour": 19,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 7,
-      "hour": 20,
-      "minute": 0
-    }
-  },
-  {
-    "id": 58,
-    "name": "Cocktail de clôture",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 4,
-        "name": "Bar TNB",
-        "seats": -1
-      }
-    ],
-    "category": {
-      "id": 8,
-      "name": "Unknown"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 7,
-      "hour": 20,
-      "minute": 0
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 7,
       "hour": 21,
-      "minute": 30
-    }
-  },
-  {
-    "id": 59,
-    "name": "Projection du palmarès",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 1,
-        "name": "Ciné TNB Jouvet",
-        "seats": 400
-      }
-    ],
-    "category": {
-      "id": 4,
-      "name": "Compétition et sélections"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 7,
-      "hour": 21,
-      "minute": 30
+      "minute": 0
     },
     "endingDate": {
       "year": 2018,
@@ -1905,56 +2034,196 @@
       "day": 7,
       "hour": 23,
       "minute": 0
-    }
+    },
+    "director": null,
+    "producer": null,
+    "age": null
   },
   {
-    "id": 60,
-    "name": "Soirée de clôture",
-    "excerpt": "",
+    "id": 61,
+    "name": "A la rencontre des réalisateurs ",
+    "excerpt": "Modérée par Alexis Hunot, en accès libre",
     "image": "random",
-    "age": null,
     "places": [
       {
-        "id": 4,
-        "name": "Bar TNB",
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 5,
+      "name": "Autour des films"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 17,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 19,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 62,
+    "name": "Montgolfière Dimitri",
+    "excerpt": "Sous réserve",
+    "image": "random",
+    "places": [
+      {
+        "id": 5,
+        "name": "Esplanade Charles de Gaulles",
         "seats": -1
       }
     ],
     "category": {
-      "id": 1,
+      "id": 8,
+      "name": "Focus"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 14,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 19,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 63,
+    "name": "Musique à l'Image",
+    "excerpt": "Par la musicienne Christine Ott",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 5,
+      "name": "Autour des films"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 14,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 16,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 64,
+    "name": "Remise des prix",
+    "excerpt": "en accès libre en présence des lauréats",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 2,
       "name": "Séance spéciale"
     },
     "startingDate": {
       "year": 2018,
       "month": 4,
       "day": 7,
-      "hour": 22,
-      "minute": 30
+      "hour": 19,
+      "minute": 0
     },
     "endingDate": {
       "year": 2018,
       "month": 4,
-      "day": 8,
-      "hour": 1,
+      "day": 7,
+      "hour": 20,
       "minute": 0
-    }
+    },
+    "director": null,
+    "producer": null,
+    "age": null
   },
   {
-    "id": 61,
-    "name": "Séries Jeune public",
-    "excerpt": "",
+    "id": 65,
+    "name": "Carte Blanche Arte",
+    "excerpt": "En présence d'Hélène Vayssières, responsable des programmes courts d'Arte",
     "image": "random",
-    "age": null,
     "places": [
       {
-        "id": 7,
-        "name": "Arvor salle 2",
+        "id": 2,
+        "name": "Arvor",
         "seats": 152
       }
     ],
     "category": {
-      "id": 4,
-      "name": "Compétition et sélections"
+      "id": 8,
+      "name": "Focus"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 14,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 7,
+      "hour": 15,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": 10
+  },
+  {
+    "id": 66,
+    "name": "Séries jeunesse",
+    "excerpt": null,
+    "image": "random",
+    "places": [
+      {
+        "id": 2,
+        "name": "Arvor",
+        "seats": 152
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Compétition et panorama"
     },
     "startingDate": {
       "year": 2018,
@@ -1969,28 +2238,93 @@
       "day": 8,
       "hour": 12,
       "minute": 30
-    }
+    },
+    "director": null,
+    "producer": null,
+    "age": 6
   },
   {
-    "id": 62,
-    "name": "Salon des nouvelles écritures",
-    "excerpt": "Et projections (boucle de 20min) ou démos en continu",
+    "id": 67,
+    "name": "Reprise du Palmarès ",
+    "excerpt": "En présence des lauréats",
     "image": "random",
-    "age": null,
     "places": [
       {
-        "id": 5,
-        "name": "Hall bas TNB",
-        "seats": -1
-      },
+        "id": 2,
+        "name": "Arvor",
+        "seats": 152
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Compétition et panorama"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 8,
+      "hour": 11,
+      "minute": 15
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 8,
+      "hour": 12,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 68,
+    "name": "Le Cube animé - Spécial famille",
+    "excerpt": "En accès libre",
+    "image": "random",
+    "places": [
       {
-        "id": 6,
-        "name": "Cube - RDC TNB",
-        "seats": -1
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
       }
     ],
     "category": {
       "id": 7,
+      "name": "Cube animé"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 8,
+      "hour": 13,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 8,
+      "hour": 19,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": 10
+  },
+  {
+    "id": 69,
+    "name": "Salon des nouvelles écritures",
+    "excerpt": "En accès libre",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 6,
       "name": "Salon des nouvelles écritures"
     },
     "startingDate": {
@@ -1998,6 +2332,108 @@
       "month": 4,
       "day": 8,
       "hour": 13,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 8,
+      "hour": 19,
+      "minute": 0
+    },
+    "director": null,
+    "producer": null,
+    "age": 5
+  },
+  {
+    "id": 70,
+    "name": "Drôles de petites bêtes",
+    "excerpt": "en présence de l'auteur Antoon Krings et suivi d'une séance de dédicace",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 3,
+      "name": "Long métrage"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 8,
+      "hour": 14,
+      "minute": 0
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 8,
+      "hour": 15,
+      "minute": 30
+    },
+    "director": "Arnaud Bouron et Antoon Krings",
+    "producer": "On entertainment",
+    "age": 3
+  },
+  {
+    "id": 71,
+    "name": "Le meilleur de Vivement Lundi!",
+    "excerpt": null,
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 8,
+      "name": "Focus"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 8,
+      "hour": 15,
+      "minute": 30
+    },
+    "endingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 8,
+      "hour": 16,
+      "minute": 30
+    },
+    "director": null,
+    "producer": null,
+    "age": null
+  },
+  {
+    "id": 72,
+    "name": "Ciné concert - Lotte, mon amour",
+    "excerpt": "Par Christine Ott et et Anne-Irène Kempf",
+    "image": "random",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ciné TNB Jouvet",
+        "seats": 400
+      }
+    ],
+    "category": {
+      "id": 2,
+      "name": "Séance spéciale"
+    },
+    "startingDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 8,
+      "hour": 16,
       "minute": 30
     },
     "endingDate": {
@@ -2005,15 +2441,17 @@
       "month": 4,
       "day": 8,
       "hour": 18,
-      "minute": 30
-    }
+      "minute": 0
+    },
+    "director": "Par Lotte Reininger et avec Christine Ott & Anne-Irène Kempf ",
+    "producer": "Production Mimiladoré",
+    "age": 3
   },
   {
-    "id": 63,
-    "name": "Les As de la jungle",
-    "excerpt": "",
+    "id": 73,
+    "name": "Atelier jeux optiques",
+    "excerpt": "En partenariat avec LISAA, en accès libre",
     "image": "random",
-    "age": null,
     "places": [
       {
         "id": 1,
@@ -2023,7 +2461,7 @@
     ],
     "category": {
       "id": 5,
-      "name": "Long métrage et rencontres"
+      "name": "Autour des films"
     },
     "startingDate": {
       "year": 2018,
@@ -2036,112 +2474,52 @@
       "year": 2018,
       "month": 4,
       "day": 8,
-      "hour": 15,
-      "minute": 30
-    }
-  },
-  {
-    "id": 64,
-    "name": "Ateliers tout public",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 3,
-        "name": "Espace rencontre TNB",
-        "seats": 80
-      }
-    ],
-    "category": {
-      "id": 6,
-      "name": "Atelier secret Fab"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 8,
-      "hour": 14,
+      "hour": 18,
       "minute": 0
     },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 8,
-      "hour": 16,
-      "minute": 30
-    }
+    "director": null,
+    "producer": null,
+    "age": 6
   },
   {
-    "id": 65,
-    "name": "Séance petite enfance",
-    "excerpt": "3 ans",
+    "id": 74,
+    "name": "Formation “Comment adapter une oeuvre littéraire en production cinématographique ?” ",
+    "excerpt": "Organisé par Livre et lecture en Bretagne, En partenariat avec Vivement Lundi !",
     "image": "random",
-    "age": null,
     "places": [
       {
-        "id": 2,
-        "name": "Ciné TNB Piccoli",
-        "seats": 100
-      }
-    ],
-    "category": {
-      "id": 4,
-      "name": "Compétition et sélections"
-    },
-    "startingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 8,
-      "hour": 15,
-      "minute": 30
-    },
-    "endingDate": {
-      "year": 2018,
-      "month": 4,
-      "day": 8,
-      "hour": 16,
-      "minute": 30
-    }
-  },
-  {
-    "id": 66,
-    "name": "Doc en stock « Un homme est mort »",
-    "excerpt": "",
-    "image": "random",
-    "age": null,
-    "places": [
-      {
-        "id": 9,
-        "name": "Rennes Les champs Libres",
+        "id": 6,
+        "name": "France 3 Bretagne",
         "seats": -1
       }
     ],
     "category": {
-      "id": 1,
-      "name": "Séance spéciale"
+      "id": 4,
+      "name": "Volet professionnel"
     },
     "startingDate": {
       "year": 2018,
       "month": 4,
-      "day": 8,
-      "hour": 16,
+      "day": 4,
+      "hour": 14,
       "minute": 0
     },
     "endingDate": {
       "year": 2018,
       "month": 4,
-      "day": 8,
-      "hour": 17,
+      "day": 4,
+      "hour": 16,
       "minute": 30
-    }
+    },
+    "director": null,
+    "producer": null,
+    "age": null
   },
   {
-    "id": 67,
-    "name": "Ciné - concert",
-    "excerpt": "",
+    "id": 75,
+    "name": " Regards croisés du collectif des résidences",
+    "excerpt": null,
     "image": "random",
-    "age": null,
     "places": [
       {
         "id": 1,
@@ -2150,22 +2528,25 @@
       }
     ],
     "category": {
-      "id": 1,
-      "name": "Séance spéciale"
+      "id": 4,
+      "name": "Volet professionnel"
     },
     "startingDate": {
       "year": 2018,
       "month": 4,
-      "day": 8,
-      "hour": 16,
-      "minute": 30
+      "day": 6,
+      "hour": 11,
+      "minute": 0
     },
     "endingDate": {
       "year": 2018,
       "month": 4,
-      "day": 8,
-      "hour": 18,
+      "day": 6,
+      "hour": 12,
       "minute": 0
-    }
+    },
+    "director": null,
+    "producer": null,
+    "age": null
   }
 ]

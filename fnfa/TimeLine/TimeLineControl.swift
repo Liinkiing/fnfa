@@ -345,10 +345,6 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
     }
     
     
-    override func touchesEnded(_ touches: Set<UITouch>, with withEvent: UIEvent?) {
-        self.line!.bounds.size.width = 70
-    }
-    
     
     
     

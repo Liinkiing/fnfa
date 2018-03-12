@@ -66,11 +66,11 @@ class ProgrammeViewController: UIViewController, UICollectionViewDelegate {
         let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
         let indexPath = programmeCollectionView.indexPathForItem(at: visiblePoint)
         if let cell = programmeCollectionView.cellForItem(at: indexPath!) as! ProgrammeCollectionViewCell? {
-                timeline.setStep((cell.event?.startingDate.day)! - 3)
-                let df = DateFormatter()
-                df.locale = Locale(identifier: "fr_FR")
-                df.setLocalizedDateFormatFromTemplate("EEEE dd")
-                timeline.timelineLabelValue = df.string(from: (cell.event?.startingDate.getDate())!).capitalized
+            timeline.setStep((cell.event?.startingDate.day)! - 3)
+            let df = DateFormatter()
+            df.locale = Locale(identifier: "fr_FR")
+            df.setLocalizedDateFormatFromTemplate("EEEE dd")
+            timeline.timelineLabelValue = df.string(from: (cell.event?.startingDate.getDate())!).capitalized
         }
     }
 

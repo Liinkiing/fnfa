@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A3DFF1D205683EB00340835 /* Tarifs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3DFF1C205683EB00340835 /* Tarifs.storyboard */; };
 		3A799972203EC0F700036941 /* circleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A79996C203EC0F700036941 /* circleView.swift */; };
 		3A799973203EC0F700036941 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A79996D203EC0F700036941 /* LineView.swift */; };
 		3A799974203EC0F700036941 /* TimeLineControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A79996E203EC0F700036941 /* TimeLineControl.swift */; };
@@ -72,6 +73,7 @@
 
 /* Begin PBXFileReference section */
 		1AF4F4C03221CE5F39069D43 /* Pods-fnfa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fnfa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fnfa/Pods-fnfa.debug.xcconfig"; sourceTree = "<group>"; };
+		3A3DFF1C205683EB00340835 /* Tarifs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tarifs.storyboard; sourceTree = "<group>"; };
 		3A79996C203EC0F700036941 /* circleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = circleView.swift; sourceTree = "<group>"; };
 		3A79996D203EC0F700036941 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		3A79996E203EC0F700036941 /* TimeLineControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineControl.swift; sourceTree = "<group>"; };
@@ -127,6 +129,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A3DFF18205683DA00340835 /* Tarifs */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DFF1C205683EB00340835 /* Tarifs.storyboard */,
+			);
+			path = Tarifs;
+			sourceTree = "<group>";
+		};
 		3A79996B203EC0F700036941 /* TimeLine */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +179,7 @@
 		3AF2602A2035C18100D7E022 /* fnfa */ = {
 			isa = PBXGroup;
 			children = (
+				3A3DFF18205683DA00340835 /* Tarifs */,
 				3A79996B203EC0F700036941 /* TimeLine */,
 				AFF894BF203C4A7B00AA1387 /* Assets.xcassets */,
 				3AF260422035C3A000D7E022 /* Programme */,
@@ -354,6 +365,7 @@
 				3AF260462035C3C100D7E022 /* Programme.storyboard in Resources */,
 				AFCDE2BB203A6B0000D57078 /* NoItemCollectionViewCell.xib in Resources */,
 				AF9AA6F3203916EC000A1BF4 /* EventCollectionViewCell.xib in Resources */,
+				3A3DFF1D205683EB00340835 /* Tarifs.storyboard in Resources */,
 				3AF260412035C23200D7E022 /* Agenda.storyboard in Resources */,
 				AFF894C6203C4D9800AA1387 /* ProgrammeCollectionViewCell.xib in Resources */,
 				3AF260312035C18100D7E022 /* Main.storyboard in Resources */,

@@ -22,6 +22,7 @@
                     <connections>
                         <segue destination="K20-Oa-KBU" kind="relationship" relationship="viewControllers" id="LdH-uD-She"/>
                         <segue destination="qz7-LH-hcF" kind="relationship" relationship="viewControllers" id="bn7-gg-4un"/>
+                        <segue destination="aKi-st-lUk" kind="relationship" relationship="viewControllers" id="AjQ-M8-oBb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5D3-kz-JnD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -37,6 +38,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Jj-Rf-Mpu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-322" y="-39"/>
+        </scene>
+        <!--Tarifs-->
+        <scene sceneID="mbl-CJ-0VS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tarifs" id="aKi-st-lUk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ADr-Dn-GlI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AQT-AC-dGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146" y="142"/>
         </scene>
         <!--Programme-->
         <scene sceneID="qXk-xw-Y8d">

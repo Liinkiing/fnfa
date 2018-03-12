@@ -48,10 +48,21 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Agenda" id="hSe-Sy-cd3"/>
+                    <connections>
+                        <segue destination="xIQ-gR-w3c" kind="show" identifier="eventDetail" id="y8Y-CA-Adx"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="50I-WL-aj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="389.60000000000002" y="26.53673163418291"/>
+        </scene>
+        <!--ProgrammeDetail-->
+        <scene sceneID="JBn-wx-3oW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProgrammeDetail" id="xIQ-gR-w3c" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U9m-PC-CYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029" y="27"/>
         </scene>
     </scenes>
 </document>

@@ -26,9 +26,20 @@ class AgendaViewController: UITableViewController {
         dateFormatter.locale = locale
         tableView.register(UINib(nibName: String(describing: AgendaTableViewCell.self), bundle: nil),
                 forCellReuseIdentifier: String(describing: AgendaTableViewCell.self))
+        NotificationCenter.default.addObserver(self, selector: #selector(onEventTapped), name: .AGENDA_EVENT_TAPPED, object: nil)
     }
 
+    @objc
+    func onEventTapped(_ notification: Notification) {
+        performSegue(withIdentifier: "eventDetail", sender: notification.object)
+    }
    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "eventDetail") {
+            let destination = segue.destination as! ProgrammeDetailViewController
+            destination.event = sender as! Event
+        }
+    }
 }
 
 extension AgendaViewController {

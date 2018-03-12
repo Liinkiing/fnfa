@@ -22,6 +22,8 @@
 		944ABB5B3A83C70F3A0BD1D2 /* Pods_fnfa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE1B9ACA7C0551D06906509 /* Pods_fnfa.framework */; };
 		A55722B92056871000BBF2E9 /* LieuxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55722B82056871000BBF2E9 /* LieuxViewController.swift */; };
 		A55722BF2056875000BBF2E9 /* Lieux.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55722BE2056875000BBF2E9 /* Lieux.storyboard */; };
+		AF6DA5402057205400AD82F1 /* ProgrammeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6DA53F2057205400AD82F1 /* ProgrammeDetailViewController.swift */; };
+		AF6DA5422057326C00AD82F1 /* ProgrammeDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6DA5412057326C00AD82F1 /* ProgrammeDetail.storyboard */; };
 		AF801751203CECBE00233FB9 /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF801750203CECBE00233FB9 /* FilterButton.swift */; };
 		AF9AA6F2203916EC000A1BF4 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9AA6F0203916EC000A1BF4 /* EventCollectionViewCell.swift */; };
 		AF9AA6F3203916EC000A1BF4 /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF9AA6F1203916EC000A1BF4 /* EventCollectionViewCell.xib */; };
@@ -93,6 +95,8 @@
 		7DE1B9ACA7C0551D06906509 /* Pods_fnfa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fnfa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55722B82056871000BBF2E9 /* LieuxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LieuxViewController.swift; sourceTree = "<group>"; };
 		A55722BE2056875000BBF2E9 /* Lieux.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lieux.storyboard; sourceTree = "<group>"; };
+		AF6DA53F2057205400AD82F1 /* ProgrammeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeDetailViewController.swift; sourceTree = "<group>"; };
+		AF6DA5412057326C00AD82F1 /* ProgrammeDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProgrammeDetail.storyboard; sourceTree = "<group>"; };
 		AF801750203CECBE00233FB9 /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		AF9AA6F0203916EC000A1BF4 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF9AA6F1203916EC000A1BF4 /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -227,6 +231,8 @@
 				AFF894C3203C4D9800AA1387 /* ProgrammeCollectionViewCell.swift */,
 				AFF894C4203C4D9800AA1387 /* ProgrammeCollectionViewCell.xib */,
 				AF801750203CECBE00233FB9 /* FilterButton.swift */,
+				AF6DA53F2057205400AD82F1 /* ProgrammeDetailViewController.swift */,
+				AF6DA5412057326C00AD82F1 /* ProgrammeDetail.storyboard */,
 			);
 			path = Programme;
 			sourceTree = "<group>";
@@ -380,6 +386,7 @@
 				3AF260462035C3C100D7E022 /* Programme.storyboard in Resources */,
 				AFCDE2BB203A6B0000D57078 /* NoItemCollectionViewCell.xib in Resources */,
 				AF9AA6F3203916EC000A1BF4 /* EventCollectionViewCell.xib in Resources */,
+				AF6DA5422057326C00AD82F1 /* ProgrammeDetail.storyboard in Resources */,
 				A55722BF2056875000BBF2E9 /* Lieux.storyboard in Resources */,
 				3A3DFF1D205683EB00340835 /* Tarifs.storyboard in Resources */,
 				3AF260412035C23200D7E022 /* Agenda.storyboard in Resources */,
@@ -458,6 +465,7 @@
 				3AF2602E2035C18100D7E022 /* ViewController.swift in Sources */,
 				3AF260442035C3BA00D7E022 /* ProgrammeViewController.swift in Sources */,
 				3AF2602C2035C18100D7E022 /* AppDelegate.swift in Sources */,
+				AF6DA5402057205400AD82F1 /* ProgrammeDetailViewController.swift in Sources */,
 				3AF2603F2035C22600D7E022 /* AgendaViewController.swift in Sources */,
 				AFF894C2203C4C3200AA1387 /* ProgrammeDataSource.swift in Sources */,
 				AF9AA6F62039224F000A1BF4 /* AgendaTableViewCell.swift in Sources */,

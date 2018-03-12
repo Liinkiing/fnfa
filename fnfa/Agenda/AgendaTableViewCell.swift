@@ -37,6 +37,7 @@ class AgendaTableViewCell: UITableViewCell {
             .sorted(by: .date)!)
         dateFormatter.setLocalizedDateFormatFromTemplate("d")
         eventsCollectionFlowLayout.spacingMode = .overlap(visibleOffset: 30)
+        eventsCollectionView.delegate = self
         eventsCollectionView.dataSource = eventsDataSource
         eventsCollectionView.reloadData()
         eventsCollectionView.register(UINib(nibName: String(describing: NoItemCollectionViewCell.self), bundle: nil),
@@ -62,6 +63,15 @@ class AgendaTableViewCell: UITableViewCell {
         eventsCollectionView.reloadData()
     }
     
+}
+
+extension AgendaTableViewCell : UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if (collectionView.cellForItem(at: indexPath)?.isKind(of: EventCollectionViewCell.self))! {
+            let event = eventsDataSource?.events[indexPath.item]
+            NotificationCenter.default.post(name: .AGENDA_EVENT_TAPPED, object: event);
+        }
+    }
 }
 
 extension AgendaTableViewCell : TimeLineControlDelegate {

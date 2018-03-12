@@ -17,7 +17,6 @@ class ProgrammeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var eventImage: UIImageView!
     
     @IBOutlet weak var buttonFav: UIButton!
-    @IBOutlet weak var labelExcerpt: UILabel!
     
     var event: Event? {
         didSet {
@@ -26,7 +25,6 @@ class ProgrammeCollectionViewCell: UICollectionViewCell {
             labelAudience.text = (event?.age != nil ? "A partir de \((event?.age!)!) ans" : "Pour tous public")
             eventImage.image = event?.getUIImage()
             buttonFav.isSelected = DataMapper.instance.isFavorited(event: event!)
-            labelExcerpt.text = event?.excerpt
         }
     }
     

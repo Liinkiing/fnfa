@@ -33,10 +33,10 @@ class ProgrammeViewController: UIViewController, UICollectionViewDelegate {
     
     
     required init?(coder aDecoder: NSCoder) {
-        programmeDataSource = ProgrammeDataSource(events: DataMapper.instance.events)
+        programmeDataSource = ProgrammeDataSource(events: DataMapper.instance.events.sorted(by: .date)!)
         super.init(coder: aDecoder)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         timeline.delegate = self
@@ -59,6 +59,19 @@ class ProgrammeViewController: UIViewController, UICollectionViewDelegate {
         if(!decelerate) {
             updateTimeline()
         }
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "eventDetail", sender: programmeDataSource.events[indexPath.item])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "eventDetail") {
+            let event = sender as! Event
+            let destination = segue.destination as! ProgrammeDetailViewController
+            destination.event = event
+        }
+        
     }
 
     private func updateTimeline() {

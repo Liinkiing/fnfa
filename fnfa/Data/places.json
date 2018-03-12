@@ -6,42 +6,27 @@
   },
   {
     "id": 2,
-    "name": "Ciné TNB Piccoli",
-    "seats": 100
+    "name": "Arvor",
+    "seats": 152
   },
   {
     "id": 3,
-    "name": "Espace rencontre TNB",
-    "seats": 80
+    "name": "ESRA",
+    "seats": -1
   },
   {
     "id": 4,
-    "name": "Bar TNB",
+    "name": "Grand Logis",
     "seats": -1
   },
   {
     "id": 5,
-    "name": "Hall bas TNB",
+    "name": "Esplanade Charles de Gaulles",
     "seats": -1
   },
   {
     "id": 6,
-    "name": "Cube - RDC TNB",
-    "seats": -1
-  },
-  {
-    "id": 7,
-    "name": "Arvor salle 2",
-    "seats": 152
-  },
-  {
-    "id": 8,
-    "name": "Hall haut TNB",
-    "seats": -1
-  },
-  {
-    "id": 9,
-    "name": "Rennes Les champs Libres",
+    "name": "France 3 Bretagne",
     "seats": -1
   }
 ]

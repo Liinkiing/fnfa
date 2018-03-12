@@ -15,9 +15,9 @@ class ProgrammeDataSource: NSObject, UICollectionViewDataSource {
     var filters: [String] = []
 
     var filtersMap = [
-        "movies": ["Séance spéciale", "Séance scolaire", "Long métrage et rencontres"],
-        "activities": ["Atelier secret Fab", "Compétition et sélections"],
-        "meetups": ["Salon des nouvelles écritures", "Volet professionnel"]
+        "movies": ["Long métrage", "Autour des films", "Cube animé", "Séance spéciale"],
+        "activities": ["Compétition et panorama", "Compétition et sélections", "Cube animéF"],
+        "pro": ["Salon des nouvelles écritures", "Volet professionnel", "Focus"]
     ]
 
     init(events: [Event]) {

@@ -18,6 +18,8 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
     var category: Category
     var startingDate: EventDate
     var endingDate: EventDate
+    var producer: String?
+    var director: String?
 
     static func ==(lhs: Event, rhs: Event) -> Bool {
         return lhs.id == rhs.id
@@ -33,6 +35,8 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
         self.category = aDecoder.decodeObject(forKey: "category") as! Category
         self.startingDate = aDecoder.decodeObject(forKey: "startingDate") as! EventDate
         self.endingDate = aDecoder.decodeObject(forKey: "endingDate") as! EventDate
+        self.excerpt = aDecoder.decodeObject(forKey: "producer") as! String?
+        self.excerpt = aDecoder.decodeObject(forKey: "director") as! String?
     }
 
     func encode(with aCoder: NSCoder) {
@@ -45,6 +49,8 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
         aCoder.encode(category, forKey: "category")
         aCoder.encode(startingDate, forKey: "startingDate")
         aCoder.encode(endingDate, forKey: "endingDate")
+        aCoder.encode(producer, forKey: "producer")
+        aCoder.encode(director, forKey: "director")
     }
 
     func getUIImage() -> UIImage {

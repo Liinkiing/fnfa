@@ -111,7 +111,7 @@
                                         <real key="value" value="28"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="timelineLabel" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="timelineLabelValue" value="Mardi 5"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="timelineLabelValue" value="Mercredi 04"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbt-DZ-lEr">

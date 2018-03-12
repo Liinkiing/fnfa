@@ -59,7 +59,11 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
     @IBInspectable  var thumbSize           : CGFloat = 32
     @IBInspectable  var timelineMode        : Bool = false
     @IBInspectable  var timelineLabel       : Bool = false
-    @IBInspectable  var timelineLabelValue  : String = "default"
+    @IBInspectable  var timelineLabelValue  : String = "default" {
+        didSet {
+            label?.text = timelineLabelValue
+        }
+    }
     @IBInspectable  var timelineSteps       : Int = 5
     @IBInspectable  var timelineInitSteps   : Int = 1
     @IBInspectable  var LineColor           : UIColor = UIColor.black
@@ -157,6 +161,7 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
         
         ctx?.strokePath()
     }
+    
     
     
     
@@ -442,12 +447,16 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
                 let sumCircle = CGFloat(newStep-2) * (2 * circleRadius)
                 let sumDash = CGFloat(newStep-1) * intervalBetweenCircles
                 let lineSize = sumCircle + sumDash
+                let labelPos = lineSize + 4*circleRadius
                 let lineCenter = lineSize/2 + (2 * circleRadius) + 1
                 UIView.animate(withDuration: 0.5, animations: {
                     self.line!.bounds.size.width = lineSize
                 }, completion: nil)
                 UIView.animate(withDuration: 0.5, animations: {
                     self.line?.center = CGPoint(x: lineCenter, y: self.verticalPosition + self.circleRadius)
+                }, completion: nil)
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.label?.center = CGPoint(x: labelPos, y: self.labelHeight)
                 }, completion: nil)
                 drawCircles(nbCirclesToDraw: newStep, timelineWidth: width )
             }
@@ -567,6 +576,8 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
             let lineSize = sumCircle + sumDash
             let labelPos = lineSize + 4*circleRadius
             label = UILabel(frame: CGRect(x:0, y:labelHeight, width: 100, height: 15))
+            label?.adjustsFontSizeToFitWidth = true
+            label?.minimumScaleFactor = 0.5
             label!.center = CGPoint(x: labelPos + 1, y: labelHeight)
             label!.textAlignment = NSTextAlignment.center
             label!.textColor = LineColor

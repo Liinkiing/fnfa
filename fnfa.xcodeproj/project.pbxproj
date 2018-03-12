@@ -20,6 +20,8 @@
 		3AF260442035C3BA00D7E022 /* ProgrammeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260432035C3BA00D7E022 /* ProgrammeViewController.swift */; };
 		3AF260462035C3C100D7E022 /* Programme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF260452035C3C100D7E022 /* Programme.storyboard */; };
 		944ABB5B3A83C70F3A0BD1D2 /* Pods_fnfa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE1B9ACA7C0551D06906509 /* Pods_fnfa.framework */; };
+		A55722B92056871000BBF2E9 /* LieuxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55722B82056871000BBF2E9 /* LieuxViewController.swift */; };
+		A55722BF2056875000BBF2E9 /* Lieux.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55722BE2056875000BBF2E9 /* Lieux.storyboard */; };
 		AF801751203CECBE00233FB9 /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF801750203CECBE00233FB9 /* FilterButton.swift */; };
 		AF9AA6F2203916EC000A1BF4 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9AA6F0203916EC000A1BF4 /* EventCollectionViewCell.swift */; };
 		AF9AA6F3203916EC000A1BF4 /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF9AA6F1203916EC000A1BF4 /* EventCollectionViewCell.xib */; };
@@ -89,6 +91,8 @@
 		3AF260432035C3BA00D7E022 /* ProgrammeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeViewController.swift; sourceTree = "<group>"; };
 		3AF260452035C3C100D7E022 /* Programme.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Programme.storyboard; sourceTree = "<group>"; };
 		7DE1B9ACA7C0551D06906509 /* Pods_fnfa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fnfa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A55722B82056871000BBF2E9 /* LieuxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LieuxViewController.swift; sourceTree = "<group>"; };
+		A55722BE2056875000BBF2E9 /* Lieux.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lieux.storyboard; sourceTree = "<group>"; };
 		AF801750203CECBE00233FB9 /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		AF9AA6F0203916EC000A1BF4 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF9AA6F1203916EC000A1BF4 /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 		3AF2602A2035C18100D7E022 /* fnfa */ = {
 			isa = PBXGroup;
 			children = (
+				A55722BD2056872400BBF2E9 /* Lieux */,
 				3A3DFF18205683DA00340835 /* Tarifs */,
 				3A79996B203EC0F700036941 /* TimeLine */,
 				AFF894BF203C4A7B00AA1387 /* Assets.xcassets */,
@@ -242,6 +247,16 @@
 				D28F6579E1123505B8D33BD6 /* Pods-fnfa.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A55722BD2056872400BBF2E9 /* Lieux */ = {
+			isa = PBXGroup;
+			children = (
+				A55722B82056871000BBF2E9 /* LieuxViewController.swift */,
+				A55722BE2056875000BBF2E9 /* Lieux.storyboard */,
+			);
+			name = Lieux;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		FBD9168F459F7DA4FEC9E16F /* Data */ = {
@@ -365,6 +380,7 @@
 				3AF260462035C3C100D7E022 /* Programme.storyboard in Resources */,
 				AFCDE2BB203A6B0000D57078 /* NoItemCollectionViewCell.xib in Resources */,
 				AF9AA6F3203916EC000A1BF4 /* EventCollectionViewCell.xib in Resources */,
+				A55722BF2056875000BBF2E9 /* Lieux.storyboard in Resources */,
 				3A3DFF1D205683EB00340835 /* Tarifs.storyboard in Resources */,
 				3AF260412035C23200D7E022 /* Agenda.storyboard in Resources */,
 				AFF894C6203C4D9800AA1387 /* ProgrammeCollectionViewCell.xib in Resources */,
@@ -456,6 +472,7 @@
 				FBD91759918FEEEEDE7F709F /* DataMapper.swift in Sources */,
 				FBD91BA9775BA429CB0F1C6E /* IdProtocol.swift in Sources */,
 				3A799973203EC0F700036941 /* LineView.swift in Sources */,
+				A55722B92056871000BBF2E9 /* LieuxViewController.swift in Sources */,
 				3A799972203EC0F700036941 /* circleView.swift in Sources */,
 				FBD91186237305BFD8410EE0 /* NameProtocol.swift in Sources */,
 				FBD916A38D771EF8DA38C878 /* Extensions.swift in Sources */,

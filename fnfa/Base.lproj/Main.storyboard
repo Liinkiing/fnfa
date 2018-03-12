@@ -21,13 +21,24 @@
                     </tabBar>
                     <connections>
                         <segue destination="K20-Oa-KBU" kind="relationship" relationship="viewControllers" id="LdH-uD-She"/>
-                        <segue destination="qz7-LH-hcF" kind="relationship" relationship="viewControllers" id="bn7-gg-4un"/>
                         <segue destination="aKi-st-lUk" kind="relationship" relationship="viewControllers" id="AjQ-M8-oBb"/>
+                        <segue destination="qz7-LH-hcF" kind="relationship" relationship="viewControllers" id="bn7-gg-4un"/>
+                        <segue destination="ljr-3D-eRe" kind="relationship" relationship="viewControllers" id="HBL-Zp-26l"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5D3-kz-JnD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1252" y="-253"/>
+        </scene>
+        <!--Lieux-->
+        <scene sceneID="Laa-MN-O3x">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Lieux" id="ljr-3D-eRe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="4KY-iv-YDV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRH-d3-PoY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164" y="-409"/>
         </scene>
         <!--Agenda-->
         <scene sceneID="iM8-mI-Yrr">
@@ -37,7 +48,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Jj-Rf-Mpu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-322" y="-39"/>
+            <point key="canvasLocation" x="-154" y="22"/>
         </scene>
         <!--Tarifs-->
         <scene sceneID="mbl-CJ-0VS">
@@ -47,7 +58,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AQT-AC-dGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-146" y="142"/>
+            <point key="canvasLocation" x="-162" y="-193"/>
         </scene>
         <!--Programme-->
         <scene sceneID="qXk-xw-Y8d">
@@ -57,7 +68,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7M-pp-mOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-311" y="-700"/>
+            <point key="canvasLocation" x="-134" y="-586"/>
         </scene>
     </scenes>
 </document>

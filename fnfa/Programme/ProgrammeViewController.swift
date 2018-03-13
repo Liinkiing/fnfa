@@ -29,6 +29,12 @@ class ProgrammeViewController: UIViewController, UICollectionViewDelegate {
         }
         programmeDataSource.events = programmeDataSource.filter()
         programmeCollectionView.reloadData()
+        programmeCollectionView.performBatchUpdates({
+            
+        }) { (finished) in
+            self.updateTimeline()
+        }
+        
     }
     
     

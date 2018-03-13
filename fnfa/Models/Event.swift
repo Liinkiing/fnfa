@@ -13,7 +13,7 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
     var name: String?
     var excerpt: String?
     var image: String
-    var age: Int?
+    var audience: Int?
     var places: [Place]?
     var category: Category
     var startingDate: EventDate
@@ -30,7 +30,7 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
         self.name = aDecoder.decodeObject(forKey: "name") as! String?
         self.excerpt = aDecoder.decodeObject(forKey: "excerpt") as! String?
         self.image = aDecoder.decodeObject(forKey: "image") as! String
-        self.age = aDecoder.decodeObject(forKey: "age") as! Int?
+        self.audience = aDecoder.decodeObject(forKey: "audience") as! Int?
         self.places = aDecoder.decodeObject(forKey: "places") as! [Place]?
         self.category = aDecoder.decodeObject(forKey: "category") as! Category
         self.startingDate = aDecoder.decodeObject(forKey: "startingDate") as! EventDate
@@ -44,7 +44,7 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
         aCoder.encode(name, forKey: "name")
         aCoder.encode(excerpt, forKey: "excerpt")
         aCoder.encode(image, forKey: "image")
-        aCoder.encode(age, forKey: "age")
+        aCoder.encode(audience, forKey: "audience")
         aCoder.encode(places, forKey: "places")
         aCoder.encode(category, forKey: "category")
         aCoder.encode(startingDate, forKey: "startingDate")
@@ -53,11 +53,8 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
         aCoder.encode(director, forKey: "director")
     }
 
-    func getUIImage() -> UIImage {
-        if (image == "random") {
+    func getPlaceholderImage() -> UIImage {
             return [#imageLiteral(resourceName: "motif-afca-3"), #imageLiteral(resourceName: "motif-afca-5"), #imageLiteral(resourceName: "motif-afca-8"), #imageLiteral(resourceName: "motif-afca-17"), #imageLiteral(resourceName: "motif-afca-14")].random()
-        }
-        return UIImage(named: image )!
     }
     
     override var description: String {

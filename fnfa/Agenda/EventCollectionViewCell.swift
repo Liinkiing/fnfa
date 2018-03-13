@@ -38,7 +38,7 @@ class EventCollectionViewCell: UICollectionViewCell {
             df.setLocalizedDateFormatFromTemplate("HH'h'mm")
             let start = df.string(from: (event?.startingDate.getDate())!)
             let end = df.string(from: (event?.endingDate.getDate())!)
-            eventImage.image = event?.getUIImage()
+            eventImage.image = event?.getPlaceholderImage()
             labelTitle.text = event?.name
             labelExcerpt.text = event?.excerpt
             labelPlace.text = event?.places?.first?.name

@@ -1,12 +1,17 @@
 PODS:
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
   - UPCarouselFlowLayout (1.1.1)
 
 DEPENDENCIES:
+  - SDWebImage (~> 4.0)
   - UPCarouselFlowLayout (~> 1.1)
 
 SPEC CHECKSUMS:
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
   UPCarouselFlowLayout: 02045c1505d63057fba3d9975be880a8d16bf17d
 
-PODFILE CHECKSUM: 9fbf3cfbeb15b9917df9fa419e65ece799366162
+PODFILE CHECKSUM: 31f8305f2d92673675d27e75417be64463a6560f
 
 COCOAPODS: 1.4.0

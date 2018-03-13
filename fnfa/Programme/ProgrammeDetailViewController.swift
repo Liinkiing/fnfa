@@ -26,14 +26,18 @@ class ProgrammeDetailViewController: UIViewController {
     }
     
     func setup() {
-        imageView.image = event?.getUIImage()
+        if(event?.image == "random") {
+            imageView.image = event?.getPlaceholderImage()
+        } else {
+            imageView.sd_setImage(with: URL(string: (event?.image)!), placeholderImage: event?.getPlaceholderImage())
+        }
         title = event?.name
         labelPlace.text = event?.places?.first?.name
         let df = DateFormatter()
         df.setLocalizedDateFormatFromTemplate("HH:mm")
         labelDuration.text = "\(df.string(from: (event?.startingDate.getDate())!)) - \(df.string(from: (event?.endingDate.getDate())!))"
         labelExcerpt.text = event?.excerpt
-        labelAudience.text = (event?.age != nil ? "A partir de \((event?.age!)!) ans" : "Pour tous public")
+        labelAudience.text = (event?.audience != nil ? "A partir de \((event?.audience!)!) ans" : "Pour tous public")
         labelDirector.text = event?.director
         labelProducer.text = event?.producer
     }

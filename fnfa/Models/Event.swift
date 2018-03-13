@@ -20,6 +20,7 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
     var endingDate: EventDate
     var producer: String?
     var director: String?
+    var url: String?
 
     static func ==(lhs: Event, rhs: Event) -> Bool {
         return lhs.id == rhs.id
@@ -37,6 +38,7 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
         self.endingDate = aDecoder.decodeObject(forKey: "endingDate") as! EventDate
         self.excerpt = aDecoder.decodeObject(forKey: "producer") as! String?
         self.excerpt = aDecoder.decodeObject(forKey: "director") as! String?
+        self.url = aDecoder.decodeObject(forKey: "url") as! String?
     }
 
     func encode(with aCoder: NSCoder) {
@@ -51,6 +53,7 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
         aCoder.encode(endingDate, forKey: "endingDate")
         aCoder.encode(producer, forKey: "producer")
         aCoder.encode(director, forKey: "director")
+        aCoder.encode(url, forKey: "url")
     }
 
     func getPlaceholderImage() -> UIImage {

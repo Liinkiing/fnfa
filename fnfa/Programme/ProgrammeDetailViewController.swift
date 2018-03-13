@@ -42,6 +42,12 @@ class ProgrammeDetailViewController: UIViewController {
         labelProducer.text = event?.producer
     }
 
+    @IBAction func onButtonMoreTapped(_ sender: UIButton) {
+        if let url = URL(string: (event?.url)!) {
+            UIApplication.shared.open(url)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

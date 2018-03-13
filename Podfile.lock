@@ -1,12 +1,15 @@
 PODS:
+  - ISHPullUp (1.0.6)
   - UPCarouselFlowLayout (1.1.1)
 
 DEPENDENCIES:
+  - ISHPullUp (~> 1.0)
   - UPCarouselFlowLayout (~> 1.1)
 
 SPEC CHECKSUMS:
+  ISHPullUp: 0ce08aeef21a034ab883b22c5810015853dda6f8
   UPCarouselFlowLayout: 02045c1505d63057fba3d9975be880a8d16bf17d
 
-PODFILE CHECKSUM: 9fbf3cfbeb15b9917df9fa419e65ece799366162
+PODFILE CHECKSUM: 05479e73e5eca899218bb537fb44aac4253b7431
 
 COCOAPODS: 1.4.0

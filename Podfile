@@ -7,5 +7,6 @@ target 'fnfa' do
 
   # Pods for fnfa
   pod 'UPCarouselFlowLayout', '~> 1.1'
+  pod 'ISHPullUp', '~> 1.0'
 
 end

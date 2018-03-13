@@ -22,6 +22,9 @@
 		944ABB5B3A83C70F3A0BD1D2 /* Pods_fnfa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE1B9ACA7C0551D06906509 /* Pods_fnfa.framework */; };
 		A55722B92056871000BBF2E9 /* LieuxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55722B82056871000BBF2E9 /* LieuxViewController.swift */; };
 		A55722BF2056875000BBF2E9 /* Lieux.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55722BE2056875000BBF2E9 /* Lieux.storyboard */; };
+		A55722C72056D24000BBF2E9 /* BottomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55722C32056D24000BBF2E9 /* BottomVC.swift */; };
+		A55722C92056D24400BBF2E9 /* ContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55722C82056D24400BBF2E9 /* ContentVC.swift */; };
+		A55722CB2056DCDD00BBF2E9 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55722CA2056DCDD00BBF2E9 /* Annotation.swift */; };
 		AF801751203CECBE00233FB9 /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF801750203CECBE00233FB9 /* FilterButton.swift */; };
 		AF9AA6F2203916EC000A1BF4 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9AA6F0203916EC000A1BF4 /* EventCollectionViewCell.swift */; };
 		AF9AA6F3203916EC000A1BF4 /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF9AA6F1203916EC000A1BF4 /* EventCollectionViewCell.xib */; };
@@ -93,6 +96,9 @@
 		7DE1B9ACA7C0551D06906509 /* Pods_fnfa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fnfa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55722B82056871000BBF2E9 /* LieuxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LieuxViewController.swift; sourceTree = "<group>"; };
 		A55722BE2056875000BBF2E9 /* Lieux.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lieux.storyboard; sourceTree = "<group>"; };
+		A55722C32056D24000BBF2E9 /* BottomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomVC.swift; sourceTree = "<group>"; };
+		A55722C82056D24400BBF2E9 /* ContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentVC.swift; sourceTree = "<group>"; };
+		A55722CA2056DCDD00BBF2E9 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 		AF801750203CECBE00233FB9 /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		AF9AA6F0203916EC000A1BF4 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF9AA6F1203916EC000A1BF4 /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -253,6 +259,9 @@
 			isa = PBXGroup;
 			children = (
 				A55722B82056871000BBF2E9 /* LieuxViewController.swift */,
+				A55722C32056D24000BBF2E9 /* BottomVC.swift */,
+				A55722C82056D24400BBF2E9 /* ContentVC.swift */,
+				A55722CA2056DCDD00BBF2E9 /* Annotation.swift */,
 				A55722BE2056875000BBF2E9 /* Lieux.storyboard */,
 			);
 			name = Lieux;
@@ -403,10 +412,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-fnfa/Pods-fnfa-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ISHPullUp/ISHPullUp.framework",
 				"${BUILT_PRODUCTS_DIR}/UPCarouselFlowLayout/UPCarouselFlowLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISHPullUp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UPCarouselFlowLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,15 +477,18 @@
 				FBD91EE95CF7BE307D24FCC4 /* Date.swift in Sources */,
 				FBD91493F3C188E7149A19BE /* Event.swift in Sources */,
 				AFCDE2BA203A6B0000D57078 /* NoItemCollectionViewCell.swift in Sources */,
+				A55722C72056D24000BBF2E9 /* BottomVC.swift in Sources */,
 				3A799974203EC0F700036941 /* TimeLineControl.swift in Sources */,
 				FBD91E79AD1400659FE15AA4 /* Place.swift in Sources */,
 				FBD91A6BDC790E1C8C2C88AA /* Category.swift in Sources */,
+				A55722CB2056DCDD00BBF2E9 /* Annotation.swift in Sources */,
 				FBD91759918FEEEEDE7F709F /* DataMapper.swift in Sources */,
 				FBD91BA9775BA429CB0F1C6E /* IdProtocol.swift in Sources */,
 				3A799973203EC0F700036941 /* LineView.swift in Sources */,
 				A55722B92056871000BBF2E9 /* LieuxViewController.swift in Sources */,
 				3A799972203EC0F700036941 /* circleView.swift in Sources */,
 				FBD91186237305BFD8410EE0 /* NameProtocol.swift in Sources */,
+				A55722C92056D24400BBF2E9 /* ContentVC.swift in Sources */,
 				FBD916A38D771EF8DA38C878 /* Extensions.swift in Sources */,
 				FBD91821DBE596FA810DE019 /* Utils.swift in Sources */,
 				FBD91BCF79065D2B51E6213D /* EventsDataSource.swift in Sources */,

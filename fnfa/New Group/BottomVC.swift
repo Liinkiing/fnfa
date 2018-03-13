@@ -2,33 +2,32 @@
 //  ScrollViewController.swift
 //  ISHPullUpSample
 //
-//  Created by Felix Lamouroux on 25.06.16.
-//  Copyright © 2016 iosphere GmbH. All rights reserved.
+//  Created by Yann Cherif on 12/03/2018.
+//  Copyright © 2018 Yann Cherif. All rights reserved.
 //
-
 import UIKit
 import ISHPullUp
 import MapKit
 
-class BottomVC: UIViewController, ISHPullUpSizingDelegate, ISHPullUpStateDelegate, UITableViewDelegate, UITableViewDataSource {
+class BottomVC: UIViewController, ISHPullUpSizingDelegate, ISHPullUpStateDelegate, UITableViewDelegate {
     @IBOutlet private weak var handleView: ISHPullUpHandleView!
     @IBOutlet private weak var rootView: UIView!
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet private weak var topLabel: UILabel!
     @IBOutlet private weak var topView: UIView!
-    @IBOutlet private weak var buttonLock: UIButton?
+    
+    var lieuxDataSource: LieuxDataSource
+    var arrayDataSources : Array<Place>
 
     private var firstAppearanceCompleted = false
     weak var pullUpController: ISHPullUpViewController!
     
-    
-    
-    
-    
-    let listLieux : Array = ["First", "Bitch", "Suce"]
-    
-    
+    required init?(coder aDecoder: NSCoder) {
+        arrayDataSources = DataMapper.instance.places
+        lieuxDataSource = LieuxDataSource(places: arrayDataSources)
+        super.init(coder: aDecoder)
+    }
     
     
     
@@ -44,6 +43,9 @@ class BottomVC: UIViewController, ISHPullUpSizingDelegate, ISHPullUpStateDelegat
         super.viewDidLoad()
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture))
         topView.addGestureRecognizer(tapGesture)
+        tableView.dataSource = lieuxDataSource
+        tableView.reloadData()
+        topLabel.text = arrayDataSources[0].name
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -52,18 +54,9 @@ class BottomVC: UIViewController, ISHPullUpSizingDelegate, ISHPullUpStateDelegat
     }
 
     @objc private dynamic func handleTapGesture(gesture: UITapGestureRecognizer) {
-        if pullUpController.isLocked {
-            return
-        }
-
         pullUpController.toggleState(animated: true)
     }
 
-
-    @IBAction private func buttonTappedLock(_ sender: AnyObject) {
-        pullUpController.isLocked  = !pullUpController.isLocked
-        buttonLock?.setTitle(pullUpController.isLocked ? "Unlock" : "Lock", for: .normal)
-    }
 
     // MARK: ISHPullUpSizingDelegate
 
@@ -123,18 +116,12 @@ class BottomVC: UIViewController, ISHPullUpSizingDelegate, ISHPullUpStateDelegat
         }
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell")!
-        cell.textLabel?.text = listLieux[indexPath.row]
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listLieux.count
-    }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         pullUpController.toggleState(animated: true)
+        let index : Int8 = Int8(indexPath.row)
+        let lieu = arrayDataSources[Int(index)]
+        NotificationCenter.default.post(name: .selectAPlace, object: nil, userInfo: [AnyHashable("place"): lieu])
     }
 }
 
@@ -143,4 +130,9 @@ class ModalViewController: UIViewController {
     @IBAction func buttonTappedDone(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
+}
+
+extension Notification.Name {
+    
+    static let selectAPlace = Notification.Name("selectAPlace")
 }

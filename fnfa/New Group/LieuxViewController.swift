@@ -3,7 +3,7 @@
 //  fnfa
 //
 //  Created by Yann Cherif on 12/03/2018.
-//  Copyright © 2018 JBARA Omar. All rights reserved.
+//  Copyright © 2018 Yann Cherif. All rights reserved.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ import MapKit
 import ISHPullUp
 
 class LieuxViewController: ISHPullUpViewController {
-
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()

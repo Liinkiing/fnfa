@@ -23,38 +23,35 @@ class LieuxTableViewCell: UITableViewCell {
     var place : Place? {
         didSet {
             if let title = place?.name {
+                titleLabel.isHidden = false
                 titleLabel.text = title
             } else {
-                titleLabel.removeFromSuperview()
+                titleLabel.isHidden = true
             }
             if let adresse = place?.adresse {
+                labelAdresse.isHidden = false
                 labelAdresse.text = adresse
             } else {
-                labelAdresse.removeFromSuperview()
+                labelAdresse.isHidden = true
             }
             if let phone = place?.phone {
+                labelPhone.isHidden = false
                 labelPhone.text = phone
             } else {
-                labelPhone.removeFromSuperview()
+                labelPhone.isHidden = true
             }
-            
             if let stops = place?.stops {
+                stopsLabel.isHidden = false
                 stopsLabel.text = stops
             } else {
-                stopsLabel.removeFromSuperview()
+                stopsLabel.isHidden = true
             }
             if let horaire = place?.schedule {
+                scheduleLabel.isHidden = false
                 scheduleLabel.text = horaire
             } else {
-                scheduleLabel.removeFromSuperview()
+                scheduleLabel.isHidden = true
             }
         }
     }
-    
-    override func awakeFromNib() {
-//        buttonFav.setImage(#imageLiteral(resourceName: "like"), for: .normal)
-//        buttonFav.setImage(#imageLiteral(resourceName: "like_fill"), for: .selected)
-    }
-
-
 }

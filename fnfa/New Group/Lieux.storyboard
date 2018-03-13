@@ -109,7 +109,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
-                                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" red="0.019607843140000001" green="0.87058823529999996" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
@@ -121,7 +121,7 @@
                                             <constraint firstItem="Jly-yC-ffF" firstAttribute="centerX" secondItem="xRx-YR-ZVJ" secondAttribute="centerX" id="LGy-Vf-aSb"/>
                                             <constraint firstItem="Jly-yC-ffF" firstAttribute="top" secondItem="xRx-YR-ZVJ" secondAttribute="top" constant="6" id="O8K-W0-l4c"/>
                                             <constraint firstItem="R33-gM-BJW" firstAttribute="centerX" secondItem="xRx-YR-ZVJ" secondAttribute="centerX" id="iXc-wj-aG7"/>
-                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="R33-gM-BJW" secondAttribute="bottom" constant="5" id="toU-OV-B7V"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="R33-gM-BJW" secondAttribute="bottom" constant="3" id="toU-OV-B7V"/>
                                             <constraint firstItem="R33-gM-BJW" firstAttribute="top" secondItem="Jly-yC-ffF" secondAttribute="bottom" constant="2" id="vuL-WH-rQA"/>
                                             <constraint firstItem="R33-gM-BJW" firstAttribute="centerY" secondItem="xRx-YR-ZVJ" secondAttribute="centerY" id="zDa-HH-m7a"/>
                                         </constraints>

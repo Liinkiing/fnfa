@@ -6,6 +6,7 @@
 //  Copyright © 2018 Yann Cherif. All rights reserved.
 //
 import MapKit
+import Contacts
 
 class Annotation: NSObject, MKAnnotation {
     let title: String?
@@ -24,5 +25,13 @@ class Annotation: NSObject, MKAnnotation {
     
     var subtitle: String? {
         return locationName
+    }
+    
+    func mapItem() -> MKMapItem {
+        let addressDict = [CNPostalAddressStreetKey: subtitle!]
+        let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: addressDict)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = title
+        return mapItem
     }
 }

@@ -61,7 +61,7 @@ class BottomVC: UIViewController, ISHPullUpSizingDelegate, ISHPullUpStateDelegat
     // MARK: ISHPullUpSizingDelegate
 
     func pullUpViewController(_ pullUpViewController: ISHPullUpViewController, maximumHeightForBottomViewController bottomVC: UIViewController, maximumAvailableHeight: CGFloat) -> CGFloat {
-        let totalHeight = CGFloat(600)
+        let totalHeight = CGFloat(maximumAvailableHeight - 30)
 
         // we allow the pullUp to snap to the half way point
         // we "calculate" the cached value here 
@@ -93,7 +93,7 @@ class BottomVC: UIViewController, ISHPullUpSizingDelegate, ISHPullUpStateDelegat
     // MARK: ISHPullUpStateDelegate
 
     func pullUpViewController(_ pullUpViewController: ISHPullUpViewController, didChangeTo state: ISHPullUpState) {
-        topLabel.text = textForState(state);
+        
         handleView.setState(ISHPullUpHandleView.handleState(for: state), animated: firstAppearanceCompleted)
 
         // Hide the scrollview in the collapsed state to avoid collision
@@ -119,9 +119,9 @@ class BottomVC: UIViewController, ISHPullUpSizingDelegate, ISHPullUpStateDelegat
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         pullUpController.toggleState(animated: true)
-        let index : Int8 = Int8(indexPath.row)
-        let lieu = arrayDataSources[Int(index)]
-        NotificationCenter.default.post(name: .selectAPlace, object: nil, userInfo: [AnyHashable("place"): lieu])
+        let place = arrayDataSources[indexPath.row]
+        topLabel.text = place.name
+        NotificationCenter.default.post(name: .selectAPlace, object: nil, userInfo: [AnyHashable("place"): place])
     }
 }
 

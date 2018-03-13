@@ -7,90 +7,112 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00DC8FD74F31F1844539CA68A609CCCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		048EB4805D1CD0DA1ABEACE8D4E64F0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		069832029C78C6200DBD9B9C4B92D955 /* ISHPullUpHandleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 93A780E4A84FD364DA2A627957C95938 /* ISHPullUpHandleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15A23266EE4EB980A5E438D151E3038C /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 87FAC0C18C8D4102CA0E28A4D6312EE8 /* Info.plist */; };
-		1ACCC9B448EC9C3FC2FD7EFA1E7768F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		1E871B921C46AAC053600F00B0B1DB24 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC621EE4948CB696A3AB1C92818906E /* UPCarouselFlowLayout.swift */; };
-		23905156BA3D5349E3A00CCEE6009D5B /* ISHPullUpViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7F38B3ED633A6D0A3585564C27C5DF /* ISHPullUpViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35C6ADA0C219C7213E0ACABA979CCCB7 /* ISHPullUp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D59A892171A936D36BF7F226BCDE6FE9 /* ISHPullUp-dummy.m */; };
-		36D9D51B5BABEDF10137291833F80DB1 /* ISHPullUpRoundedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 43575726C5C2FAAF2D27AD59FEE39DDE /* ISHPullUpRoundedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3767D7208BD377AFC58BAAC3CA933BDF /* ISHPullUpRoundedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15C0E5D0544FB1005E4EE7710F8A033 /* ISHPullUpRoundedView.m */; };
-		4D4A1B8BCFEFB78C161CA9B979A76264 /* ISHPullUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B51C56AA8217547BA81B33271541AE9C /* ISHPullUpViewController.m */; };
-		675D51B3A1CB0DCD3C0FF6E2B1E74B85 /* ISHPullUpHandleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3307A6347D3AD46C6522E912A6ECA5A5 /* ISHPullUpHandleView.m */; };
-		A83F4EBDF30832DB45603DA3811285AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		069832029C78C6200DBD9B9C4B92D955 /* ISHPullUpHandleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9855CB498661AA419EEB2C41856DEE14 /* ISHPullUpHandleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10D1AFA5CA44523C912C2874BEE08073 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		23905156BA3D5349E3A00CCEE6009D5B /* ISHPullUpViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AD4D99DCCABE9C40C0452E2AF3BB39BF /* ISHPullUpViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B117AEDA5A4AD375CFB62ECE1089868 /* ISHHoverBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 152EEBC28375838FF2948328CAAB3A4A /* ISHHoverBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35C6ADA0C219C7213E0ACABA979CCCB7 /* ISHPullUp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DE6803E6FA88AC48C1E359ACFA7BDC /* ISHPullUp-dummy.m */; };
+		36D9D51B5BABEDF10137291833F80DB1 /* ISHPullUpRoundedView.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B248CD2D55CCDBB041B729ABA795E6 /* ISHPullUpRoundedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3767D7208BD377AFC58BAAC3CA933BDF /* ISHPullUpRoundedView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B64E437AC414D7E48464BEAE6EBFF3 /* ISHPullUpRoundedView.m */; };
+		43C46353B6C112FD963394617B60DA84 /* UPCarouselFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D2077CC491DE2C7A822792E6F59BA8 /* UPCarouselFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D4A1B8BCFEFB78C161CA9B979A76264 /* ISHPullUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5B3778815C55CE5EE6360A4236F6FE /* ISHPullUpViewController.m */; };
+		55DF505A48A675136B6FA34BABAB6F94 /* ISHHoverBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A90714035D6432111B8868ACE09E4EBC /* ISHHoverBar.m */; };
+		651246C2CF1D0DBBF6DDA1128B3A341C /* UPCarouselFlowLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A10922D4BC3B87203B124A967EA0DA85 /* UPCarouselFlowLayout-dummy.m */; };
+		675D51B3A1CB0DCD3C0FF6E2B1E74B85 /* ISHPullUpHandleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E756EF2B93311C52BD8D69828DCAA9 /* ISHPullUpHandleView.m */; };
+		6C1C3C67CF1C3FE86B0E65FDD92F1510 /* Pods-fnfa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B961FADD700C723728173C6288E12F /* Pods-fnfa-dummy.m */; };
+		9902962067D508D0A850A7699A3A77C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		AC4DAA23FBCF12EA03425F3AAB73C7CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		D00A301FD4760BBC9FDE2E15451BFC5C /* UPCarouselFlowLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCAFB5391C6BDC5B40E9F9BA3A7BE6D6 /* UPCarouselFlowLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBADA8407D4A7974A2A68897BD479E67 /* UPCarouselFlowLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B70475CF0C4EE39B8EAD3D306BC0 /* UPCarouselFlowLayout-dummy.m */; };
-		DCF762D7FB66C89D0BBD46D11D89494E /* UPCarouselFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 1099B88E0FC1CDE7A404EC92FEB14D58 /* UPCarouselFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EBC684523F1E24DE769783FF09B05262 /* Pods-fnfa-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0F18CD13AEC92774566F29E602A9F9 /* Pods-fnfa-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6A296381554DA3C79506E09865EE68F /* ISHPullUp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F770605FD985E06989D8A4796BA8F2A5 /* ISHPullUp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAA57673722546D58956BE1BF82465F9 /* Pods-fnfa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B961FADD700C723728173C6288E12F /* Pods-fnfa-dummy.m */; };
+		B5936036FB6210E416A07D7E0A562F5F /* UPCarouselFlowLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FE9B394DFC608FFF192586C1068C78F /* UPCarouselFlowLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9F2566DD7B29B412C8961EE2E734622 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		DB6B00CCBE7DB50BA3198BABF257AE89 /* ISHHoverBar.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D9D4CD450CF36EE63A3A9FFFC35D91 /* ISHHoverBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E35CADC8815914E877523D7720619C83 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = C8E3B7A452DF2514B54106176792BD72 /* Info.plist */; };
+		ED28C330FFFADFB3A3C3FCF92AB43FBA /* Pods-fnfa-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0F18CD13AEC92774566F29E602A9F9 /* Pods-fnfa-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3C96FB0D953C21BFC9F47C6233AD2F3 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B46C9F94C5BCB62222E89C2F9518C2E /* UPCarouselFlowLayout.swift */; };
+		F6A296381554DA3C79506E09865EE68F /* ISHPullUp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ACE4D17E26862F50275BE5E5DC75A40D /* ISHPullUp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FADAC333AF146511E0D17C274C73B9C6 /* ISHHoverBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C73733085451862016D9C51E8E6FEDD /* ISHHoverBar-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		491FF5FF62064D5A169F1D4DEB85BFD9 /* PBXContainerItemProxy */ = {
+		2BB6603C21AE4A08600F39D8F97820B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A2931E664883AB8E4C573BA11B58A917;
-			remoteInfo = UPCarouselFlowLayout;
+			remoteGlobalIDString = 0EB9E3E33D1BD3DBA85D570B0C330457;
+			remoteInfo = ISHHoverBar;
 		};
-		9384D9AAA28D16349B206A47757A8893 /* PBXContainerItemProxy */ = {
+		3C9DA1982A56A1777AE2316FDB5CAD18 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 30CE52C8B1E0F5CE940B973AEF41F6EB;
 			remoteInfo = ISHPullUp;
 		};
+		862CA6E9D6AC78025C4159A9481628D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C699172983CA548B9EA55F238C7F53D;
+			remoteInfo = UPCarouselFlowLayout;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		05799341494653B82FB64DA7165741B1 /* Pods-fnfa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fnfa.debug.xcconfig"; sourceTree = "<group>"; };
-		0AAF3F46CA89BD98AA2B75C73AF3423E /* UPCarouselFlowLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UPCarouselFlowLayout.modulemap; sourceTree = "<group>"; };
 		0C526E74E924DD6A75744F7419E1D49A /* Pods-fnfa-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fnfa-frameworks.sh"; sourceTree = "<group>"; };
-		1099B88E0FC1CDE7A404EC92FEB14D58 /* UPCarouselFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UPCarouselFlowLayout.h; path = UPCarouselFlowLayout/UPCarouselFlowLayout.h; sourceTree = "<group>"; };
+		13E756EF2B93311C52BD8D69828DCAA9 /* ISHPullUpHandleView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISHPullUpHandleView.m; path = ISHPullUp/ISHPullUpHandleView.m; sourceTree = "<group>"; };
+		152EEBC28375838FF2948328CAAB3A4A /* ISHHoverBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISHHoverBar-umbrella.h"; sourceTree = "<group>"; };
+		1655E600B66967AEA23A0804A7D04185 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16E5DC60BA8E0BA2816283B7E5B50903 /* Pods-fnfa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fnfa.release.xcconfig"; sourceTree = "<group>"; };
-		1D16EA359AD484863D0DD59FCB64A5B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3307A6347D3AD46C6522E912A6ECA5A5 /* ISHPullUpHandleView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISHPullUpHandleView.m; path = ISHPullUp/ISHPullUpHandleView.m; sourceTree = "<group>"; };
-		38DCBF330C78BB63CF36D1BF0436EE75 /* ISHPullUp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ISHPullUp.modulemap; sourceTree = "<group>"; };
+		274FCB418B400364D23A4303D9B361F3 /* UPCarouselFlowLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UPCarouselFlowLayout.xcconfig; sourceTree = "<group>"; };
+		2B46C9F94C5BCB62222E89C2F9518C2E /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UPCarouselFlowLayout.swift; path = UPCarouselFlowLayout/UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
+		3102E1EAF39B330CDC4B090BAB71CB00 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3936F1A67054633991C7653913F38246 /* ISHPullUp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISHPullUp-prefix.pch"; sourceTree = "<group>"; };
 		3BEF13D05842B58D09A9DC0DCD0BB664 /* Pods-fnfa-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-fnfa-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3D89F93657CFE5C06A93FB712ECC6E9C /* UPCarouselFlowLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UPCarouselFlowLayout-prefix.pch"; sourceTree = "<group>"; };
-		43575726C5C2FAAF2D27AD59FEE39DDE /* ISHPullUpRoundedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISHPullUpRoundedView.h; path = ISHPullUp/ISHPullUpRoundedView.h; sourceTree = "<group>"; };
+		3C73733085451862016D9C51E8E6FEDD /* ISHHoverBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ISHHoverBar-dummy.m"; sourceTree = "<group>"; };
 		4C9ADCE002D612CA57C7CF97E61BCEE6 /* Pods-fnfa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-fnfa.modulemap"; sourceTree = "<group>"; };
-		5B7F38B3ED633A6D0A3585564C27C5DF /* ISHPullUpViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISHPullUpViewController.h; path = ISHPullUp/ISHPullUpViewController.h; sourceTree = "<group>"; };
-		65E9FD36D8DD5CCEF5B4C61FA5A2BBE2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CF8952AE0293EFDD107D3D03DEDFB1F /* UPCarouselFlowLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UPCarouselFlowLayout.xcconfig; sourceTree = "<group>"; };
-		87FAC0C18C8D4102CA0E28A4D6312EE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = UPCarouselFlowLayout/Info.plist; sourceTree = "<group>"; };
+		621E3AFB7494D604DFC021B573FB390B /* ISHHoverBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISHHoverBar-prefix.pch"; sourceTree = "<group>"; };
+		62DE6803E6FA88AC48C1E359ACFA7BDC /* ISHPullUp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ISHPullUp-dummy.m"; sourceTree = "<group>"; };
+		65D2077CC491DE2C7A822792E6F59BA8 /* UPCarouselFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UPCarouselFlowLayout.h; path = UPCarouselFlowLayout/UPCarouselFlowLayout.h; sourceTree = "<group>"; };
+		7761F3CAFAB07960BC9010976939733C /* ISHPullUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ISHPullUp.framework; path = ISHPullUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE9B394DFC608FFF192586C1068C78F /* UPCarouselFlowLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UPCarouselFlowLayout-umbrella.h"; sourceTree = "<group>"; };
+		8C9C5D67ED5A860F08F13CF7C6821736 /* UPCarouselFlowLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UPCarouselFlowLayout.modulemap; sourceTree = "<group>"; };
 		8F04077DA930B98D8C39FCA2888AC401 /* Pods-fnfa-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fnfa-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93A780E4A84FD364DA2A627957C95938 /* ISHPullUpHandleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISHPullUpHandleView.h; path = ISHPullUp/ISHPullUpHandleView.h; sourceTree = "<group>"; };
 		9630B16DD3E4D1FC5E6EF35DA0ACF0C9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A15C0E5D0544FB1005E4EE7710F8A033 /* ISHPullUpRoundedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISHPullUpRoundedView.m; path = ISHPullUp/ISHPullUpRoundedView.m; sourceTree = "<group>"; };
+		9855CB498661AA419EEB2C41856DEE14 /* ISHPullUpHandleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISHPullUpHandleView.h; path = ISHPullUp/ISHPullUpHandleView.h; sourceTree = "<group>"; };
+		9DD1AABED98A0125D4269078FE84A53E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A10922D4BC3B87203B124A967EA0DA85 /* UPCarouselFlowLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UPCarouselFlowLayout-dummy.m"; sourceTree = "<group>"; };
 		A1B961FADD700C723728173C6288E12F /* Pods-fnfa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fnfa-dummy.m"; sourceTree = "<group>"; };
-		B51C56AA8217547BA81B33271541AE9C /* ISHPullUpViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISHPullUpViewController.m; path = ISHPullUp/ISHPullUpViewController.m; sourceTree = "<group>"; };
+		A3CBF4A29BE367E18E714494AFE4E5BA /* ISHPullUp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ISHPullUp.xcconfig; sourceTree = "<group>"; };
+		A552257EEBA9941828102F7F826B4C79 /* UPCarouselFlowLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UPCarouselFlowLayout-prefix.pch"; sourceTree = "<group>"; };
+		A90714035D6432111B8868ACE09E4EBC /* ISHHoverBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISHHoverBar.m; path = ISHHoverBar/ISHHoverBar.m; sourceTree = "<group>"; };
+		ACE4D17E26862F50275BE5E5DC75A40D /* ISHPullUp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISHPullUp-umbrella.h"; sourceTree = "<group>"; };
+		AD4D99DCCABE9C40C0452E2AF3BB39BF /* ISHPullUpViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISHPullUpViewController.h; path = ISHPullUp/ISHPullUpViewController.h; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C8D9D1EC13020D3EB91E2D7A91F474C0 /* ISHPullUp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISHPullUp-prefix.pch"; sourceTree = "<group>"; };
-		CCAFB5391C6BDC5B40E9F9BA3A7BE6D6 /* UPCarouselFlowLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UPCarouselFlowLayout-umbrella.h"; sourceTree = "<group>"; };
-		CE6F8B265784C865D84E4E62AF50A079 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UPCarouselFlowLayout.framework; path = UPCarouselFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D59A892171A936D36BF7F226BCDE6FE9 /* ISHPullUp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ISHPullUp-dummy.m"; sourceTree = "<group>"; };
-		D5BC54B1E56BFE868BA0204A89A6582D /* ISHPullUp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ISHPullUp.xcconfig; sourceTree = "<group>"; };
+		C2E23E564C85877E829B13C41C969CAC /* ISHPullUp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ISHPullUp.modulemap; sourceTree = "<group>"; };
+		C4D9D4CD450CF36EE63A3A9FFFC35D91 /* ISHHoverBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISHHoverBar.h; path = ISHHoverBar/ISHHoverBar.h; sourceTree = "<group>"; };
+		C8E3B7A452DF2514B54106176792BD72 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = UPCarouselFlowLayout/Info.plist; sourceTree = "<group>"; };
+		CB5B3778815C55CE5EE6360A4236F6FE /* ISHPullUpViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISHPullUpViewController.m; path = ISHPullUp/ISHPullUpViewController.m; sourceTree = "<group>"; };
+		D5B64E437AC414D7E48464BEAE6EBFF3 /* ISHPullUpRoundedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISHPullUpRoundedView.m; path = ISHPullUp/ISHPullUpRoundedView.m; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DC0F18CD13AEC92774566F29E602A9F9 /* Pods-fnfa-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-fnfa-umbrella.h"; sourceTree = "<group>"; };
-		EB56F9FDB37967424C6362DC9FF98E2A /* ISHPullUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ISHPullUp.framework; path = ISHPullUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EEC621EE4948CB696A3AB1C92818906E /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UPCarouselFlowLayout.swift; path = UPCarouselFlowLayout/UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
-		F694E3E7D650CA7248824A86EE8D58D2 /* Pods_fnfa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_fnfa.framework; path = "Pods-fnfa.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F770605FD985E06989D8A4796BA8F2A5 /* ISHPullUp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISHPullUp-umbrella.h"; sourceTree = "<group>"; };
-		FC15B70475CF0C4EE39B8EAD3D306BC0 /* UPCarouselFlowLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UPCarouselFlowLayout-dummy.m"; sourceTree = "<group>"; };
+		E8A491453B8247166B33DCCABA146767 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UPCarouselFlowLayout.framework; path = UPCarouselFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD70D6A2E243517F12CCC98E6859B3B /* Pods_fnfa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_fnfa.framework; path = "Pods-fnfa.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F14398C41FA9A7E4318E3D12667E8D12 /* ISHHoverBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ISHHoverBar.framework; path = ISHHoverBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F420E1C700F40788A47F95DF120E27E5 /* ISHHoverBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ISHHoverBar.xcconfig; sourceTree = "<group>"; };
+		F5B248CD2D55CCDBB041B729ABA795E6 /* ISHPullUpRoundedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISHPullUpRoundedView.h; path = ISHPullUp/ISHPullUpRoundedView.h; sourceTree = "<group>"; };
+		FA18B9459C746294EF129CAE6BCB17C6 /* ISHHoverBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ISHHoverBar.modulemap; sourceTree = "<group>"; };
 		FF1B0C6DE2ABE2B428D8883257465C36 /* Pods-fnfa-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fnfa-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		72B4FC3548A8B88503526D3AF29241B1 /* Frameworks */ = {
+		36C7F28A8C2546130DC91FE6B68579B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A83F4EBDF30832DB45603DA3811285AD /* Foundation.framework in Frameworks */,
+				10D1AFA5CA44523C912C2874BEE08073 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,29 +125,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA12B0053D654FCEA8E362267FC6BEB7 /* Frameworks */ = {
+		A0099355FD9C193854E930710F9943CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ACCC9B448EC9C3FC2FD7EFA1E7768F2 /* Foundation.framework in Frameworks */,
+				D9F2566DD7B29B412C8961EE2E734622 /* Foundation.framework in Frameworks */,
+				00DC8FD74F31F1844539CA68A609CCCE /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86F9ECA28603983FD8DB22B58D61521 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9902962067D508D0A850A7699A3A77C7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		400F4EC8F4F41374ACD9230F6DC00478 /* Support Files */ = {
+		252B0C70FADE89478D90F30991BBE050 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				65E9FD36D8DD5CCEF5B4C61FA5A2BBE2 /* Info.plist */,
-				38DCBF330C78BB63CF36D1BF0436EE75 /* ISHPullUp.modulemap */,
-				D5BC54B1E56BFE868BA0204A89A6582D /* ISHPullUp.xcconfig */,
-				D59A892171A936D36BF7F226BCDE6FE9 /* ISHPullUp-dummy.m */,
-				C8D9D1EC13020D3EB91E2D7A91F474C0 /* ISHPullUp-prefix.pch */,
-				F770605FD985E06989D8A4796BA8F2A5 /* ISHPullUp-umbrella.h */,
+				9DD1AABED98A0125D4269078FE84A53E /* Info.plist */,
+				8C9C5D67ED5A860F08F13CF7C6821736 /* UPCarouselFlowLayout.modulemap */,
+				274FCB418B400364D23A4303D9B361F3 /* UPCarouselFlowLayout.xcconfig */,
+				A10922D4BC3B87203B124A967EA0DA85 /* UPCarouselFlowLayout-dummy.m */,
+				A552257EEBA9941828102F7F826B4C79 /* UPCarouselFlowLayout-prefix.pch */,
+				7FE9B394DFC608FFF192586C1068C78F /* UPCarouselFlowLayout-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/ISHPullUp";
+			path = "../Target Support Files/UPCarouselFlowLayout";
+			sourceTree = "<group>";
+		};
+		31C4434FA4F25B07DC8D585D67E1D153 /* ISHPullUp */ = {
+			isa = PBXGroup;
+			children = (
+				9855CB498661AA419EEB2C41856DEE14 /* ISHPullUpHandleView.h */,
+				13E756EF2B93311C52BD8D69828DCAA9 /* ISHPullUpHandleView.m */,
+				F5B248CD2D55CCDBB041B729ABA795E6 /* ISHPullUpRoundedView.h */,
+				D5B64E437AC414D7E48464BEAE6EBFF3 /* ISHPullUpRoundedView.m */,
+				AD4D99DCCABE9C40C0452E2AF3BB39BF /* ISHPullUpViewController.h */,
+				CB5B3778815C55CE5EE6360A4236F6FE /* ISHPullUpViewController.m */,
+				ECC6DBD95D15122F27AB4A0D8D9A6F01 /* Support Files */,
+			);
+			name = ISHPullUp;
+			path = ISHPullUp;
 			sourceTree = "<group>";
 		};
 		407BDCD2DBFB73821C74E842C043B227 /* Pods-fnfa */ = {
@@ -163,34 +209,13 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		46CF9C394976375A9CB1B55922433102 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9CFEF585290E63E21D03A0779B4CE2E5 /* ISHPullUp */,
-				4F4ACD5347A1D30277760B6BED7B3BF0 /* UPCarouselFlowLayout */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		4F4ACD5347A1D30277760B6BED7B3BF0 /* UPCarouselFlowLayout */ = {
-			isa = PBXGroup;
-			children = (
-				87FAC0C18C8D4102CA0E28A4D6312EE8 /* Info.plist */,
-				1099B88E0FC1CDE7A404EC92FEB14D58 /* UPCarouselFlowLayout.h */,
-				EEC621EE4948CB696A3AB1C92818906E /* UPCarouselFlowLayout.swift */,
-				A5200E456F0496BECC1502520570984B /* Support Files */,
-			);
-			name = UPCarouselFlowLayout;
-			path = UPCarouselFlowLayout;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				46CF9C394976375A9CB1B55922433102 /* Pods */,
-				B1A9FD920DE6B2B3FF902B458A78C1CB /* Products */,
+				FAD944F09AE1ECD8AA062DCED7B9B6FF /* Pods */,
+				F3B6D42E9CEF78EB85F93C03A588C4A6 /* Products */,
 				8369EA028CAB96F94021598E73D55CF3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -203,62 +228,104 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9CFEF585290E63E21D03A0779B4CE2E5 /* ISHPullUp */ = {
+		A1B6E03328328DFEE1EC3A54CDABC4A6 /* ISHHoverBar */ = {
 			isa = PBXGroup;
 			children = (
-				93A780E4A84FD364DA2A627957C95938 /* ISHPullUpHandleView.h */,
-				3307A6347D3AD46C6522E912A6ECA5A5 /* ISHPullUpHandleView.m */,
-				43575726C5C2FAAF2D27AD59FEE39DDE /* ISHPullUpRoundedView.h */,
-				A15C0E5D0544FB1005E4EE7710F8A033 /* ISHPullUpRoundedView.m */,
-				5B7F38B3ED633A6D0A3585564C27C5DF /* ISHPullUpViewController.h */,
-				B51C56AA8217547BA81B33271541AE9C /* ISHPullUpViewController.m */,
-				400F4EC8F4F41374ACD9230F6DC00478 /* Support Files */,
+				C4D9D4CD450CF36EE63A3A9FFFC35D91 /* ISHHoverBar.h */,
+				A90714035D6432111B8868ACE09E4EBC /* ISHHoverBar.m */,
+				DA0C6D20C2523CC31142CF47C7793A28 /* Support Files */,
 			);
-			name = ISHPullUp;
-			path = ISHPullUp;
+			name = ISHHoverBar;
+			path = ISHHoverBar;
 			sourceTree = "<group>";
 		};
-		A5200E456F0496BECC1502520570984B /* Support Files */ = {
+		B35CF9728A11FD5F55E2099237F0383B /* UPCarouselFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
-				1D16EA359AD484863D0DD59FCB64A5B7 /* Info.plist */,
-				0AAF3F46CA89BD98AA2B75C73AF3423E /* UPCarouselFlowLayout.modulemap */,
-				7CF8952AE0293EFDD107D3D03DEDFB1F /* UPCarouselFlowLayout.xcconfig */,
-				FC15B70475CF0C4EE39B8EAD3D306BC0 /* UPCarouselFlowLayout-dummy.m */,
-				3D89F93657CFE5C06A93FB712ECC6E9C /* UPCarouselFlowLayout-prefix.pch */,
-				CCAFB5391C6BDC5B40E9F9BA3A7BE6D6 /* UPCarouselFlowLayout-umbrella.h */,
+				C8E3B7A452DF2514B54106176792BD72 /* Info.plist */,
+				65D2077CC491DE2C7A822792E6F59BA8 /* UPCarouselFlowLayout.h */,
+				2B46C9F94C5BCB62222E89C2F9518C2E /* UPCarouselFlowLayout.swift */,
+				252B0C70FADE89478D90F30991BBE050 /* Support Files */,
+			);
+			name = UPCarouselFlowLayout;
+			path = UPCarouselFlowLayout;
+			sourceTree = "<group>";
+		};
+		DA0C6D20C2523CC31142CF47C7793A28 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1655E600B66967AEA23A0804A7D04185 /* Info.plist */,
+				FA18B9459C746294EF129CAE6BCB17C6 /* ISHHoverBar.modulemap */,
+				F420E1C700F40788A47F95DF120E27E5 /* ISHHoverBar.xcconfig */,
+				3C73733085451862016D9C51E8E6FEDD /* ISHHoverBar-dummy.m */,
+				621E3AFB7494D604DFC021B573FB390B /* ISHHoverBar-prefix.pch */,
+				152EEBC28375838FF2948328CAAB3A4A /* ISHHoverBar-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/UPCarouselFlowLayout";
+			path = "../Target Support Files/ISHHoverBar";
 			sourceTree = "<group>";
 		};
-		B1A9FD920DE6B2B3FF902B458A78C1CB /* Products */ = {
+		ECC6DBD95D15122F27AB4A0D8D9A6F01 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EB56F9FDB37967424C6362DC9FF98E2A /* ISHPullUp.framework */,
-				F694E3E7D650CA7248824A86EE8D58D2 /* Pods_fnfa.framework */,
-				CE6F8B265784C865D84E4E62AF50A079 /* UPCarouselFlowLayout.framework */,
+				3102E1EAF39B330CDC4B090BAB71CB00 /* Info.plist */,
+				C2E23E564C85877E829B13C41C969CAC /* ISHPullUp.modulemap */,
+				A3CBF4A29BE367E18E714494AFE4E5BA /* ISHPullUp.xcconfig */,
+				62DE6803E6FA88AC48C1E359ACFA7BDC /* ISHPullUp-dummy.m */,
+				3936F1A67054633991C7653913F38246 /* ISHPullUp-prefix.pch */,
+				ACE4D17E26862F50275BE5E5DC75A40D /* ISHPullUp-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ISHPullUp";
+			sourceTree = "<group>";
+		};
+		F3B6D42E9CEF78EB85F93C03A588C4A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F14398C41FA9A7E4318E3D12667E8D12 /* ISHHoverBar.framework */,
+				7761F3CAFAB07960BC9010976939733C /* ISHPullUp.framework */,
+				EBD70D6A2E243517F12CCC98E6859B3B /* Pods_fnfa.framework */,
+				E8A491453B8247166B33DCCABA146767 /* UPCarouselFlowLayout.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FAD944F09AE1ECD8AA062DCED7B9B6FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1B6E03328328DFEE1EC3A54CDABC4A6 /* ISHHoverBar */,
+				31C4434FA4F25B07DC8D585D67E1D153 /* ISHPullUp */,
+				B35CF9728A11FD5F55E2099237F0383B /* UPCarouselFlowLayout */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D863DC9B414DD0CDDA1CA69FD7F73C16 /* Headers */ = {
+		1DBEB363608EDFF1D22F36FD796B603A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBC684523F1E24DE769783FF09B05262 /* Pods-fnfa-umbrella.h in Headers */,
+				2B117AEDA5A4AD375CFB62ECE1089868 /* ISHHoverBar-umbrella.h in Headers */,
+				DB6B00CCBE7DB50BA3198BABF257AE89 /* ISHHoverBar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1C74F9D5110179DD7FC8F43709FC6C4 /* Headers */ = {
+		88D63BF51934F20F41679CAA15DCA02F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D00A301FD4760BBC9FDE2E15451BFC5C /* UPCarouselFlowLayout-umbrella.h in Headers */,
-				DCF762D7FB66C89D0BBD46D11D89494E /* UPCarouselFlowLayout.h in Headers */,
+				ED28C330FFFADFB3A3C3FCF92AB43FBA /* Pods-fnfa-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7239CBE23B99249784FA1ADA18482B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5936036FB6210E416A07D7E0A562F5F /* UPCarouselFlowLayout-umbrella.h in Headers */,
+				43C46353B6C112FD963394617B60DA84 /* UPCarouselFlowLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,23 +343,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0F92305A5C572B58880E4EBDF7946B18 /* Pods-fnfa */ = {
+		0EB9E3E33D1BD3DBA85D570B0C330457 /* ISHHoverBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A410BA555D787712BD892EEDCC0AAE03 /* Build configuration list for PBXNativeTarget "Pods-fnfa" */;
+			buildConfigurationList = 6587EDF6D9C6839909AC3A144034EEE0 /* Build configuration list for PBXNativeTarget "ISHHoverBar" */;
 			buildPhases = (
-				85F61946D9A96C8EB5623B197B6FAC4E /* Sources */,
-				72B4FC3548A8B88503526D3AF29241B1 /* Frameworks */,
-				D863DC9B414DD0CDDA1CA69FD7F73C16 /* Headers */,
+				4A5E75B2A1923522EA7555195AEC6780 /* Sources */,
+				A0099355FD9C193854E930710F9943CC /* Frameworks */,
+				1DBEB363608EDFF1D22F36FD796B603A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A15604147981BA7789384B190C3C965C /* PBXTargetDependency */,
-				FF7734E208E8590473C56E53E161D95D /* PBXTargetDependency */,
+			);
+			name = ISHHoverBar;
+			productName = ISHHoverBar;
+			productReference = F14398C41FA9A7E4318E3D12667E8D12 /* ISHHoverBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2EB0E7C3F8F16D9C2CBB5DCAD0780F2D /* Pods-fnfa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7740E54D3C6BB40B6838A863E2607F2 /* Build configuration list for PBXNativeTarget "Pods-fnfa" */;
+			buildPhases = (
+				3B914C23AA9333576C56088BE383034A /* Sources */,
+				C86F9ECA28603983FD8DB22B58D61521 /* Frameworks */,
+				88D63BF51934F20F41679CAA15DCA02F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7354C07923540241C4340C61A288773 /* PBXTargetDependency */,
+				C24A4474789255FE1C4960C094128147 /* PBXTargetDependency */,
+				5E94322D02094403C4061055B5C98FAF /* PBXTargetDependency */,
 			);
 			name = "Pods-fnfa";
 			productName = "Pods-fnfa";
-			productReference = F694E3E7D650CA7248824A86EE8D58D2 /* Pods_fnfa.framework */;
+			productReference = EBD70D6A2E243517F12CCC98E6859B3B /* Pods_fnfa.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		30CE52C8B1E0F5CE940B973AEF41F6EB /* ISHPullUp */ = {
@@ -309,16 +394,16 @@
 			);
 			name = ISHPullUp;
 			productName = ISHPullUp;
-			productReference = EB56F9FDB37967424C6362DC9FF98E2A /* ISHPullUp.framework */;
+			productReference = 7761F3CAFAB07960BC9010976939733C /* ISHPullUp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A2931E664883AB8E4C573BA11B58A917 /* UPCarouselFlowLayout */ = {
+		9C699172983CA548B9EA55F238C7F53D /* UPCarouselFlowLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BCFBCC92BC4BC9B8F1BDED95035C50D8 /* Build configuration list for PBXNativeTarget "UPCarouselFlowLayout" */;
+			buildConfigurationList = E8507A1905FB697AC115A6C4315814AA /* Build configuration list for PBXNativeTarget "UPCarouselFlowLayout" */;
 			buildPhases = (
-				7A9F63EA004F0BB8BCE82B124390B594 /* Sources */,
-				DA12B0053D654FCEA8E362267FC6BEB7 /* Frameworks */,
-				F1C74F9D5110179DD7FC8F43709FC6C4 /* Headers */,
+				66AD7A99797E7569C0BDD44D9ECAE71F /* Sources */,
+				36C7F28A8C2546130DC91FE6B68579B7 /* Frameworks */,
+				B7239CBE23B99249784FA1ADA18482B6 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -326,7 +411,7 @@
 			);
 			name = UPCarouselFlowLayout;
 			productName = UPCarouselFlowLayout;
-			productReference = CE6F8B265784C865D84E4E62AF50A079 /* UPCarouselFlowLayout.framework */;
+			productReference = E8A491453B8247166B33DCCABA146767 /* UPCarouselFlowLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -346,18 +431,36 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B1A9FD920DE6B2B3FF902B458A78C1CB /* Products */;
+			productRefGroup = F3B6D42E9CEF78EB85F93C03A588C4A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				0EB9E3E33D1BD3DBA85D570B0C330457 /* ISHHoverBar */,
 				30CE52C8B1E0F5CE940B973AEF41F6EB /* ISHPullUp */,
-				0F92305A5C572B58880E4EBDF7946B18 /* Pods-fnfa */,
-				A2931E664883AB8E4C573BA11B58A917 /* UPCarouselFlowLayout */,
+				2EB0E7C3F8F16D9C2CBB5DCAD0780F2D /* Pods-fnfa */,
+				9C699172983CA548B9EA55F238C7F53D /* UPCarouselFlowLayout */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3B914C23AA9333576C56088BE383034A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C1C3C67CF1C3FE86B0E65FDD92F1510 /* Pods-fnfa-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A5E75B2A1923522EA7555195AEC6780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADAC333AF146511E0D17C274C73B9C6 /* ISHHoverBar-dummy.m in Sources */,
+				55DF505A48A675136B6FA34BABAB6F94 /* ISHHoverBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D38510FD46B5EB6E410529BB6A1A2D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,38 +472,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A9F63EA004F0BB8BCE82B124390B594 /* Sources */ = {
+		66AD7A99797E7569C0BDD44D9ECAE71F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15A23266EE4EB980A5E438D151E3038C /* Info.plist in Sources */,
-				DBADA8407D4A7974A2A68897BD479E67 /* UPCarouselFlowLayout-dummy.m in Sources */,
-				1E871B921C46AAC053600F00B0B1DB24 /* UPCarouselFlowLayout.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		85F61946D9A96C8EB5623B197B6FAC4E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAA57673722546D58956BE1BF82465F9 /* Pods-fnfa-dummy.m in Sources */,
+				E35CADC8815914E877523D7720619C83 /* Info.plist in Sources */,
+				651246C2CF1D0DBBF6DDA1128B3A341C /* UPCarouselFlowLayout-dummy.m in Sources */,
+				F3C96FB0D953C21BFC9F47C6233AD2F3 /* UPCarouselFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A15604147981BA7789384B190C3C965C /* PBXTargetDependency */ = {
+		5E94322D02094403C4061055B5C98FAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UPCarouselFlowLayout;
+			target = 9C699172983CA548B9EA55F238C7F53D /* UPCarouselFlowLayout */;
+			targetProxy = 862CA6E9D6AC78025C4159A9481628D0 /* PBXContainerItemProxy */;
+		};
+		B7354C07923540241C4340C61A288773 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ISHHoverBar;
+			target = 0EB9E3E33D1BD3DBA85D570B0C330457 /* ISHHoverBar */;
+			targetProxy = 2BB6603C21AE4A08600F39D8F97820B1 /* PBXContainerItemProxy */;
+		};
+		C24A4474789255FE1C4960C094128147 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ISHPullUp;
 			target = 30CE52C8B1E0F5CE940B973AEF41F6EB /* ISHPullUp */;
-			targetProxy = 9384D9AAA28D16349B206A47757A8893 /* PBXContainerItemProxy */;
-		};
-		FF7734E208E8590473C56E53E161D95D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UPCarouselFlowLayout;
-			target = A2931E664883AB8E4C573BA11B58A917 /* UPCarouselFlowLayout */;
-			targetProxy = 491FF5FF62064D5A169F1D4DEB85BFD9 /* PBXContainerItemProxy */;
+			targetProxy = 3C9DA1982A56A1777AE2316FDB5CAD18 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -468,9 +569,9 @@
 			};
 			name = Debug;
 		};
-		37E56FD9C35D44CA943E51632FF64285 /* Release */ = {
+		6B62024941329DD6593CE55D8090EB6F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CF8952AE0293EFDD107D3D03DEDFB1F /* UPCarouselFlowLayout.xcconfig */;
+			baseConfigurationReference = A3CBF4A29BE367E18E714494AFE4E5BA /* ISHPullUp.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -481,17 +582,46 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UPCarouselFlowLayout/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ISHPullUp/ISHPullUp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ISHPullUp/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout.modulemap";
-				PRODUCT_NAME = UPCarouselFlowLayout;
+				MODULEMAP_FILE = "Target Support Files/ISHPullUp/ISHPullUp.modulemap";
+				PRODUCT_NAME = ISHPullUp;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6FEFEB516880397A3F51353CF4153BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3CBF4A29BE367E18E714494AFE4E5BA /* ISHPullUp.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ISHPullUp/ISHPullUp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ISHPullUp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ISHPullUp/ISHPullUp.modulemap";
+				PRODUCT_NAME = ISHPullUp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -500,7 +630,38 @@
 			};
 			name = Release;
 		};
-		464523AA203C14EE8715A021D629A808 /* Debug */ = {
+		7B4CD8CAF2B30F644A18F1B395796C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F420E1C700F40788A47F95DF120E27E5 /* ISHHoverBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ISHHoverBar/ISHHoverBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ISHHoverBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ISHHoverBar/ISHHoverBar.modulemap";
+				PRODUCT_NAME = ISHHoverBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A637AD4B1FEAE812D0A70AE0EEC8753A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 05799341494653B82FB64DA7165741B1 /* Pods-fnfa.debug.xcconfig */;
 			buildSettings = {
@@ -535,70 +696,9 @@
 			};
 			name = Debug;
 		};
-		6B62024941329DD6593CE55D8090EB6F /* Debug */ = {
+		ADFE01359173DCDC908FEC52A823259C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5BC54B1E56BFE868BA0204A89A6582D /* ISHPullUp.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ISHPullUp/ISHPullUp-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ISHPullUp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ISHPullUp/ISHPullUp.modulemap";
-				PRODUCT_NAME = ISHPullUp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6FEFEB516880397A3F51353CF4153BC0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5BC54B1E56BFE868BA0204A89A6582D /* ISHPullUp.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ISHPullUp/ISHPullUp-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ISHPullUp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ISHPullUp/ISHPullUp.modulemap";
-				PRODUCT_NAME = ISHPullUp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A9DFCDD52C36D2B61C5A191AB6830CF1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CF8952AE0293EFDD107D3D03DEDFB1F /* UPCarouselFlowLayout.xcconfig */;
+			baseConfigurationReference = 274FCB418B400364D23A4303D9B361F3 /* UPCarouselFlowLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -685,7 +785,7 @@
 			};
 			name = Release;
 		};
-		F92A0E5DC11C6253AF95E3706B2C0EE6 /* Release */ = {
+		D1E8112FF41A725D8A7460E3CDC98A81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16E5DC60BA8E0BA2816283B7E5B50903 /* Pods-fnfa.release.xcconfig */;
 			buildSettings = {
@@ -720,6 +820,68 @@
 			};
 			name = Release;
 		};
+		DB93BA506120FF1BB5360B82B41C1C77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F420E1C700F40788A47F95DF120E27E5 /* ISHHoverBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ISHHoverBar/ISHHoverBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ISHHoverBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ISHHoverBar/ISHHoverBar.modulemap";
+				PRODUCT_NAME = ISHHoverBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E33D6BD33EC268C2C2DF54D65B9CA02B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 274FCB418B400364D23A4303D9B361F3 /* UPCarouselFlowLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UPCarouselFlowLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout.modulemap";
+				PRODUCT_NAME = UPCarouselFlowLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -732,20 +894,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A410BA555D787712BD892EEDCC0AAE03 /* Build configuration list for PBXNativeTarget "Pods-fnfa" */ = {
+		6587EDF6D9C6839909AC3A144034EEE0 /* Build configuration list for PBXNativeTarget "ISHHoverBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				464523AA203C14EE8715A021D629A808 /* Debug */,
-				F92A0E5DC11C6253AF95E3706B2C0EE6 /* Release */,
+				DB93BA506120FF1BB5360B82B41C1C77 /* Debug */,
+				7B4CD8CAF2B30F644A18F1B395796C4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BCFBCC92BC4BC9B8F1BDED95035C50D8 /* Build configuration list for PBXNativeTarget "UPCarouselFlowLayout" */ = {
+		A7740E54D3C6BB40B6838A863E2607F2 /* Build configuration list for PBXNativeTarget "Pods-fnfa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A9DFCDD52C36D2B61C5A191AB6830CF1 /* Debug */,
-				37E56FD9C35D44CA943E51632FF64285 /* Release */,
+				A637AD4B1FEAE812D0A70AE0EEC8753A /* Debug */,
+				D1E8112FF41A725D8A7460E3CDC98A81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8507A1905FB697AC115A6C4315814AA /* Build configuration list for PBXNativeTarget "UPCarouselFlowLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFE01359173DCDC908FEC52A823259C /* Debug */,
+				E33D6BD33EC268C2C2DF54D65B9CA02B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

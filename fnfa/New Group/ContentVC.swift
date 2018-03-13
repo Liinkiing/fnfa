@@ -9,9 +9,9 @@
 import MapKit
 import ISHPullUp
 
-class ContentVC: UIViewController, ISHPullUpContentDelegate {
+class ContentVC: UIViewController, ISHPullUpContentDelegate, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
-    let regionRadius: CLLocationDistance = 1000
+    let regionRadius: CLLocationDistance = 400
     var arrayDataSources : Array<Place> = []
     @IBOutlet private weak var rootView: UIView!
     
@@ -28,19 +28,33 @@ class ContentVC: UIViewController, ISHPullUpContentDelegate {
         arrayDataSources = DataMapper.instance.places
         let firstPlace = arrayDataSources[0]
         
-        let initialLocation = CLLocation(latitude: firstPlace.lat!,longitude: firstPlace.long!)
-        centerMapOnLocation(location: initialLocation)
-        
+        let initialLocation = CLLocation(latitude: firstPlace.lat!, longitude: firstPlace.long!)
         let firstLoc = Annotation(title: firstPlace.name!,
-                              locationName: firstPlace.adresse!,
-                              discipline: "Theatre",
-                              coordinate: CLLocationCoordinate2D(latitude: firstPlace.lat!,longitude: firstPlace.long!))
+                                  locationName: firstPlace.adresse!,
+                                  discipline: "Theatre",
+                                  coordinate: CLLocationCoordinate2D(latitude: firstPlace.lat!,longitude: firstPlace.long!))
+        
+        centerMapOnLocation(location: initialLocation)
         mapView.addAnnotation(firstLoc)
         
         // Watch for new Anotations
         NotificationCenter.default.addObserver(self, selector: #selector(self.placeOnTheMap(_:)), name: .selectAPlace, object: nil)
     }
-
+    
+    
+    //
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        let location = view.annotation as! Annotation
+        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+        location.mapItem().openInMaps(launchOptions: launchOptions)
+        
+        print("yoooooo")
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationViewDragState, fromOldState oldState: MKAnnotationViewDragState) {
+        print("Teeeeeest")
+    }
     
     
 
@@ -62,6 +76,7 @@ class ContentVC: UIViewController, ISHPullUpContentDelegate {
     
     
     
+    
     /*  ==========================================================
      == Helper Functions ==
      ======================================================= */
@@ -73,7 +88,6 @@ class ContentVC: UIViewController, ISHPullUpContentDelegate {
         if let payload = notification.userInfo as? [String: Any] {
             if let placeToShow = payload["place"] as? Place {
                 let location = CLLocation(latitude: placeToShow.lat!,longitude: placeToShow.long!)
-                centerMapOnLocation(location: location)
                 let annotation = Annotation(
                     title: placeToShow.name!,
                     locationName: placeToShow.adresse!,
@@ -83,6 +97,8 @@ class ContentVC: UIViewController, ISHPullUpContentDelegate {
                         longitude: placeToShow.long!
                     )
                 )
+                
+                centerMapOnLocation(location: location)
                 mapView.addAnnotation(annotation)
             }
         }
@@ -93,7 +109,7 @@ class ContentVC: UIViewController, ISHPullUpContentDelegate {
      *   Place the center of the map to the given coordonate
      */
     func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius, regionRadius)
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, self.regionRadius, self.regionRadius)
         mapView.setRegion(coordinateRegion, animated: true)
     }
 }

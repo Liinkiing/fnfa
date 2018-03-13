@@ -418,11 +418,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-fnfa/Pods-fnfa-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ISHHoverBar/ISHHoverBar.framework",
 				"${BUILT_PRODUCTS_DIR}/ISHPullUp/ISHPullUp.framework",
 				"${BUILT_PRODUCTS_DIR}/UPCarouselFlowLayout/UPCarouselFlowLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISHHoverBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISHPullUp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UPCarouselFlowLayout.framework",
 			);

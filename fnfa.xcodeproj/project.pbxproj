@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0680FAAB205976460015A066 /* Lieux.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0680FAAA205976460015A066 /* Lieux.storyboard */; };
 		06CDDFF22057E24C00C99D7A /* LieuxDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CDDFF12057E24C00C99D7A /* LieuxDataSource.swift */; };
 		06CDDFF42057E4A000C99D7A /* LieuxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CDDFF32057E4A000C99D7A /* LieuxTableViewCell.swift */; };
 		3A3DFF1D205683EB00340835 /* Tarifs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3DFF1C205683EB00340835 /* Tarifs.storyboard */; };
@@ -23,7 +24,6 @@
 		3AF260462035C3C100D7E022 /* Programme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF260452035C3C100D7E022 /* Programme.storyboard */; };
 		944ABB5B3A83C70F3A0BD1D2 /* Pods_fnfa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE1B9ACA7C0551D06906509 /* Pods_fnfa.framework */; };
 		A55722B92056871000BBF2E9 /* LieuxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55722B82056871000BBF2E9 /* LieuxViewController.swift */; };
-		A55722BF2056875000BBF2E9 /* Lieux.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55722BE2056875000BBF2E9 /* Lieux.storyboard */; };
 		A55722C72056D24000BBF2E9 /* BottomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55722C32056D24000BBF2E9 /* BottomVC.swift */; };
 		A55722C92056D24400BBF2E9 /* ContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55722C82056D24400BBF2E9 /* ContentVC.swift */; };
 		A55722CB2056DCDD00BBF2E9 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55722CA2056DCDD00BBF2E9 /* Annotation.swift */; };
@@ -82,6 +82,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0680FAAA205976460015A066 /* Lieux.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lieux.storyboard; sourceTree = "<group>"; };
 		06CDDFF12057E24C00C99D7A /* LieuxDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LieuxDataSource.swift; sourceTree = "<group>"; };
 		06CDDFF32057E4A000C99D7A /* LieuxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LieuxTableViewCell.swift; sourceTree = "<group>"; };
 		1AF4F4C03221CE5F39069D43 /* Pods-fnfa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fnfa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fnfa/Pods-fnfa.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,7 +103,6 @@
 		3AF260452035C3C100D7E022 /* Programme.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Programme.storyboard; sourceTree = "<group>"; };
 		7DE1B9ACA7C0551D06906509 /* Pods_fnfa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fnfa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55722B82056871000BBF2E9 /* LieuxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LieuxViewController.swift; sourceTree = "<group>"; };
-		A55722BE2056875000BBF2E9 /* Lieux.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lieux.storyboard; sourceTree = "<group>"; };
 		A55722C32056D24000BBF2E9 /* BottomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomVC.swift; sourceTree = "<group>"; };
 		A55722C82056D24400BBF2E9 /* ContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentVC.swift; sourceTree = "<group>"; };
 		A55722CA2056DCDD00BBF2E9 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
@@ -277,7 +277,7 @@
 				06CDDFF32057E4A000C99D7A /* LieuxTableViewCell.swift */,
 				A55722C82056D24400BBF2E9 /* ContentVC.swift */,
 				A55722CA2056DCDD00BBF2E9 /* Annotation.swift */,
-				A55722BE2056875000BBF2E9 /* Lieux.storyboard */,
+				0680FAAA205976460015A066 /* Lieux.storyboard */,
 			);
 			name = Lieux;
 			path = "New Group";
@@ -405,7 +405,6 @@
 				AFCDE2BB203A6B0000D57078 /* NoItemCollectionViewCell.xib in Resources */,
 				AF9AA6F3203916EC000A1BF4 /* EventCollectionViewCell.xib in Resources */,
 				AF6DA5422057326C00AD82F1 /* ProgrammeDetail.storyboard in Resources */,
-				A55722BF2056875000BBF2E9 /* Lieux.storyboard in Resources */,
 				3A3DFF1D205683EB00340835 /* Tarifs.storyboard in Resources */,
 				3AF260412035C23200D7E022 /* Agenda.storyboard in Resources */,
 				AFF894C6203C4D9800AA1387 /* ProgrammeCollectionViewCell.xib in Resources */,
@@ -414,6 +413,7 @@
 				FBD910B8637EC8189D3E0860 /* events.json in Resources */,
 				FBD9106799CC42E4B7D619E2 /* places.json in Resources */,
 				AFF894C0203C4A7B00AA1387 /* Assets.xcassets in Resources */,
+				0680FAAB205976460015A066 /* Lieux.storyboard in Resources */,
 				FBD91C3DF093D973C7B6E280 /* categories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

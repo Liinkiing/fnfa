@@ -61,7 +61,7 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
     @IBInspectable  var timelineLabel       : Bool = false
     @IBInspectable  var timelineSteps       : Int = 5
     @IBInspectable  var timelineInitSteps   : Int = 1
-    @IBInspectable  var LineColor           : UIColor = UIColor.black
+    @IBInspectable  var LineColor           : UIColor = UIColor.white
     private         var viewDidInit         : Bool = false
     private         var circles             : Array<CircleView>     = []
     weak            var delegate            : TimeLineControlDelegate?
@@ -124,6 +124,7 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
         // if TimeLine mode isn't Ativated :
         
         if !timelineMode {
+            ctx?.setStrokeColor(LineColor.cgColor)
             ctx?.addEllipse(
                 in: CGRect(
                     origin: CGPoint(

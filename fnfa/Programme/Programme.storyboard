@@ -44,8 +44,13 @@
                                     <outlet property="delegate" destination="ZXj-yO-PRK" id="7iU-bS-4Jy"/>
                                 </connections>
                             </collectionView>
+<<<<<<< HEAD
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IE8-NQ-TGi">
                                 <rect key="frame" x="20" y="77.5" width="265" height="50"/>
+=======
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IE8-NQ-TGi">
+                                <rect key="frame" x="20" y="70" width="280" height="50"/>
+>>>>>>> f71fa2ad400aca3ccf0b729194bd6b6860538c15
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhg-1K-MVt" customClass="FilterButton" customModule="fnfa" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>

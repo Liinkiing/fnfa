@@ -1,57 +1,60 @@
 [
- {
- "id": 1,
- "name": "Ciné TNB Jouvet",
- "lat": 48.107967,
- "long": -1.672559,
- "seats": 400,
- "adresse":"1 rue Saint-Hélier",
- "phone": "02 99 31 55 33",
- "schedule": "Ouverture au grand public à partir de 13h",
- "stops": "Liberté TNB / Métro Charles de Gaulle"
- },
- {
- "id": 2,
- "name": "Cinéma Arvor",
- "lat": 48.115995,
- "long": -1.679114,
- "seats": 152,
- "adresse": "29 rue d’Antrain",
- "phone": "02 99 38 78 04",
- "stops": "Sainte-Anne ou Hôtel Dieu / Métro Sainte-Anne"
- },
- {
- "id": 3,
- "name": "ESRA",
- "lat": 48.128809,
- "long": -1.642040,
- "seats": -1,
- "adresse": "1 rue Xavier Grall",
- "phone": "02 99 36 64 64",
- "stops": "Pâtis Tatelin"
- },
- {
- "id": 4,
- "name": "Le Grand Logis et la Médiathèque",
- "lat": 48.023168,
- "long": -1.744634,
- "seats": -1,
- "adresse": "10 avenue du Général de Gaulle",
- "phone": "02 99 05 30 62 / 02 99 05 30 60",
- "stops": "Bruz Centre"
- },
- {
- "id": 5,
- "name": "Esplanade Charles de Gaulles",
- "lat": 48.106490,
- "long": -1.676755,
- "seats": -1
- },
- {
- "id": 6,
- "name": "France 3 Bretagne",
- "lat": 48.107967,
- "long": -1.672559,
- "seats": -1
- }
- ]
+  {
+    "id": 1,
+    "name": "Ciné TNB Jouvet",
+    "lat": 48.107967,
+    "long": -1.672559,
+    "seats": 400,
+    "adresse": "1 rue Saint-Hélier",
+    "phone": "02 99 31 55 33",
+    "schedule": "Ouverture au grand public à partir de 13h",
+    "stops": "Liberté TNB / Métro Charles de Gaulle"
+  },
+  {
+    "id": 2,
+    "name": "Cinéma Arvor",
+    "lat": 48.115995,
+    "long": -1.679114,
+    "seats": 152,
+    "adresse": "29 rue d’Antrain",
+    "phone": "02 99 38 78 04",
+    "stops": "Sainte-Anne ou Hôtel Dieu / Métro Sainte-Anne"
+  },
+  {
+    "id": 3,
+    "name": "ESRA",
+    "lat": 48.128809,
+    "long": -1.642040,
+    "seats": -1,
+    "adresse": "1 rue Xavier Grall",
+    "phone": "02 99 36 64 64",
+    "stops": "Pâtis Tatelin"
+  },
+  {
+    "id": 4,
+    "name": "Le Grand Logis et la Médiathèque",
+    "lat": 48.023168,
+    "long": -1.744634,
+    "seats": -1,
+    "adresse": "10 avenue du Général de Gaulle",
+    "phone": "02 99 05 30 62 / 02 99 05 30 60",
+    "stops": "Bruz Centre"
+  },
+  {
+    "id": 5,
+    "name": "Esplanade Charles de Gaulles",
+    "lat": 48.1084434,
+    "long": -1.6731135,
+    "adresse": "1 Espl. Charles de Gaulle, 35700 Rennes",
+    "seats": -1
+  },
+  {
+    "id": 6,
+    "name": "France 3 Bretagne",
+    "lat": 48.107967,
+    "long": -1.672559,
+    "adresse": "9 Avenue Jean Janvier, 35000 Rennes",
+    "phone": "02 99 01 79 79",
+    "seats": -1
+  }
+]

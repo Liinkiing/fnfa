@@ -64,7 +64,7 @@
                                 <integer key="value" value="1"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="timelineLabel" value="YES"/>
-                            <userDefinedRuntimeAttribute type="string" keyPath="timelineLabelValue" value="11h - 18h"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="timelineLabelValue" value="00h - 00h"/>
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>

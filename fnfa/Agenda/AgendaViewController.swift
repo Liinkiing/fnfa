@@ -68,6 +68,8 @@ extension AgendaViewController {
             dateFormatter.setLocalizedDateFormatFromTemplate("EEEE d")
             header.textLabel?.text = dateFormatter.string(from: days[section]).capitalized(with: locale)
             header.textLabel?.textAlignment = .center
+            header.backgroundView?.backgroundColor = #colorLiteral(red: 0.2236568574, green: 0.2233459969, blue: 0.4078362944, alpha: 1)
+            header.backgroundView?.alpha = 0.9
             header.textLabel?.textColor = #colorLiteral(red:1.0, green:1.0, blue:1.0, alpha:1.0)
         }
     }

@@ -165,9 +165,30 @@ class DesignableButton: UIButton {
 class DesignableLabel: UILabel {
 }
 
-@IBDesignable
 class DesignableImageView: UIImageView {
+    
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+        self.image = self.image?.withRenderingMode(.alwaysTemplate)
+    }
+
+    @IBInspectable
+    var tint: UIColor? {
+        didSet {
+            if(tint != nil) {
+                self.tintColor = tint
+            }
+        }
+    }
 }
+
+
 
 extension Notification.Name {
     static let FAVORITE_ADD = Notification.Name("FAVORITE_ADD")

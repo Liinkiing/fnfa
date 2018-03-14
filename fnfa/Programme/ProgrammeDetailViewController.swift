@@ -18,7 +18,9 @@ class ProgrammeDetailViewController: UIViewController {
     @IBOutlet weak var labelProducer: UILabel!
     @IBOutlet weak var labelDirector: UILabel!
     @IBOutlet weak var labelAudience: UILabel!
+    @IBOutlet weak var imageDirector: DesignableImageView!
     
+    let buttonFav = UIButton()
     var event: Event?
 
     override func viewWillAppear(_ animated: Bool) {
@@ -40,12 +42,32 @@ class ProgrammeDetailViewController: UIViewController {
         labelAudience.text = (event?.audience != nil ? "A partir de \((event?.audience!)!) ans" : "Pour tous public")
         labelDirector.text = event?.director
         labelProducer.text = event?.producer
+        imageDirector.isHidden = event?.director == nil
     }
 
     @IBAction func onButtonMoreTapped(_ sender: UIButton) {
         if let url = URL(string: (event?.url)!) {
             UIApplication.shared.open(url)
         }
+    }
+    
+    override func viewDidLoad() {
+        buttonFav.addTarget(self, action: #selector(onButtonFavTapped), for: .touchUpInside)
+        buttonFav.setImage(#imageLiteral(resourceName: "like_baritem"), for: .normal)
+        buttonFav.setImage(#imageLiteral(resourceName: "like_baritem_fill"), for: .selected)
+        buttonFav.isSelected = DataMapper.instance.isFavorited(event: event!)
+        navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: buttonFav)
+    }
+    
+    @objc private func onButtonFavTapped() {
+        if (DataMapper.instance.isFavorited(event: event!)) {
+            buttonFav.isSelected = false
+            DataMapper.instance.removeFromFavorites(event: event!)
+        } else {
+            buttonFav.isSelected = true
+            DataMapper.instance.addToFavorites(event: event!)
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {

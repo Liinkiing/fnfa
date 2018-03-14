@@ -13,7 +13,7 @@
         <scene sceneID="Q7w-hJ-ouL">
             <objects>
                 <navigationController title="AGENDA" automaticallyAdjustsScrollViewInsets="NO" id="wan-11-pvh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Mon agenda" id="f8k-f8-MPv"/>
+                    <tabBarItem key="tabBarItem" title="Mon agenda" image="agenda-final" selectedImage="agenda-full" id="f8k-f8-MPv"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
@@ -65,4 +65,8 @@
             <point key="canvasLocation" x="1029" y="27"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="agenda-final" width="24" height="24"/>
+        <image name="agenda-full" width="24" height="24"/>
+    </resources>
 </document>

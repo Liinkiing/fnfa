@@ -151,7 +151,7 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
                 in: CGRect(
                     origin: CGPoint(
                         x:rect.size.width - circleRadius * 2 - 1 ,
-                        y: 10),
+                        y: self.verticalPosition),
                     size: CGSize(
                         width: circleRadius * 2,
                         height: circleRadius * 2)
@@ -443,7 +443,7 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
      */
     public func setStep(_ stepNumber: Int) {
         if timelineMode {
-            if circles.count <= timelineSteps {
+            if stepNumber > 0 || stepNumber <= timelineSteps  {
                 let newStep = stepNumber
                 let width  = self.bounds.width - circleRadius * 4 - 2
                 let sumCircle = CGFloat(newStep-2) * (2 * circleRadius)

@@ -86,6 +86,7 @@ class ProgrammeViewController: UIViewController, UICollectionViewDelegate {
         let indexPath = programmeCollectionView.indexPathForItem(at: visiblePoint)
         if let cell = programmeCollectionView.cellForItem(at: indexPath!) as! ProgrammeCollectionViewCell? {
             timeline.setStep((cell.event?.startingDate.day)! - 3)
+            print((cell.event?.startingDate.day)! - 3)
             let df = DateFormatter()
             df.locale = Locale(identifier: "fr_FR")
             df.setLocalizedDateFormatFromTemplate("EEEE dd")

@@ -88,11 +88,10 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jq5-vH-GCq" customClass="TimeLineControl" customModule="fnfa" customModuleProvider="target">
-                                <rect key="frame" x="35" y="458" width="250" height="50"/>
+                                <rect key="frame" x="30" y="452" width="270" height="50"/>
                                 <color key="backgroundColor" red="0.01193963829" green="0.036842212079999999" blue="0.15308156610000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.0" green="0.99607843137254903" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="3gi-tA-zcr"/>
                                     <constraint firstAttribute="height" constant="50" id="iAU-m5-2hJ"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -129,14 +128,15 @@
                         <color key="backgroundColor" red="0.0078431372549019607" green="0.035294117647058823" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="jq5-vH-GCq" firstAttribute="centerX" secondItem="jg3-cu-Ix7" secondAttribute="centerX" id="GdF-Ih-7KI"/>
+                            <constraint firstItem="jg3-cu-Ix7" firstAttribute="trailing" secondItem="jq5-vH-GCq" secondAttribute="trailing" constant="20" id="8h5-8W-zPX"/>
                             <constraint firstItem="xj8-39-HkV" firstAttribute="centerY" secondItem="jg3-cu-Ix7" secondAttribute="centerY" id="N5s-eX-6up"/>
                             <constraint firstItem="xj8-39-HkV" firstAttribute="trailing" secondItem="jg3-cu-Ix7" secondAttribute="trailing" id="chJ-g4-p6V"/>
                             <constraint firstItem="xj8-39-HkV" firstAttribute="leading" secondItem="jg3-cu-Ix7" secondAttribute="leading" id="e8G-fQ-WWJ"/>
                             <constraint firstItem="xj8-39-HkV" firstAttribute="centerX" secondItem="jg3-cu-Ix7" secondAttribute="centerX" id="fOo-53-qaa"/>
                             <constraint firstItem="IE8-NQ-TGi" firstAttribute="centerX" secondItem="jg3-cu-Ix7" secondAttribute="centerX" id="jOe-MZ-l8X"/>
+                            <constraint firstItem="jq5-vH-GCq" firstAttribute="leading" secondItem="jg3-cu-Ix7" secondAttribute="leading" constant="30" id="jsd-pa-qOZ"/>
                             <constraint firstItem="IE8-NQ-TGi" firstAttribute="centerY" secondItem="jg3-cu-Ix7" secondAttribute="centerY" multiplier="0.37" id="tts-vP-TLF"/>
-                            <constraint firstItem="jq5-vH-GCq" firstAttribute="centerY" secondItem="gWg-NK-5zw" secondAttribute="centerY" multiplier="1.7" id="yJk-QL-K5i"/>
+                            <constraint firstItem="jq5-vH-GCq" firstAttribute="centerY" secondItem="gWg-NK-5zw" secondAttribute="centerY" multiplier="1.68" id="yJk-QL-K5i"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jg3-cu-Ix7"/>
                     </view>

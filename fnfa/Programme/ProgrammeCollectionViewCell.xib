@@ -91,7 +91,6 @@
                     </label>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="0.0078431372549019607" green="0.039215686274509803" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="SLk-Hb-Ve4" firstAttribute="top" secondItem="M6m-ZR-xb5" secondAttribute="bottom" constant="9" id="1JD-Qh-TwP"/>
                 <constraint firstItem="SLk-Hb-Ve4" firstAttribute="trailing" secondItem="pck-Fa-Laa" secondAttribute="trailing" id="1Ni-t3-hER"/>

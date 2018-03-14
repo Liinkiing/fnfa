@@ -3,35 +3,36 @@
 //  fnfa
 //
 //  Created by Yann Cherif on 12/03/2018.
-//  Copyright © 2018 JBARA Omar. All rights reserved.
+//  Copyright © 2018 Yann Cherif. All rights reserved.
 //
 
 import UIKit
 import MapKit
+import ISHPullUp
 
-class LieuxViewController: UIViewController {
-
-    @IBOutlet weak var mapView: MKMapView!
-    let regionRadius: CLLocationDistance = 1000
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let initialLocation = CLLocation(latitude: 48.858053, longitude: 2.294289)
-        centerMapOnLocation(location: initialLocation)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+class LieuxViewController: ISHPullUpViewController {
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        commonInit()
     }
     
-    
-    func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-                                                                regionRadius, regionRadius)
-        mapView.setRegion(coordinateRegion, animated: true)
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        commonInit()
     }
     
-
+    private func commonInit() {
+        let storyBoard = UIStoryboard(name: "Lieux", bundle: nil)
+        let contentVC = storyBoard.instantiateViewController(withIdentifier: "content") as! ContentVC
+        let bottomVC = storyBoard.instantiateViewController(withIdentifier: "bottom") as! BottomVC
+        contentViewController = contentVC
+        bottomViewController = bottomVC
+        bottomVC.pullUpController = self
+        contentDelegate = contentVC
+        sizingDelegate = bottomVC
+        stateDelegate = bottomVC
+    }
     /*
     // MARK: - Navigation
 

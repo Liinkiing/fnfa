@@ -20,6 +20,7 @@ class Place : NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
     var phone       : String?
     var schedule    : String?
     var stops       : String?
+    var bus         : Array<String>?
 
     static func ==(lhs: Place, rhs: Place) -> Bool {
         return lhs.name == rhs.name
@@ -43,6 +44,7 @@ class Place : NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
         self.phone = aDecoder.decodeObject(forKey: "phone") as! String?
         self.schedule = aDecoder.decodeObject(forKey: "schedule") as! String?
         self.stops = aDecoder.decodeObject(forKey: "stops") as! String?
+        self.bus = aDecoder.decodeObject(forKey: "bus") as! Array<String>?
     }
     
     func encode(with aCoder: NSCoder) {
@@ -55,5 +57,6 @@ class Place : NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
         aCoder.encode(phone, forKey: "phone")
         aCoder.encode(schedule, forKey: "schedule")
         aCoder.encode(stops, forKey: "stops")
+        aCoder.encode(bus, forKey: "bus")
     }
 }

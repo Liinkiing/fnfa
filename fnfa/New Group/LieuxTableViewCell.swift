@@ -18,6 +18,7 @@ class LieuxTableViewCell: UITableViewCell {
     @IBOutlet weak var scheduleLabel: UILabel!
     @IBOutlet weak var busLabel: UILabel!
     @IBOutlet weak var stopsLabel: UILabel!
+    @IBOutlet weak var busholder: UIView!
     
 
     var place : Place? {
@@ -52,6 +53,25 @@ class LieuxTableViewCell: UITableViewCell {
             } else {
                 scheduleLabel.isHidden = true
             }
+            if let bus = place?.bus {
+                scheduleLabel.isHidden = false
+                creatBusliste(busesListe: bus)
+            } else {
+                scheduleLabel.isHidden = true
+            }
         }
     }
+    
+    func creatBusliste(busesListe: Array<String>) {
+        for i in 0...busesListe.count-1 {
+            let x = i==0 ? 0 : i * 15 + 4*i
+            print(i)
+            let name = busesListe[i]
+            var imageView : UIImageView
+            imageView  = UIImageView(frame: CGRect(x: CGFloat(x) ,y: 0, width: 15 , height:15));
+            imageView.image = UIImage(named:name)
+            busholder.addSubview(imageView)
+        }
+    }
+    
 }

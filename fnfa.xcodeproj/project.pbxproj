@@ -27,6 +27,7 @@
 		A55722C72056D24000BBF2E9 /* BottomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55722C32056D24000BBF2E9 /* BottomVC.swift */; };
 		A55722C92056D24400BBF2E9 /* ContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55722C82056D24400BBF2E9 /* ContentVC.swift */; };
 		A55722CB2056DCDD00BBF2E9 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55722CA2056DCDD00BBF2E9 /* Annotation.swift */; };
+		AF67AB2220592FCC000AFE27 /* TarifsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67AB2120592FCC000AFE27 /* TarifsViewController.swift */; };
 		AF6DA5402057205400AD82F1 /* ProgrammeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6DA53F2057205400AD82F1 /* ProgrammeDetailViewController.swift */; };
 		AF6DA5422057326C00AD82F1 /* ProgrammeDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6DA5412057326C00AD82F1 /* ProgrammeDetail.storyboard */; };
 		AF801751203CECBE00233FB9 /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF801750203CECBE00233FB9 /* FilterButton.swift */; };
@@ -105,6 +106,7 @@
 		A55722C32056D24000BBF2E9 /* BottomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomVC.swift; sourceTree = "<group>"; };
 		A55722C82056D24400BBF2E9 /* ContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentVC.swift; sourceTree = "<group>"; };
 		A55722CA2056DCDD00BBF2E9 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		AF67AB2120592FCC000AFE27 /* TarifsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarifsViewController.swift; sourceTree = "<group>"; };
 		AF6DA53F2057205400AD82F1 /* ProgrammeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeDetailViewController.swift; sourceTree = "<group>"; };
 		AF6DA5412057326C00AD82F1 /* ProgrammeDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProgrammeDetail.storyboard; sourceTree = "<group>"; };
 		AF801750203CECBE00233FB9 /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				3A3DFF1C205683EB00340835 /* Tarifs.storyboard */,
+				AF67AB2120592FCC000AFE27 /* TarifsViewController.swift */,
 			);
 			path = Tarifs;
 			sourceTree = "<group>";
@@ -432,7 +435,6 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISHHoverBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISHPullUp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -497,6 +499,7 @@
 				FBD91EE95CF7BE307D24FCC4 /* Date.swift in Sources */,
 				FBD91493F3C188E7149A19BE /* Event.swift in Sources */,
 				AFCDE2BA203A6B0000D57078 /* NoItemCollectionViewCell.swift in Sources */,
+				AF67AB2220592FCC000AFE27 /* TarifsViewController.swift in Sources */,
 				A55722C72056D24000BBF2E9 /* BottomVC.swift in Sources */,
 				3A799974203EC0F700036941 /* TimeLineControl.swift in Sources */,
 				FBD91E79AD1400659FE15AA4 /* Place.swift in Sources */,

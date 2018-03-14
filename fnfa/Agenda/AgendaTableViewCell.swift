@@ -95,9 +95,6 @@ extension AgendaTableViewCell : TimeLineControlDelegate {
         
         dateFormatter.setLocalizedDateFormatFromTemplate("dd MMM yyyy HH:mm:ss")
 
-        print(dateFormatter.string(from: startDate!))
-        print(dateFormatter.string(from: endDate!))
-
         self.eventsDataSource?.events =  DataMapper.instance.getSavedFavorites()
             .findBy(date: day!)!
             .between(startDate: startDate!, endDate: endDate!)!

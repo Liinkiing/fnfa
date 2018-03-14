@@ -44,8 +44,8 @@
                                     <outlet property="delegate" destination="ZXj-yO-PRK" id="7iU-bS-4Jy"/>
                                 </connections>
                             </collectionView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IE8-NQ-TGi">
-                                <rect key="frame" x="35" y="70" width="265" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IE8-NQ-TGi">
+                                <rect key="frame" x="27.5" y="83" width="265" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhg-1K-MVt" customClass="FilterButton" customModule="fnfa" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
@@ -118,7 +118,7 @@
                                         <real key="value" value="26"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="timelineLabel" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="timelineLabelValue" value="Mercredi 04"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="timelineLabelValue" value="Mer. 04"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="circleRadius">
                                         <real key="value" value="7"/>
                                     </userDefinedRuntimeAttribute>

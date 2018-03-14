@@ -36,8 +36,8 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
         self.category = aDecoder.decodeObject(forKey: "category") as! Category
         self.startingDate = aDecoder.decodeObject(forKey: "startingDate") as! EventDate
         self.endingDate = aDecoder.decodeObject(forKey: "endingDate") as! EventDate
-        self.excerpt = aDecoder.decodeObject(forKey: "producer") as! String?
-        self.excerpt = aDecoder.decodeObject(forKey: "director") as! String?
+        self.producer = aDecoder.decodeObject(forKey: "producer") as! String?
+        self.director = aDecoder.decodeObject(forKey: "director") as! String?
         self.url = aDecoder.decodeObject(forKey: "url") as! String?
     }
 

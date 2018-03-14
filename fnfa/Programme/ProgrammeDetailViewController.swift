@@ -21,7 +21,19 @@ class ProgrammeDetailViewController: UIViewController {
     @IBOutlet weak var imageDirector: DesignableImageView!
     
     let buttonFav = UIButton()
-    var event: Event?
+    var event: Event? 
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        NotificationCenter.default.addObserver(self, selector: #selector(refresh), name: .AGENDA_FAVORITE_REMOVE, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(refresh), name: .FAVORITE_ADD, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(refresh), name: .FAVORITE_REMOVE, object: nil)
+    }
+
+    @objc
+    private func refresh() {
+        buttonFav.isSelected = DataMapper.instance.isFavorited(event: event!)
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         setup()

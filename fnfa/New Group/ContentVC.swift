@@ -11,12 +11,13 @@ import ISHPullUp
 
 class ContentVC: UIViewController, ISHPullUpContentDelegate, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
-    let regionRadius: CLLocationDistance = 400
+    let regionRadius: CLLocationDistance = 200
     var arrayDataSources : Array<Place> = []
     @IBOutlet private weak var rootView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapView.delegate = self
 
         if #available(iOS 11.0, *) {
             mapView.preservesSuperviewLayoutMargins = false
@@ -111,5 +112,28 @@ class ContentVC: UIViewController, ISHPullUpContentDelegate, MKMapViewDelegate {
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, self.regionRadius, self.regionRadius)
         mapView.setRegion(coordinateRegion, animated: true)
+    }
+}
+extension ViewController: MKMapViewDelegate {
+    // 1
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        // 2
+        guard let annotation = annotation as? Annotation else { return nil }
+        // 3
+        let identifier = "marker"
+        var view: MKMarkerAnnotationView
+        // 4
+        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+            as? MKMarkerAnnotationView {
+            dequeuedView.annotation = annotation
+            view = dequeuedView
+        } else {
+            // 5
+            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            view.canShowCallout = true
+            view.calloutOffset = CGPoint(x: -5, y: 5)
+            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+        }
+        return view
     }
 }

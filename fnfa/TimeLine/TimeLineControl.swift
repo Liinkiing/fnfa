@@ -47,13 +47,13 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
      ======================================================= */
     
     private         let verticalPosition    : CGFloat = 20
-    private         let circleRadius        : CGFloat = 8
     private         let labelHeight         : CGFloat = 0
     private         var draggableZoneWidth  : CGFloat!
     private         var firstCircle         : CircleView?
     private         var secondCircle        : CircleView?
     private         var line                : LineView?
     private         var label               : UILabel?
+    @IBInspectable  var circleRadius        : CGFloat = 8
     @IBInspectable  var firstValue          : CGFloat = 50
     @IBInspectable  var secondValue         : CGFloat = 100
     @IBInspectable  var thumbSize           : CGFloat = 32
@@ -174,6 +174,7 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
      ======================================================= */
     
     override func awakeFromNib() {
+        self.setNeedsDisplay()
         draggableZoneWidth = self.bounds.size.width-thumbSize-2
         if (!timelineMode) {
             

@@ -20,9 +20,9 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SLk-Hb-Ve4">
-                        <rect key="frame" x="10" y="107" width="296" height="194"/>
+                        <rect key="frame" x="10" y="69" width="296" height="250"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="194" id="TBp-wZ-kIm"/>
+                            <constraint firstAttribute="height" constant="250" id="TBp-wZ-kIm"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
@@ -41,7 +41,7 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pck-Fa-Laa">
-                        <rect key="frame" x="10" y="224" width="296" height="77"/>
+                        <rect key="frame" x="10" y="242" width="296" height="77"/>
                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pfn-aK-OJL">
                             <rect key="frame" x="0.0" y="0.0" width="296" height="77"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,7 +81,7 @@
                         <blurEffect style="dark"/>
                     </visualEffectView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6m-ZR-xb5">
-                        <rect key="frame" x="0.0" y="38" width="316" height="60"/>
+                        <rect key="frame" x="0.0" y="0.0" width="316" height="60"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="bAo-0S-GV6"/>
                         </constraints>
@@ -100,7 +100,7 @@
                 <constraint firstAttribute="trailing" secondItem="M6m-ZR-xb5" secondAttribute="trailing" id="C3i-EU-3bg"/>
                 <constraint firstItem="SLk-Hb-Ve4" firstAttribute="centerX" secondItem="M6m-ZR-xb5" secondAttribute="centerX" id="L8m-nW-eEL"/>
                 <constraint firstItem="SLk-Hb-Ve4" firstAttribute="top" secondItem="M6m-ZR-xb5" secondAttribute="bottom" constant="9" id="MyJ-Hb-j2k"/>
-                <constraint firstItem="M6m-ZR-xb5" firstAttribute="top" secondItem="9g7-A8-ePE" secondAttribute="top" constant="38" id="Td4-8a-q5S"/>
+                <constraint firstItem="M6m-ZR-xb5" firstAttribute="top" secondItem="9g7-A8-ePE" secondAttribute="top" id="Td4-8a-q5S"/>
                 <constraint firstItem="M6m-ZR-xb5" firstAttribute="leading" secondItem="9g7-A8-ePE" secondAttribute="leading" id="YZA-3D-oHT"/>
                 <constraint firstItem="SLk-Hb-Ve4" firstAttribute="leading" secondItem="9g7-A8-ePE" secondAttribute="leading" constant="10" id="dCk-tw-cPE"/>
             </constraints>

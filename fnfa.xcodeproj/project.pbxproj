@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0680FAAB205976460015A066 /* Lieux.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0680FAAA205976460015A066 /* Lieux.storyboard */; };
+		0680FAAF205978030015A066 /* Programme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0680FAAE205978030015A066 /* Programme.storyboard */; };
 		06CDDFF22057E24C00C99D7A /* LieuxDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CDDFF12057E24C00C99D7A /* LieuxDataSource.swift */; };
 		06CDDFF42057E4A000C99D7A /* LieuxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CDDFF32057E4A000C99D7A /* LieuxTableViewCell.swift */; };
 		3A3DFF1D205683EB00340835 /* Tarifs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3DFF1C205683EB00340835 /* Tarifs.storyboard */; };
@@ -21,7 +22,6 @@
 		3AF2603F2035C22600D7E022 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2603E2035C22600D7E022 /* AgendaViewController.swift */; };
 		3AF260412035C23200D7E022 /* Agenda.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF260402035C23200D7E022 /* Agenda.storyboard */; };
 		3AF260442035C3BA00D7E022 /* ProgrammeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260432035C3BA00D7E022 /* ProgrammeViewController.swift */; };
-		3AF260462035C3C100D7E022 /* Programme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF260452035C3C100D7E022 /* Programme.storyboard */; };
 		944ABB5B3A83C70F3A0BD1D2 /* Pods_fnfa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE1B9ACA7C0551D06906509 /* Pods_fnfa.framework */; };
 		A55722B92056871000BBF2E9 /* LieuxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55722B82056871000BBF2E9 /* LieuxViewController.swift */; };
 		A55722C72056D24000BBF2E9 /* BottomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55722C32056D24000BBF2E9 /* BottomVC.swift */; };
@@ -83,6 +83,7 @@
 
 /* Begin PBXFileReference section */
 		0680FAAA205976460015A066 /* Lieux.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lieux.storyboard; sourceTree = "<group>"; };
+		0680FAAE205978030015A066 /* Programme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Programme.storyboard; sourceTree = "<group>"; };
 		06CDDFF12057E24C00C99D7A /* LieuxDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LieuxDataSource.swift; sourceTree = "<group>"; };
 		06CDDFF32057E4A000C99D7A /* LieuxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LieuxTableViewCell.swift; sourceTree = "<group>"; };
 		1AF4F4C03221CE5F39069D43 /* Pods-fnfa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fnfa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fnfa/Pods-fnfa.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,7 +101,6 @@
 		3AF2603E2035C22600D7E022 /* AgendaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
 		3AF260402035C23200D7E022 /* Agenda.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Agenda.storyboard; sourceTree = "<group>"; };
 		3AF260432035C3BA00D7E022 /* ProgrammeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeViewController.swift; sourceTree = "<group>"; };
-		3AF260452035C3C100D7E022 /* Programme.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Programme.storyboard; sourceTree = "<group>"; };
 		7DE1B9ACA7C0551D06906509 /* Pods_fnfa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fnfa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55722B82056871000BBF2E9 /* LieuxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LieuxViewController.swift; sourceTree = "<group>"; };
 		A55722C32056D24000BBF2E9 /* BottomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomVC.swift; sourceTree = "<group>"; };
@@ -239,10 +239,10 @@
 			isa = PBXGroup;
 			children = (
 				3AF260432035C3BA00D7E022 /* ProgrammeViewController.swift */,
-				3AF260452035C3C100D7E022 /* Programme.storyboard */,
 				AFF894C1203C4C3200AA1387 /* ProgrammeDataSource.swift */,
 				AFF894C3203C4D9800AA1387 /* ProgrammeCollectionViewCell.swift */,
 				AFF894C4203C4D9800AA1387 /* ProgrammeCollectionViewCell.xib */,
+				0680FAAE205978030015A066 /* Programme.storyboard */,
 				AF801750203CECBE00233FB9 /* FilterButton.swift */,
 				AF6DA53F2057205400AD82F1 /* ProgrammeDetailViewController.swift */,
 				AF6DA5412057326C00AD82F1 /* ProgrammeDetail.storyboard */,
@@ -401,10 +401,10 @@
 			files = (
 				3AF260362035C18100D7E022 /* LaunchScreen.storyboard in Resources */,
 				AF9AA6F72039224F000A1BF4 /* AgendaTableViewCell.xib in Resources */,
-				3AF260462035C3C100D7E022 /* Programme.storyboard in Resources */,
 				AFCDE2BB203A6B0000D57078 /* NoItemCollectionViewCell.xib in Resources */,
 				AF9AA6F3203916EC000A1BF4 /* EventCollectionViewCell.xib in Resources */,
 				AF6DA5422057326C00AD82F1 /* ProgrammeDetail.storyboard in Resources */,
+				0680FAAF205978030015A066 /* Programme.storyboard in Resources */,
 				3A3DFF1D205683EB00340835 /* Tarifs.storyboard in Resources */,
 				3AF260412035C23200D7E022 /* Agenda.storyboard in Resources */,
 				AFF894C6203C4D9800AA1387 /* ProgrammeCollectionViewCell.xib in Resources */,

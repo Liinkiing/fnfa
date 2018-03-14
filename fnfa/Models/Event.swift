@@ -57,7 +57,7 @@ class Event: NSObject, NSCoding, Decodable, IdProtocol, NameProtocol {
     }
 
     func getPlaceholderImage() -> UIImage {
-            return [#imageLiteral(resourceName: "motif-afca-3"), #imageLiteral(resourceName: "motif-afca-5"), #imageLiteral(resourceName: "motif-afca-8"), #imageLiteral(resourceName: "motif-afca-17"), #imageLiteral(resourceName: "motif-afca-14")].random()
+            return #imageLiteral(resourceName: "motif-afca-14")
     }
     
     override var description: String {

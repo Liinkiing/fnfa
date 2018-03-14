@@ -14,7 +14,9 @@
         <scene sceneID="ahI-6w-l4t">
             <objects>
                 <navigationController title="Infos pratiques" automaticallyAdjustsScrollViewInsets="NO" id="7hw-QZ-0Xg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Infos" image="info" selectedImage="info-full" id="Z77-bg-dVt"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Tvh-mD-aeR">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -572,5 +574,7 @@ Par Alix Chabagny, Yannis Cherif, Omar Jbara, Justine Lenouvel et Iris Mangin.</
         <image name="9" width="199" height="138"/>
         <image name="FEUILLE" width="362" height="552"/>
         <image name="FEUILLE_B" width="307" height="249"/>
+        <image name="info" width="24" height="24"/>
+        <image name="info-full" width="24" height="24"/>
     </resources>
 </document>

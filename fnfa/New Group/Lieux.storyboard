@@ -263,16 +263,20 @@
             </objects>
             <point key="canvasLocation" x="2776.8000000000002" y="-209.59520239880061"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--LIEUX-->
         <scene sceneID="8Uq-Bv-ADa">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V0q-qe-kQJ" sceneMemberID="viewController">
+                <navigationController title="LIEUX" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="V0q-qe-kQJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Lieux" image="lieux-final" selectedImage="lieu" id="ld9-xO-Ige"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ALg-E6-Vom">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rgv-fD-l67">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="C3h-ft-Pp5" kind="relationship" relationship="rootViewController" id="G5d-Kr-2UW"/>
                     </connections>
@@ -282,4 +286,8 @@
             <point key="canvasLocation" x="287" y="-57"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lieu" width="24" height="24"/>
+        <image name="lieux-final" width="24" height="24"/>
+    </resources>
 </document>

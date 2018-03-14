@@ -23,6 +23,7 @@ class AgendaTableViewCell: UITableViewCell {
         }
     }
     let dateFormatter = DateFormatter()
+    let calendar = Calendar.current
     
     override func awakeFromNib() {
         NotificationCenter.default.addObserver(self, selector: #selector(refresh), name: .FAVORITE_ADD, object: nil)
@@ -76,7 +77,14 @@ extension AgendaTableViewCell : UICollectionViewDelegate {
 
 extension AgendaTableViewCell : TimeLineControlDelegate {
     func userIsDragging(_ values: Array<CGFloat>) {
+        let startDate = buildDateWith(hour: values.first!)
+        let endDate = buildDateWith(hour: values.last!)
+        let starHour = startDate?.hour0x
+        let endHour = endDate?.hour0x
         
+        let startMinutes = startDate?.minute0x
+        let endMinutes = endDate?.minute0x
+        timeline.timelineLabelValue = "\(starHour!)h\(startMinutes!) - \(endHour!)h\(endMinutes!)"
     }
     
     func userDidEndDrag(_ values: Array<CGFloat>) {
@@ -90,13 +98,20 @@ extension AgendaTableViewCell : TimeLineControlDelegate {
         print(dateFormatter.string(from: startDate!))
         print(dateFormatter.string(from: endDate!))
 
-
         self.eventsDataSource?.events =  DataMapper.instance.getSavedFavorites()
             .findBy(date: day!)!
             .between(startDate: startDate!, endDate: endDate!)!
             .sorted(by: .date)!
         eventsCollectionView.reloadData()
         eventsCollectionView.selectItem(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: .centeredHorizontally)
+        
+        let starHour = startDate?.hour0x
+        let endHour = endDate?.hour0x
+        
+        let startMinutes = startDate?.minute0x
+        let endMinutes = endDate?.minute0x
+        timeline.timelineLabelValue = "\(starHour!)h\(startMinutes!) - \(endHour!)h\(endMinutes!)"
+
     }
 
     private func buildDateWith(hour: CGFloat) -> Date? {

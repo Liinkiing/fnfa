@@ -571,7 +571,7 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
         
         
         if !timelineMode {
-            label = UILabel(frame: CGRect(x:0, y:labelHeight, width: 100, height: 15))
+            label = UILabel(frame: CGRect(x:0, y:labelHeight, width: 200, height: 15))
             label!.center = CGPoint(x:  self.bounds.width/2  , y: labelHeight)
             label!.textAlignment = NSTextAlignment.center
             label!.textColor = LineColor

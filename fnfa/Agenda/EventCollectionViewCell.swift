@@ -11,7 +11,6 @@ import UIKit
 class EventCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var eventImage: UIImageView!
-    @IBOutlet weak var labelExcerpt: UILabel!
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelPlace: UILabel!
     @IBOutlet weak var labelDuration: UILabel!
@@ -38,9 +37,12 @@ class EventCollectionViewCell: UICollectionViewCell {
             df.setLocalizedDateFormatFromTemplate("HH'h'mm")
             let start = df.string(from: (event?.startingDate.getDate())!)
             let end = df.string(from: (event?.endingDate.getDate())!)
-            eventImage.image = event?.getUIImage()
+            if(event?.image == "random") {
+                eventImage.image = event?.getPlaceholderImage()
+            } else {
+                eventImage.sd_setImage(with: URL(string: (event?.image)!), placeholderImage: event?.getPlaceholderImage())
+            }
             labelTitle.text = event?.name
-            labelExcerpt.text = event?.excerpt
             labelPlace.text = event?.places?.first?.name
             labelDuration.text = "De \(start) à \(end)"
         }

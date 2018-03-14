@@ -1,18 +1,24 @@
 PODS:
   - ISHHoverBar (1.0.1)
   - ISHPullUp (1.0.6)
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
   - UPCarouselFlowLayout (1.1.1)
 
 DEPENDENCIES:
   - ISHHoverBar
   - ISHPullUp (~> 1.0)
+  - SDWebImage (~> 4.0)
   - UPCarouselFlowLayout (~> 1.1)
 
 SPEC CHECKSUMS:
   ISHHoverBar: 44d5161b7c815a60468d181e3ce70fbbfa5bef2a
   ISHPullUp: 0ce08aeef21a034ab883b22c5810015853dda6f8
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
   UPCarouselFlowLayout: 02045c1505d63057fba3d9975be880a8d16bf17d
 
-PODFILE CHECKSUM: f50065a8a8e8ec50b02a530c859671fb9c63a3fd
+PODFILE CHECKSUM: 31f8305f2d92673675d27e75417be64463a6560f
+
 
 COCOAPODS: 1.4.0

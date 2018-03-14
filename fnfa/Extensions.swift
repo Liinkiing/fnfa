@@ -134,6 +134,7 @@ extension Notification.Name {
     static let FAVORITE_REMOVE = Notification.Name("FAVORITE_REMOVE")
     static let AGENDA_FAVORITE_REMOVE =
             Notification.Name("AGENDA_FAVORITE_REMOVE")
+    static let AGENDA_EVENT_TAPPED = Notification.Name("AGENDA_EVENT_TAPPED")
 }
 
 extension UICollectionViewCell {

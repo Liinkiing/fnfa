@@ -9,5 +9,7 @@ target 'fnfa' do
   pod 'UPCarouselFlowLayout', '~> 1.1'
   pod 'ISHPullUp', '~> 1.0'
   pod 'ISHHoverBar'
+  pod 'SDWebImage', '~> 4.0'
+
 
 end

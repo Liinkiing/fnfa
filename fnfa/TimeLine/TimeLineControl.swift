@@ -59,11 +59,6 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
     @IBInspectable  var thumbSize           : CGFloat = 32
     @IBInspectable  var timelineMode        : Bool = false
     @IBInspectable  var timelineLabel       : Bool = false
-    @IBInspectable  var timelineLabelValue  : String = "default" {
-        didSet {
-            label?.text = timelineLabelValue
-        }
-    }
     @IBInspectable  var timelineSteps       : Int = 5
     @IBInspectable  var timelineInitSteps   : Int = 1
     @IBInspectable  var LineColor           : UIColor = UIColor.black
@@ -71,6 +66,11 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
     private         var circles             : Array<CircleView>     = []
     weak            var delegate            : TimeLineControlDelegate?
     private         var intervalBetweenCircles:CGFloat = 0
+    @IBInspectable  var timelineLabelValue  : String = "default" {
+        didSet {
+            label?.text = timelineLabelValue
+        }
+    }
     
     
     
@@ -567,7 +567,18 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
     }
     
     private func addTimelineLabel() {
-        if (timelineInitSteps <= timelineSteps + 1) {
+        
+        
+        if !timelineMode {
+            label = UILabel(frame: CGRect(x:0, y:labelHeight, width: 100, height: 15))
+            label!.center = CGPoint(x:  self.bounds.width/2  , y: labelHeight)
+            label!.textAlignment = NSTextAlignment.center
+            label!.textColor = LineColor
+            label!.text = self.timelineLabelValue
+            self.addSubview(label!)
+        }
+        
+        if (timelineInitSteps <= timelineSteps + 1 && timelineMode) {
             let width  = self.bounds.width - circleRadius * 4 - 2
             let x = CGFloat(timelineInitSteps <= 0 ? 1 : timelineInitSteps - 1)
             let intervalBetweenCircles = (width - ( CGFloat(timelineSteps) * (2*circleRadius)))/CGFloat(timelineSteps) - 1

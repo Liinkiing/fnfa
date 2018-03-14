@@ -49,12 +49,9 @@ class ContentVC: UIViewController, ISHPullUpContentDelegate, MKMapViewDelegate {
         let location = view.annotation as! Annotation
         let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
         location.mapItem().openInMaps(launchOptions: launchOptions)
-        
-        print("yoooooo")
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationViewDragState, fromOldState oldState: MKAnnotationViewDragState) {
-        print("Teeeeeest")
     }
     
     

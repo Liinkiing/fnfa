@@ -65,7 +65,6 @@ class LieuxTableViewCell: UITableViewCell {
     func creatBusliste(busesListe: Array<String>) {
         for i in 0...busesListe.count-1 {
             let x = i==0 ? 0 : i * 15 + 4*i
-            print(i)
             let name = busesListe[i]
             var imageView : UIImageView
             imageView  = UIImageView(frame: CGRect(x: CGFloat(x) ,y: 0, width: 15 , height:15));

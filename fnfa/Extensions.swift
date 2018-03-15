@@ -13,6 +13,12 @@ enum EventSortProperty {
     case name, id, date
 }
 
+extension String {
+    func removingWhitespaces() -> String {
+        return components(separatedBy: .whitespaces).joined()
+    }
+}
+
 extension Formatter {
     static let monthMedium: DateFormatter = {
         let formatter = DateFormatter()

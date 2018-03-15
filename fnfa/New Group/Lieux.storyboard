@@ -158,12 +158,6 @@
                                                                     <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4h-XJ-Bxv">
-                                                                    <rect key="frame" x="8" y="57" width="55" height="20"/>
-                                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                                                    <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bus :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOv-sX-YNQ">
                                                                     <rect key="frame" x="8" y="85" width="30" height="16"/>
                                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
@@ -202,26 +196,36 @@
                                                                     <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48t-As-p9U">
+                                                                    <rect key="frame" x="8" y="55" width="59" height="25"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="25" id="6mD-As-3nZ"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <connections>
+                                                                        <action selector="phoneCall:" destination="6Zy-Uc-jW2" eventType="touchUpInside" id="4Ex-82-v15"/>
+                                                                    </connections>
+                                                                </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
+                                                                <constraint firstItem="48t-As-p9U" firstAttribute="leading" secondItem="i0a-NK-KM3" secondAttribute="leading" constant="8" id="1lT-EO-GjT"/>
                                                                 <constraint firstItem="dFW-6f-uL8" firstAttribute="centerY" secondItem="FOv-sX-YNQ" secondAttribute="centerY" id="93m-gg-VXC"/>
                                                                 <constraint firstItem="5kR-if-jWm" firstAttribute="top" secondItem="i0a-NK-KM3" secondAttribute="top" id="9AW-PS-dQo"/>
                                                                 <constraint firstItem="FOv-sX-YNQ" firstAttribute="leading" secondItem="i0a-NK-KM3" secondAttribute="leading" constant="8" id="9jF-Jj-ZAj"/>
                                                                 <constraint firstItem="YJs-t5-eNt" firstAttribute="leading" secondItem="tOD-Wn-m9g" secondAttribute="trailing" constant="6" id="A7O-vq-cfH"/>
-                                                                <constraint firstItem="80G-55-p3L" firstAttribute="top" secondItem="YJs-t5-eNt" secondAttribute="bottom" constant="8" id="JIU-R7-nC8"/>
+                                                                <constraint firstItem="tOD-Wn-m9g" firstAttribute="top" secondItem="FOv-sX-YNQ" secondAttribute="bottom" constant="8" id="BjF-5c-Fiy"/>
                                                                 <constraint firstItem="FJF-jg-Isi" firstAttribute="top" secondItem="5kR-if-jWm" secondAttribute="bottom" constant="8" id="Km0-2r-NFx"/>
-                                                                <constraint firstItem="dFW-6f-uL8" firstAttribute="leading" secondItem="FOv-sX-YNQ" secondAttribute="trailing" constant="15" id="UAf-hB-Dt0"/>
+                                                                <constraint firstItem="48t-As-p9U" firstAttribute="top" secondItem="FJF-jg-Isi" secondAttribute="bottom" constant="6" id="PCR-Cu-D14"/>
+                                                                <constraint firstItem="dFW-6f-uL8" firstAttribute="leading" secondItem="FOv-sX-YNQ" secondAttribute="trailing" constant="15" id="PYF-5M-8Hh"/>
                                                                 <constraint firstItem="FJF-jg-Isi" firstAttribute="leading" secondItem="i0a-NK-KM3" secondAttribute="leading" constant="8" id="Vxk-vw-CdB"/>
                                                                 <constraint firstItem="80G-55-p3L" firstAttribute="leading" secondItem="i0a-NK-KM3" secondAttribute="leading" constant="8" id="Vyr-C9-9gA"/>
-                                                                <constraint firstItem="tOD-Wn-m9g" firstAttribute="top" secondItem="FOv-sX-YNQ" secondAttribute="bottom" constant="8" id="dDp-eb-9nJ"/>
+                                                                <constraint firstItem="FOv-sX-YNQ" firstAttribute="top" secondItem="48t-As-p9U" secondAttribute="bottom" constant="5" id="XUb-7r-2yy"/>
                                                                 <constraint firstItem="5kR-if-jWm" firstAttribute="leading" secondItem="i0a-NK-KM3" secondAttribute="leading" constant="8" id="f4Y-0s-9OU"/>
                                                                 <constraint firstItem="tOD-Wn-m9g" firstAttribute="leading" secondItem="i0a-NK-KM3" secondAttribute="leading" constant="8" id="fup-2K-8hm"/>
-                                                                <constraint firstItem="N4h-XJ-Bxv" firstAttribute="leading" secondItem="i0a-NK-KM3" secondAttribute="leading" constant="8" id="gw4-fu-E8t"/>
-                                                                <constraint firstItem="YJs-t5-eNt" firstAttribute="top" secondItem="FOv-sX-YNQ" secondAttribute="bottom" constant="8" id="h3p-oa-dRB"/>
-                                                                <constraint firstItem="N4h-XJ-Bxv" firstAttribute="top" secondItem="FJF-jg-Isi" secondAttribute="bottom" constant="8" id="iA3-IM-jLz"/>
-                                                                <constraint firstItem="FOv-sX-YNQ" firstAttribute="top" secondItem="N4h-XJ-Bxv" secondAttribute="bottom" constant="8" id="kiZ-Dr-4wI"/>
-                                                                <constraint firstItem="N4h-XJ-Bxv" firstAttribute="leading" secondItem="i0a-NK-KM3" secondAttribute="leadingMargin" id="xnF-Q5-5aL"/>
+                                                                <constraint firstItem="YJs-t5-eNt" firstAttribute="centerY" secondItem="tOD-Wn-m9g" secondAttribute="centerY" id="qqD-U8-bQT"/>
+                                                                <constraint firstItem="80G-55-p3L" firstAttribute="top" secondItem="YJs-t5-eNt" secondAttribute="bottom" constant="8" id="xdH-M6-2kF"/>
                                                             </constraints>
                                                         </view>
                                                     </subviews>
@@ -235,10 +239,10 @@
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <connections>
+                                                    <outlet property="btnLabel" destination="48t-As-p9U" id="8pV-uv-yAX"/>
                                                     <outlet property="busLabel" destination="FOv-sX-YNQ" id="KQA-GL-5gJ"/>
                                                     <outlet property="busholder" destination="dFW-6f-uL8" id="DtB-Am-Rxt"/>
                                                     <outlet property="labelAdresse" destination="FJF-jg-Isi" id="MbK-jo-dWx"/>
-                                                    <outlet property="labelPhone" destination="N4h-XJ-Bxv" id="bWS-SN-Pxz"/>
                                                     <outlet property="scheduleLabel" destination="80G-55-p3L" id="9vK-U6-HOa"/>
                                                     <outlet property="stopsLabel" destination="YJs-t5-eNt" id="UYE-qO-DvB"/>
                                                     <outlet property="titleLabel" destination="5kR-if-jWm" id="W8Y-Cy-JmN"/>

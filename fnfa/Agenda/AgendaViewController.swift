@@ -54,14 +54,12 @@ class AgendaViewController: UITableViewController {
         let label = UILabel(frame: CGRect(x:0, y: 0, width: 300, height: 80))
         label.center = CGPoint(x: wdith/2, y: height/2-50)
         label.textAlignment = NSTextAlignment.center
-        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.font = UIFont(name: "Montserrat", size: 20)
         label.text = "Ooops il semblerait que vous n'ayez rien ajouté à votre agenda... 😕"
         label.textColor = UIColor.white
         label.numberOfLines = 3
         self.view.addSubview(label)
         label.layer.zPosition = -1
-        let horizontalConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: view, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
-        horizontalConstraint.isActive = true
     }
 
     @objc

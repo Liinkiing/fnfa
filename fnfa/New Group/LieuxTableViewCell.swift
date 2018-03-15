@@ -20,7 +20,8 @@ class LieuxTableViewCell: UITableViewCell {
     @IBOutlet weak var stopsLabel: UILabel!
     @IBOutlet weak var busholder: UIView!
     
-
+    @IBOutlet weak var btnLabel: UIButton!
+    
     var place : Place? {
         didSet {
             if let title = place?.name {
@@ -36,14 +37,16 @@ class LieuxTableViewCell: UITableViewCell {
                 labelAdresse.isHidden = true
             }
             if let phone = place?.phone {
-                labelPhone.isHidden = false
-                labelPhone.text = phone
+                btnLabel.isHidden = false
+                btnLabel.setTitle(phone, for: .normal)
+                btnLabel.setTitle(phone, for: .selected)
             } else {
                 labelPhone.isHidden = true
             }
             if let stops = place?.stops {
                 stopsLabel.isHidden = false
                 stopsLabel.text = stops
+                
             } else {
                 stopsLabel.isHidden = true
             }
@@ -59,6 +62,13 @@ class LieuxTableViewCell: UITableViewCell {
             } else {
                 scheduleLabel.isHidden = true
             }
+        }
+    }
+    
+    @IBAction func phoneCall(_ sender: UIButton) {
+        let string = sender.titleLabel?.text?.removingWhitespaces()
+        if let url = URL(string: "tel://\(string!)") {
+            UIApplication.shared.open(url)
         }
     }
     

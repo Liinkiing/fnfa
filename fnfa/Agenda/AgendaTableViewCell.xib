@@ -42,7 +42,7 @@
                         <rect key="frame" x="16" y="328" width="288" height="56"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0078431372549019607" green="0.039215686274509803" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.0" green="0.8862745098" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.99607843137254903" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="firstValue">
                                 <real key="value" value="1"/>

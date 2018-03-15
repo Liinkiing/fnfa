@@ -108,7 +108,7 @@ extension Array where Element == Event {
     }
     
     func latest(forDay: Date) -> Event {
-        var latest = self.first
+        var latest = self.findBy(date: forDay)?.first
         self.forEach { (event) in
             if (latest?.endingDate.getDate())! < event.endingDate.getDate() {
                 latest = event
@@ -117,14 +117,16 @@ extension Array where Element == Event {
         return latest!
     }
     
-    func soonest(forDay: Date) -> Event {
-        var soonest = self.first
-        self.forEach { (event) in
-            if event.startingDate.getDate() < (soonest?.startingDate.getDate())! {
-                soonest = event
+    func soonest(forDay: Date) -> Event? {
+        var soonest = self.findBy(date: forDay)?.first
+        if soonest != nil {
+            self.findBy(date: forDay)?.forEach { (event) in
+                if event.startingDate.getDate() < (soonest?.startingDate.getDate())! {
+                    soonest = event
+                }
             }
         }
-        return soonest!
+        return soonest
     }
 
     func filterBy(days: [Date]?) -> [Event]? {

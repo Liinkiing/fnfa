@@ -17,8 +17,27 @@ class AgendaViewController: UITableViewController {
         Date(timeIntervalSince1970: 1523095200), // 7 Avril 2018, 12:00
         Date(timeIntervalSince1970: 1523181600)  // 8 Avril 2018, 12:00
     ]
+    private var eventsDays: [Date] = []
     private let dateFormatter = DateFormatter()
     private let locale = Locale(identifier: "fr_FR")
+    
+    override func awakeFromNib() {
+        refresh()
+        NotificationCenter.default.addObserver(self, selector: #selector(refresh), name: .FAVORITE_ADD, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(refresh), name: .FAVORITE_REMOVE, object: nil)
+    }
+    
+    @objc func refresh() {
+        eventsDays = []
+        for day in days {
+            if let firstEventOfDay = DataMapper.instance.getSavedFavorites().soonest(forDay: day) {
+                print("\(day) : \(firstEventOfDay)")
+                eventsDays.append(firstEventOfDay.startingDate.getDate())
+            }
+        }
+        tableView.reloadData()
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +65,7 @@ extension AgendaViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let row = tableView.dequeueReusableCell(withIdentifier: String(describing: AgendaTableViewCell.self),
                                                 for: indexPath) as! AgendaTableViewCell
-        row.day = days[indexPath.section]
+        row.day = eventsDays[indexPath.section]
         return row
     }
     
@@ -55,7 +74,7 @@ extension AgendaViewController {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return days.count
+        return eventsDays.count
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -66,7 +85,7 @@ extension AgendaViewController {
         if (view is UITableViewHeaderFooterView) {
             let header = view as! UITableViewHeaderFooterView
             dateFormatter.setLocalizedDateFormatFromTemplate("EEEE d")
-            header.textLabel?.text = dateFormatter.string(from: days[section]).capitalized(with: locale)
+            header.textLabel?.text = dateFormatter.string(from: eventsDays[section]).capitalized(with: locale)
             header.textLabel?.textAlignment = .center
             header.backgroundView?.backgroundColor = #colorLiteral(red: 0.2236568574, green: 0.2233459969, blue: 0.4078362944, alpha: 1)
             header.backgroundView?.alpha = 0.9

@@ -21,7 +21,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="335" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xj8-39-HkV">
                                 <rect key="frame" x="0.0" y="124" width="320" height="335"/>
-                                <color key="backgroundColor" red="0.0078431372549019607" green="0.039215686274509803" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0078431372550000003" green="0.035294117649999998" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="335" id="mns-Hy-zbo"/>
                                 </constraints>

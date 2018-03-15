@@ -84,7 +84,7 @@ class AgendaTableViewCell: UITableViewCell {
             updateTimelineLabel(startHour: "00", startMinutes: "00", endHour: "00", endMinutes: "00")
             return
         }
-        var startDate = eventsDataSource?.events.soonest(forDay: day!).startingDate.getDate()
+        var startDate = eventsDataSource?.events.soonest(forDay: day!)?.startingDate.getDate()
         var endDate = eventsDataSource?.events.latest(forDay: day!).endingDate.getDate()
         let first = buildSliderValueWith(date: startDate!)
         let second = buildSliderValueWith(date: endDate!)

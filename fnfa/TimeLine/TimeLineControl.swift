@@ -665,6 +665,9 @@ class TimeLineControl: UIView, UIGestureRecognizerDelegate {
     }
     
     private func changeLineSize(animated: Bool) {
+        if line == nil {
+            return
+        }
         let center = (secondValue - firstValue)
         let width = ( center * draggableZoneWidth / 100)
         if animated {

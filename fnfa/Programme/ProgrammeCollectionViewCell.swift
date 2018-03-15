@@ -61,6 +61,7 @@ class ProgrammeCollectionViewCell: UICollectionViewCell {
         } else {
             buttonFav.isSelected = true
             DataMapper.instance.addToFavorites(event: event!)
+            Utils.scaleAnimation(forButton: sender)
         }
     }
 

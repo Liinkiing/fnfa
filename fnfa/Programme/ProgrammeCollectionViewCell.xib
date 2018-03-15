@@ -57,10 +57,10 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcI-hN-wcl" customClass="DesignableButton" customModule="fnfa" customModuleProvider="target">
-                                    <rect key="frame" x="250" y="31" width="32" height="32"/>
+                                    <rect key="frame" x="247" y="27" width="32" height="32"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="32" id="597-ee-Oi7"/>
-                                        <constraint firstAttribute="height" constant="32" id="5OB-4z-ir9"/>
+                                        <constraint firstAttribute="width" constant="32" id="p4m-qA-3go"/>
+                                        <constraint firstAttribute="height" constant="32" id="yXb-b9-u59"/>
                                     </constraints>
                                     <state key="normal" image="like"/>
                                     <userDefinedRuntimeAttributes>
@@ -84,12 +84,12 @@
                                 </label>
                             </subviews>
                             <constraints>
+                                <constraint firstAttribute="bottom" secondItem="fcI-hN-wcl" secondAttribute="bottom" constant="18" id="6vF-Zk-cM7"/>
                                 <constraint firstItem="3te-oQ-obe" firstAttribute="top" secondItem="R61-Gd-A1z" secondAttribute="bottom" constant="-7" id="AGV-VE-vqA"/>
                                 <constraint firstAttribute="bottom" secondItem="3te-oQ-obe" secondAttribute="bottom" constant="10" id="XV6-0u-0kb"/>
                                 <constraint firstItem="R61-Gd-A1z" firstAttribute="leading" secondItem="pfn-aK-OJL" secondAttribute="leading" constant="10" id="bk1-fD-Biy"/>
                                 <constraint firstItem="3te-oQ-obe" firstAttribute="leading" secondItem="pfn-aK-OJL" secondAttribute="leading" constant="10" id="kCg-mP-Gl4"/>
-                                <constraint firstAttribute="bottom" secondItem="fcI-hN-wcl" secondAttribute="bottom" constant="14" id="sPM-oW-FQF"/>
-                                <constraint firstAttribute="trailing" secondItem="fcI-hN-wcl" secondAttribute="trailing" constant="14" id="yD9-kO-UAi"/>
+                                <constraint firstAttribute="trailing" secondItem="fcI-hN-wcl" secondAttribute="trailing" constant="17" id="s3h-XN-6in"/>
                             </constraints>
                         </view>
                         <constraints>

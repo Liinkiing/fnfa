@@ -97,12 +97,12 @@
                         </constraints>
                         <blurEffect style="dark"/>
                     </visualEffectView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6m-ZR-xb5">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M6m-ZR-xb5">
                         <rect key="frame" x="0.0" y="0.0" width="316" height="60"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="bAo-0S-GV6"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>

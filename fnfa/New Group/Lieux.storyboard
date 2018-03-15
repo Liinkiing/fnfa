@@ -168,14 +168,14 @@
                                                                     <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arret" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJs-t5-eNt">
-                                                                    <rect key="frame" x="8" y="111" width="33" height="17"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="inconnu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJs-t5-eNt">
+                                                                    <rect key="frame" x="61.5" y="111" width="52" height="17"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horaire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80G-55-p3L">
-                                                                    <rect key="frame" x="8" y="136" width="48" height="17"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aucun horaires" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80G-55-p3L">
+                                                                    <rect key="frame" x="8" y="136" width="96" height="17"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <nil key="highlightedColor"/>
@@ -188,22 +188,30 @@
                                                                         <constraint firstAttribute="height" constant="17" id="m2O-6H-0Lr"/>
                                                                     </constraints>
                                                                 </view>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arrets :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOD-Wn-m9g">
+                                                                    <rect key="frame" x="8" y="111" width="47.5" height="17"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstItem="dFW-6f-uL8" firstAttribute="centerY" secondItem="FOv-sX-YNQ" secondAttribute="centerY" id="93m-gg-VXC"/>
                                                                 <constraint firstItem="5kR-if-jWm" firstAttribute="top" secondItem="i0a-NK-KM3" secondAttribute="top" id="9AW-PS-dQo"/>
                                                                 <constraint firstItem="FOv-sX-YNQ" firstAttribute="leading" secondItem="i0a-NK-KM3" secondAttribute="leading" constant="8" id="9jF-Jj-ZAj"/>
+                                                                <constraint firstItem="YJs-t5-eNt" firstAttribute="leading" secondItem="tOD-Wn-m9g" secondAttribute="trailing" constant="6" id="A7O-vq-cfH"/>
                                                                 <constraint firstItem="80G-55-p3L" firstAttribute="top" secondItem="YJs-t5-eNt" secondAttribute="bottom" constant="8" id="JIU-R7-nC8"/>
                                                                 <constraint firstItem="FJF-jg-Isi" firstAttribute="top" secondItem="5kR-if-jWm" secondAttribute="bottom" constant="8" id="Km0-2r-NFx"/>
                                                                 <constraint firstItem="dFW-6f-uL8" firstAttribute="leading" secondItem="FOv-sX-YNQ" secondAttribute="trailing" constant="15" id="UAf-hB-Dt0"/>
                                                                 <constraint firstItem="FJF-jg-Isi" firstAttribute="leading" secondItem="i0a-NK-KM3" secondAttribute="leading" constant="8" id="Vxk-vw-CdB"/>
                                                                 <constraint firstItem="80G-55-p3L" firstAttribute="leading" secondItem="i0a-NK-KM3" secondAttribute="leading" constant="8" id="Vyr-C9-9gA"/>
+                                                                <constraint firstItem="tOD-Wn-m9g" firstAttribute="top" secondItem="FOv-sX-YNQ" secondAttribute="bottom" constant="8" id="dDp-eb-9nJ"/>
                                                                 <constraint firstItem="5kR-if-jWm" firstAttribute="leading" secondItem="i0a-NK-KM3" secondAttribute="leading" constant="8" id="f4Y-0s-9OU"/>
+                                                                <constraint firstItem="tOD-Wn-m9g" firstAttribute="leading" secondItem="i0a-NK-KM3" secondAttribute="leading" constant="8" id="fup-2K-8hm"/>
                                                                 <constraint firstItem="N4h-XJ-Bxv" firstAttribute="leading" secondItem="i0a-NK-KM3" secondAttribute="leading" constant="8" id="gw4-fu-E8t"/>
                                                                 <constraint firstItem="YJs-t5-eNt" firstAttribute="top" secondItem="FOv-sX-YNQ" secondAttribute="bottom" constant="8" id="h3p-oa-dRB"/>
                                                                 <constraint firstItem="N4h-XJ-Bxv" firstAttribute="top" secondItem="FJF-jg-Isi" secondAttribute="bottom" constant="8" id="iA3-IM-jLz"/>
-                                                                <constraint firstItem="YJs-t5-eNt" firstAttribute="leading" secondItem="i0a-NK-KM3" secondAttribute="leading" constant="8" id="kRg-u8-X0G"/>
                                                                 <constraint firstItem="FOv-sX-YNQ" firstAttribute="top" secondItem="N4h-XJ-Bxv" secondAttribute="bottom" constant="8" id="kiZ-Dr-4wI"/>
                                                                 <constraint firstItem="N4h-XJ-Bxv" firstAttribute="leading" secondItem="i0a-NK-KM3" secondAttribute="leadingMargin" id="xnF-Q5-5aL"/>
                                                             </constraints>

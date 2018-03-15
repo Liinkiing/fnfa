@@ -45,6 +45,9 @@ class AgendaTableViewCell: UITableViewCell {
                                       forCellWithReuseIdentifier: String(describing: NoItemCollectionViewCell.self))
         eventsCollectionView.register(UINib(nibName: String(describing: EventCollectionViewCell.self), bundle: nil),
                 forCellWithReuseIdentifier: String(describing: EventCollectionViewCell.self))
+        if (eventsDataSource?.events.count)! > 0 {
+            updateTimelineInitialValues()
+        }
     }
     
     @objc
@@ -54,6 +57,12 @@ class AgendaTableViewCell: UITableViewCell {
             .sorted(by: .date)!
         eventsCollectionView.reloadData()
         eventsCollectionView.selectItem(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: .centeredHorizontally)
+        eventsCollectionView.performBatchUpdates({
+            
+        }) { (finished) in
+            self.updateTimelineInitialValues()
+        }
+        
     }
     
     @objc
@@ -62,6 +71,42 @@ class AgendaTableViewCell: UITableViewCell {
             .findBy(date: day!)!
             .sorted(by: .date)!
         eventsCollectionView.reloadData()
+        eventsCollectionView.performBatchUpdates({
+            
+        }) { (finished) in
+            self.updateTimelineInitialValues()
+        }
+    }
+    
+    private func updateTimelineInitialValues() {
+        if eventsDataSource?.events.count == 0 {
+            timeline.changeValues(first: 0, second: 100)
+            updateTimelineLabel(startHour: "00", startMinutes: "00", endHour: "00", endMinutes: "00")
+            return
+        }
+        var startDate = eventsDataSource?.events.soonest(forDay: day!).startingDate.getDate()
+        var endDate = eventsDataSource?.events.latest(forDay: day!).endingDate.getDate()
+        let first = buildSliderValueWith(date: startDate!)
+        let second = buildSliderValueWith(date: endDate!)
+        timeline.changeValues(first: first, second: second)
+        
+        startDate = buildDateWith(hour: first)
+        endDate = buildDateWith(hour: second)
+        updateTimelineLabel(startDate: startDate!, endDate: endDate!)
+
+    }
+    
+    private func updateTimelineLabel(startDate: Date, endDate: Date) {
+        let startHour = startDate.hour0x
+        let endHour = endDate.hour0x
+        
+        let startMinutes = startDate.minute0x
+        let endMinutes = endDate.minute0x
+        timeline.timelineLabelValue = "\(startHour)h\(startMinutes) - \(endHour)h\(endMinutes)"
+    }
+    
+    private func updateTimelineLabel(startHour: String, startMinutes: String, endHour: String, endMinutes: String) {
+        timeline.timelineLabelValue = "\(startHour)h\(startMinutes) - \(endHour)h\(endMinutes)"
     }
     
 }
@@ -79,12 +124,7 @@ extension AgendaTableViewCell : TimeLineControlDelegate {
     func userIsDragging(_ values: Array<CGFloat>) {
         let startDate = buildDateWith(hour: values.first!)
         let endDate = buildDateWith(hour: values.last!)
-        let starHour = startDate?.hour0x
-        let endHour = endDate?.hour0x
-        
-        let startMinutes = startDate?.minute0x
-        let endMinutes = endDate?.minute0x
-        timeline.timelineLabelValue = "\(starHour!)h\(startMinutes!) - \(endHour!)h\(endMinutes!)"
+        updateTimelineLabel(startDate: startDate!, endDate: endDate!)
     }
     
     func userDidEndDrag(_ values: Array<CGFloat>) {
@@ -102,12 +142,7 @@ extension AgendaTableViewCell : TimeLineControlDelegate {
         eventsCollectionView.reloadData()
         eventsCollectionView.selectItem(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: .centeredHorizontally)
         
-        let starHour = startDate?.hour0x
-        let endHour = endDate?.hour0x
-        
-        let startMinutes = startDate?.minute0x
-        let endMinutes = endDate?.minute0x
-        timeline.timelineLabelValue = "\(starHour!)h\(startMinutes!) - \(endHour!)h\(endMinutes!)"
+        updateTimelineLabel(startDate: startDate!, endDate: endDate!)
 
     }
 
@@ -121,6 +156,16 @@ extension AgendaTableViewCell : TimeLineControlDelegate {
         components.second = 0
         return calendar.date(from: components)
     }
+    
+    private func buildSliderValueWith(date: Date) -> CGFloat {
+        
+        let calendar = Calendar(identifier: .gregorian)
+        var components = calendar.dateComponents([.hour, .minute], from: date)
+        let hour = CGFloat(components.hour!)
+        let minutes = CGFloat(components.minute!)
+        return (hour + minutes/60.0) * (100.0 / 24.0)
+    }
+    
     
     func userAddedStep(_ value: Int) {
         

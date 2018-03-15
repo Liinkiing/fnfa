@@ -9,6 +9,14 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Infos pratiques-->
         <scene sceneID="ahI-6w-l4t">
@@ -20,6 +28,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Tvh-mD-aeR">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -68,104 +79,61 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="80m-Gx-f9D"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Billeterie" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b75-ET-Qgh">
-                                                    <rect key="frame" x="16" y="305" width="288" height="30"/>
+                                                    <rect key="frame" x="16" y="295.5" width="288" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="pVE-5M-kbi"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ia1-QL-HqI">
-                                                    <rect key="frame" x="16" y="79" width="288" height="100.5"/>
-                                                    <attributedString key="attributedText">
-                                                        <fragment>
-                                                            <string key="content">Tarif unique : 6€
-Ciné concert : 8€ Carte sortir et groupe </string>
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.98823529481887817" green="0.99607843160629272" blue="0.99607843160629272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="(à partir de 10 personnes)">
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.98823529481887817" green="0.99607843160629272" blue="0.99607843160629272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="11" name=".AppleSystemUIFont"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content"> : 3€
-Carnet fidélité </string>
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.98823529481887817" green="0.99607843160629272" blue="0.99607843160629272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="(5 places)">
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.98823529481887817" green="0.99607843160629272" blue="0.99607843160629272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="11" name=".AppleSystemUIFont"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content=" : 25€ ">
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.98823529481887817" green="0.99607843160629272" blue="0.99607843160629272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ia1-QL-HqI">
+                                                    <rect key="frame" x="16" y="79" width="288" height="94"/>
+                                                    <string key="text">Tarif unique : 6€
+Ciné concert : 8€ Carte sortir et groupe (à partir de 10 personnes) : 3€
+Carnet fidélité (5 places) : 25€ </string>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                                                    <color key="textColor" red="0.98823529481887817" green="0.99607843160629272" blue="0.99607843160629272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnR-fc-kE0">
-                                                    <rect key="frame" x="16" y="226" width="288" height="50"/>
-                                                    <attributedString key="attributedText">
-                                                        <fragment>
-                                                            <string key="content">Projection : 3€
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnR-fc-kE0">
+                                                    <rect key="frame" x="16" y="219.5" width="288" height="47"/>
+                                                    <string key="text">Projection : 3€
 Atelier : 4€
 </string>
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.98823529481887817" green="0.99607843160629272" blue="0.99607843160629272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                                                    <color key="textColor" red="0.98823529481887817" green="0.99607843160629272" blue="0.99607843160629272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarif scolaire et structures" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3V7-B7-dTn">
-                                                    <rect key="frame" x="16" y="188" width="288" height="30"/>
+                                                    <rect key="frame" x="16" y="181.5" width="288" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="XlO-7w-RCC"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3P-Mf-xYH">
-                                                    <rect key="frame" x="16" y="290" width="288" height="1"/>
+                                                    <rect key="frame" x="16" y="280.5" width="288" height="1"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="8J2-cJ-FHJ"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7T2-Ro-TqK">
-                                                    <rect key="frame" x="16" y="343" width="288" height="167.5"/>
+                                                    <rect key="frame" x="16" y="333.5" width="288" height="156"/>
                                                     <string key="text">Ouverture de la billeterie 30 minutes avant le début de chaque séance pour toutes les salles.
 
 Pour les séances du TNB uniquement, réservation à partir du 4 avril sur toute la durée du Festival.
 
 Carte abonnée des salles partenaires (TNB, Arvor et Le Grand Logis) acceptée.</string>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
                                                     <color key="textColor" red="0.98823529481887817" green="0.99607843160629272" blue="0.99607843160629272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -212,7 +180,7 @@ Carte abonnée des salles partenaires (TNB, Arvor et Le Grand Logis) acceptée.<
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8c-Ku-6n7">
-                                                    <rect key="frame" x="20" y="42" width="280" height="167.5"/>
+                                                    <rect key="frame" x="20" y="42" width="280" height="156"/>
                                                     <string key="text">Le bar-restaurant du TNB, situé au 1er étage est ouvert :
  - Les jeudi et vendredi de 12h à 14h
  - Le soir à partir de 18h
@@ -220,8 +188,8 @@ Carte abonnée des salles partenaires (TNB, Arvor et Le Grand Logis) acceptée.<
 Un goûter au tarif préférentiel de 4€ est disponible mercredi, samedi et dimanche.
 
 Un happy hour gastronomique à 11.50€ est proposé tous les soirs de 20h à 21h</string>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                                                    <color key="textColor" red="0.98823529480000005" green="0.99607843159999998" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                                                    <color key="textColor" red="0.98823529481887817" green="0.99607843160629272" blue="0.99607843160629272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -245,20 +213,20 @@ Un happy hour gastronomique à 11.50€ est proposé tous les soirs de 20h à 21
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organisé par : " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naK-Hf-AiQ">
-                                                    <rect key="frame" x="28" y="31" width="132" height="30"/>
+                                                    <rect key="frame" x="28" y="31" width="142" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="wgc-Hp-1kq"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                                     <color key="textColor" red="0.0078431372550000003" green="0.035294117649999998" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En partenariat avec :" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H37-Mv-TBV">
-                                                    <rect key="frame" x="28" y="217" width="187" height="30"/>
+                                                    <rect key="frame" x="28" y="217" width="202.5" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="FXa-RP-bqF"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                                     <color key="textColor" red="0.0078431372550000003" green="0.035294117649999998" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -342,11 +310,11 @@ Un happy hour gastronomique à 11.50€ est proposé tous les soirs de 20h à 21
                                                     </cells>
                                                 </collectionView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avec le soutien de : " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GT-7S-JpG">
-                                                    <rect key="frame" x="28" y="391" width="180" height="30"/>
+                                                    <rect key="frame" x="28" y="391" width="194.5" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="uBA-HE-8qo"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                                     <color key="textColor" red="0.0078431372550000003" green="0.035294117649999998" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -499,11 +467,11 @@ Un happy hour gastronomique à 11.50€ est proposé tous les soirs de 20h à 21
                                                     </cells>
                                                 </collectionView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crédits" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIR-t8-11c">
-                                                    <rect key="frame" x="28" y="715" width="67" height="30"/>
+                                                    <rect key="frame" x="28" y="715" width="70.5" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="FlU-Pd-0TX"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                                     <color key="textColor" red="0.0078431372550000003" green="0.035294117649999998" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -511,7 +479,7 @@ Un happy hour gastronomique à 11.50€ est proposé tous les soirs de 20h à 21
                                                     <rect key="frame" x="28" y="741" width="280" height="82"/>
                                                     <string key="text">Réalisé par l'école des Gobelins en partenariat avec l'AFCA
 Par Alix Chabagny, Yannis Cherif, Omar Jbara, Justine Lenouvel et Iris Mangin.</string>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
                                                     <color key="textColor" red="0.0078431372550000003" green="0.035294117649999998" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>

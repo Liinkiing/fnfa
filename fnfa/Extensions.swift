@@ -210,7 +210,18 @@ class DesignableImageView: UIImageView {
     }
 }
 
-
+@IBDesignable class TIFAttributedLabel: UILabel {
+    
+    @IBInspectable var fontSize: CGFloat = 14.0
+    
+    @IBInspectable var fontFamily: String = "Montserrat"
+    
+    override func awakeFromNib() {
+        var attrString = NSMutableAttributedString(attributedString: self.attributedText!)
+        attrString.addAttribute(NSAttributedStringKey.font, value: UIFont(name: self.fontFamily, size: self.fontSize)!, range: NSMakeRange(0, attrString.length))
+        self.attributedText = attrString
+    }
+}
 
 extension Notification.Name {
     static let FAVORITE_ADD = Notification.Name("FAVORITE_ADD")

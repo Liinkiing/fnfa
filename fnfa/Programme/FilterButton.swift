@@ -14,10 +14,8 @@ class FilterButton: UIButton {
 
     override func layoutSubviews() {
         if state == .normal {
-            titleLabel?.font = UIFont.systemFont(ofSize: (titleLabel?.font.pointSize)!)
             style()
         } else if state == .selected {
-            titleLabel?.font = UIFont.boldSystemFont(ofSize: (titleLabel?.font.pointSize)!)
             style()
         }
         super.layoutSubviews()
@@ -35,7 +33,7 @@ class FilterButton: UIButton {
         } else if state == .selected {
             layer.borderWidth = 2
             layer.cornerRadius = 10
-            layer.borderColor = #colorLiteral(red: 0, green: 0.8916617036, blue: 0.5365658998, alpha: 1)
+            layer.borderColor = #colorLiteral(red: 0, green: 0.8901960784, blue: 0.537254902, alpha: 1)
             layer.shadowRadius = 6
             layer.shadowColor = #colorLiteral(red: 0, green: 0.8916617036, blue: 0.5365658998, alpha: 1)
             layer.shadowOpacity = 0.6

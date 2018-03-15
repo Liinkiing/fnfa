@@ -14,10 +14,8 @@ class FilterButton: UIButton {
 
     override func layoutSubviews() {
         if state == .normal {
-            titleLabel?.font = UIFont.systemFont(ofSize: (titleLabel?.font.pointSize)!)
             style()
         } else if state == .selected {
-            titleLabel?.font = UIFont.boldSystemFont(ofSize: (titleLabel?.font.pointSize)!)
             style()
         }
         super.layoutSubviews()

@@ -35,9 +35,9 @@ class FilterButton: UIButton {
         } else if state == .selected {
             layer.borderWidth = 2
             layer.cornerRadius = 10
-            layer.borderColor = #colorLiteral(red: 0.6207823034, green: 0.8612903795, blue: 0.4991006797, alpha: 1)
+            layer.borderColor = #colorLiteral(red: 0, green: 0.8916617036, blue: 0.5365658998, alpha: 1)
             layer.shadowRadius = 6
-            layer.shadowColor = #colorLiteral(red: 0.720758432, green: 1, blue: 0.5794801516, alpha: 1)
+            layer.shadowColor = #colorLiteral(red: 0, green: 0.8916617036, blue: 0.5365658998, alpha: 1)
             layer.shadowOpacity = 0.6
             layer.shadowOffset = CGSize(width: 0, height: 0)
         }

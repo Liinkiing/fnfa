@@ -46,6 +46,22 @@ class AgendaViewController: UITableViewController {
         tableView.register(UINib(nibName: String(describing: AgendaTableViewCell.self), bundle: nil),
                 forCellReuseIdentifier: String(describing: AgendaTableViewCell.self))
         NotificationCenter.default.addObserver(self, selector: #selector(onEventTapped), name: .AGENDA_EVENT_TAPPED, object: nil)
+        
+        
+        // add label for nothing in the agenda
+        let wdith = self.view.bounds.size.width
+        let height = self.view.bounds.size.height
+        let label = UILabel(frame: CGRect(x:0, y: 0, width: 300, height: 80))
+        label.center = CGPoint(x: wdith/2, y: height/2-50)
+        label.textAlignment = NSTextAlignment.center
+        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.text = "Ooops il semblerait que vous n'ayez rien ajouté à votre agenda... 😕"
+        label.textColor = UIColor.white
+        label.numberOfLines = 3
+        self.view.addSubview(label)
+        label.layer.zPosition = -1
+        let horizontalConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: view, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
+        horizontalConstraint.isActive = true
     }
 
     @objc
